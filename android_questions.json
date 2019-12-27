@@ -2,99 +2,121 @@
   "questions": [
     {
       "id": 0,
-      "question": "Dolor veniam laborum excepteur sit ipsum qui incididunt esse incididunt veniam.",
-      "details": "Aliquip in enim enim laborum mollit anim voluptate dolor aliqua quis deserunt deserunt. Officia consectetur nisi ex sunt commodo id. Excepteur est ullamco mollit minim culpa.\r\n",
-      "questionType": "fill",
+      "question": "What is Android?",
+      "details": "Android is a stack of software for mobile devices which includes an Operating System, middleware and some key applications. The application executes within its own process and its own instance of Dalvik Virtual Machine.",
+      "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "Laboris voluptate pariatur duis deserunt occaecat esse ullamco sit veniam ipsum adipisicing. Sint adipisicing occaecat minim nostrud fugiat id. Et laborum culpa proident laborum. Ea sint quis labore consectetur minim enim quis. Labore et mollit tempor ea est. Ipsum est nulla occaecat consequat exercitation tempor eiusmod adipisicing eu.\r\n"
+      "shortAns": "A stack of software for mobile devices.",
+      "tag": "android"
     },
     {
       "id": 1,
-      "question": "Lorem ad mollit incididunt ut velit commodo.",
-      "details": "Deserunt excepteur enim et nulla tempor duis quis pariatur veniam aute nostrud Lorem sit. Sit proident enim anim anim culpa id pariatur culpa velit. Anim duis sit veniam consequat incididunt ad labore fugiat aliqua. Tempor magna id exercitation fugiat aute commodo exercitation fugiat aute. In et adipisicing commodo proident ipsum enim nisi laborum irure incididunt ipsum ex eu. Consequat elit ex ullamco eiusmod laborum id culpa velit do culpa exercitation.\r\n",
+      "question": "What is a Service?",
+      "details": "Android service is a component that is used to perform operations on the background such as playing music, handle network transactions, interacting content providers etc.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "Velit dolore duis voluptate voluptate. Consectetur do in pariatur eu deserunt esse nulla magna tempor exercitation. Sunt consectetur eu sit veniam consectetur. Id et voluptate aute cillum minim.\r\n"
+      "shortAns": "It performs background functionalities.",
+      "tag": "service"
     },
     {
       "id": 2,
-      "question": "Nostrud eu do sint exercitation laboris occaecat officia dolor exercitation anim ex.",
-      "details": "In labore nostrud labore exercitation eu eu. Ad adipisicing nostrud laboris magna do deserunt et reprehenderit culpa. Nulla ipsum ipsum fugiat incididunt amet exercitation. Enim deserunt exercitation cillum est reprehenderit laboris laborum voluptate occaecat. Anim id excepteur Lorem reprehenderit exercitation ex.\r\n",
+      "question": "What is the APK format?",
+      "details": "The Android packaging key is compressed with classes, UI's, supportive assets and manifest. All files are compressed to a single file that is called the APK.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "Commodo veniam incididunt tempor et sint nulla dolor Lorem reprehenderit officia duis sunt culpa deserunt. Do laboris proident excepteur aliqua in magna Lorem excepteur id et. Exercitation mollit aliqua ipsum officia esse dolore qui irure consectetur non consectetur proident aliquip adipisicing. Duis elit ullamco veniam reprehenderit cupidatat aliquip culpa dolor tempor enim do duis sit. Consectetur voluptate sint commodo sint aliquip. Nulla consectetur do adipisicing dolor ut aute. Esse nisi consectetur do enim id aliqua.\r\n"
+      "shortAns": "It is compressed with classes, UI's, supportive assets and manifest.",
+      "tag": "apk"
     },
     {
       "id": 3,
-      "question": "Ea aliqua est mollit quis dolor veniam officia id occaecat tempor nulla.",
-      "details": "Pariatur laboris pariatur non et ea eu deserunt tempor excepteur reprehenderit cillum. Amet aliqua mollit ex magna eu anim voluptate id id do incididunt dolore. Ex qui ex ullamco deserunt laborum nisi duis sunt. Labore ea et tempor voluptate non ad. Aliqua elit amet nostrud excepteur do occaecat non in.\r\n",
-      "questionType": "fill",
-      "trueOrFalse": true,
-      "shortAns": "Et proident proident esse mollit culpa dolor enim labore dolor. Proident ut qui in exercitation sint nisi esse et consequat qui adipisicing sint adipisicing id. Incididunt irure esse incididunt velit nostrud aliqua officia irure. Sint est ullamco ullamco ut incididunt cillum occaecat non esse proident magna sit. Aliqua consectetur duis ex minim ex adipisicing amet exercitation incididunt minim. Occaecat et officia tempor amet nisi exercitation nisi pariatur excepteur laboris enim officia incididunt consequat. Dolor mollit nostrud elit ut proident duis ut velit culpa est ut commodo.\r\n"
+      "question": "What is an intent?",
+      "details": "It is connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser.etc.,
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a declaration to do something.",
+      "tag": "intent"
     },
     {
       "id": 4,
-      "question": "Est tempor aliquip laboris duis et sunt dolor et.",
-      "details": "Reprehenderit labore irure ex sit anim Lorem ea officia reprehenderit. Occaecat consectetur magna cupidatat cupidatat est quis do sit. Nostrud sint dolor laboris sint sit ex aliqua esse duis amet nisi nulla. Ad est aliquip Lorem dolor in esse aliqua. Aliqua duis labore laboris dolor tempor eiusmod non culpa est. Ut irure sit reprehenderit eiusmod velit fugiat labore anim incididunt deserunt dolor ut irure.\r\n",
+      "question": "What is an android manifest file?",
+      "details": "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
       "questionType": "multi",
-      "trueOrFalse": true,
-      "shortAns": "Id ex magna aliquip commodo cillum duis cupidatat aliqua minim. Ad amet voluptate id esse aliqua eiusmod. Ad sint sint est sint pariatur id amet do consectetur do exercitation consectetur proident.\r\n"
+      "trueOrFalse": false,
+      "shortAns": "It is a resource file which contains all the details needed by the android system about the application.",
+      "tag": "manifest"
     },
     {
       "id": 5,
-      "question": "Occaecat dolor veniam adipisicing do.",
-      "details": "Voluptate Lorem veniam minim laboris enim qui cillum qui. Proident ex aliquip consectetur cillum sint. Ipsum anim esse ex veniam anim magna eu amet exercitation est enim sunt officia. Laborum reprehenderit eiusmod et ea nisi voluptate sit quis laborum excepteur qui exercitation tempor adipisicing. Do est reprehenderit consectetur exercitation cillum quis cillum sunt adipisicing deserunt ullamco ex. Qui sit laboris nostrud culpa tempor ipsum tempor enim culpa nisi. Ipsum adipisicing minim ex laboris anim elit.\r\n",
-      "questionType": "fill",
-      "trueOrFalse": true,
-      "shortAns": "Labore nisi nulla Lorem labore mollit cupidatat labore id nisi cupidatat. Adipisicing ut elit sit laborum nostrud do fugiat aute nisi labore. Ad aliquip nostrud consequat reprehenderit id mollit elit labore duis commodo labore sint. Ullamco reprehenderit officia ipsum tempor qui ea in. Sit id laborum incididunt labore culpa. Aliqua excepteur incididunt consectetur ut mollit ipsum pariatur elit. Ullamco irure voluptate anim ad sit enim ullamco qui non nostrud sunt sunt adipisicing sit.\r\n"
+      "question": "What is AAPT?",
+      "details": "AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents. This tool allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.",
+      "questionType": "multi,
+      "trueOrFalse": false,
+      "shortAns": "It is a packaging tool and is included in the tools directory of the SDK.",
+      "tag": "aapt"
     },
     {
       "id": 6,
-      "question": "Nisi nisi consectetur proident commodo tempor ad ipsum.",
-      "details": "Dolore dolore reprehenderit sunt sunt do deserunt pariatur veniam. Excepteur tempor Lorem non commodo amet aute eiusmod amet excepteur commodo dolor pariatur est in. Tempor in in consectetur aliquip veniam aute adipisicing enim aliquip mollit commodo cupidatat. Irure amet ea culpa laborum voluptate est duis sunt dolor duis anim.\r\n",
+      "question": "What is an activity?",
+      "details": "Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "Sit culpa elit quis pariatur ipsum nulla do commodo incididunt aliquip sint in consequat incididunt. Esse eiusmod nulla tempor voluptate elit consequat magna laboris incididunt. Incididunt cillum ea laboris amet veniam excepteur labore et laborum veniam dolore. Sit sit nostrud anim ad elit eiusmod. Duis labore aliquip excepteur nostrud ea ad occaecat.\r\n"
+      "shortAns": "It is the window to a user interface.",
+      "tag": "activity"
     },
     {
       "id": 7,
-      "question": "Irure do laborum incididunt est sint aliquip cupidatat magna mollit pariatur dolor eu.",
-      "details": "Enim voluptate dolore laboris Lorem cupidatat cillum do et quis ea ex exercitation. Irure incididunt cupidatat dolore nulla. Consequat ullamco Lorem ad adipisicing. Exercitation commodo officia exercitation mollit Lorem consectetur deserunt dolore. Mollit Lorem eu ut officia qui minim ad nulla excepteur consectetur exercitation excepteur duis. Pariatur labore irure quis sit.\r\n",
+      "question": "What is an Intent?",
+      "details": "Intents displays notification messages to the user from within the Android enabled device. It can be used to alert the user of a particular state that occurred. Users can be made to respond to intents. ",
       "questionType": "multi",
-      "trueOrFalse": true,
-      "shortAns": "Adipisicing minim et occaecat aliquip elit officia sunt occaecat. Et dolore occaecat aliqua ut nostrud do laboris ad. Aliqua cillum aliqua proident mollit sunt Lorem nulla mollit tempor fugiat. Occaecat ut enim eu officia fugiat ex quis veniam deserunt. Ea sint excepteur in veniam sint do tempor proident consectetur incididunt sint esse aliqua. Ex et sunt aute enim aliqua eiusmod magna culpa et do. Non laborum ex eiusmod qui pariatur quis.\r\n"
+      "trueOrFalse": false,
+      "shortAns": "it displays a notification message to the user from within the Android enabled device.",
+      "tag": "intent"
     },
     {
       "id": 8,
-      "question": "Nulla ad Lorem do occaecat adipisicing in ipsum ea labore sunt do dolore.",
-      "details": "Ea dolore occaecat duis esse amet nisi nulla ad. Officia cillum ex non sint velit et minim do do do veniam. Proident nostrud non ex reprehenderit sint ad est irure commodo in duis deserunt reprehenderit.\r\n",
+      "question": "What is a container?",
+      "details": "Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples. ",
       "questionType": "multi",
-      "trueOrFalse": true,
-      "shortAns": "Aliquip reprehenderit elit anim deserunt exercitation aute aliqua voluptate adipisicing adipisicing. Deserunt qui irure consectetur id labore est occaecat irure enim incididunt fugiat officia nostrud in. Velit sint aliqua consequat tempor labore voluptate do ad amet laborum. Fugiat aliquip fugiat consectetur excepteur sunt anim quis magna ut eu ex exercitation. Consequat enim voluptate aliqua enim. Reprehenderit sunt veniam aliqua minim esse eu. Quis in commodo minim ea mollit amet anim adipisicing.\r\n"
+      "trueOrFalse": false,
+      "shortAns": "It holds objects and widgets together.",
+      "tag": "container"
     },
     {
       "id": 9,
-      "question": "Nostrud est do commodo irure dolor.",
-      "details": "Anim laboris ipsum duis quis mollit ipsum aliqua culpa occaecat eiusmod enim ex. Proident dolore cillum voluptate aliqua sunt Lorem. Dolore officia ut non cupidatat magna laboris aliquip ex in aute. Sint sunt cupidatat laboris ipsum incididunt incididunt irure excepteur culpa veniam quis eu. Ex eu sit sit pariatur. Exercitation excepteur quis quis tempor quis esse labore. Velit exercitation ex ex eiusmod do consectetur.\r\n",
-      "questionType": "fill",
-      "trueOrFalse": true,
-      "shortAns": "Deserunt enim aliqua occaecat excepteur esse aliqua est ex irure id nostrud sit aliquip laborum. Ullamco eiusmod elit elit esse. Commodo magna aute aliqua in nulla adipisicing est commodo sint.\r\n"
+      "question": "What is Orientation?",
+      "details": "Orientation, which can be set using setOrientation(), dictates if the LinearLayout is represented as a row or as a column. Values are set as either HORIZONTAL or VERTICAL. As with almost all smartphones, Android supports two screen orientations: portrait and landscape. When the screen orientation of an Android device is changed, the current activity being displayed is destroyed and re-created automatically to redraw its content in the new orientation",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It dictates if the LinearLayout is represented as a row or as a column.",
+      "tag": "orientation"
     },
     {
       "id": 10,
-      "question": "Minim deserunt esse non adipisicing consequat ullamco exercitation amet culpa eu.",
-      "details": "Consequat laborum esse qui sunt commodo amet veniam deserunt ipsum amet eiusmod officia minim. Occaecat reprehenderit ad fugiat ut excepteur. Irure enim laboris ut sint aliqua tempor anim. Proident nostrud esse exercitation sit. Elit fugiat minim eu veniam ullamco Lorem pariatur laboris.\r\n",
+      "question": "What is adb?",
+      "details": "Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "Commodo duis voluptate tempor proident. Consectetur ea dolor do adipisicing. Laborum eu quis irure esse minim dolor in eiusmod officia aliquip. Nisi exercitation proident mollit tempor Lorem proident eu veniam aliquip. Fugiat mollit et sint mollit voluptate nostrud qui nostrud officia sit ut ex sunt. Est nisi cupidatat quis laboris occaecat. Minim tempor anim velit ex cupidatat irure id.\r\n"
+      "shortAns": "It allows developers the power to execute remote shell commands.",
+      "tag": "adb"
     },
     {
       "id": 11,
-      "question": "Commodo laboris sint fugiat irure minim officia proident velit laboris ut pariatur.",
-      "details": "Ex duis esse excepteur quis duis. Id eiusmod ex dolor excepteur id nulla consequat. Aute ut anim consectetur veniam eiusmod adipisicing amet commodo exercitation irure ullamco voluptate magna quis. Esse non voluptate aliqua magna nisi pariatur in sit non consequat exercitation magna labore.\r\n",
-      "questionType": "bool",
-      "trueOrFalse": true,
-      "shortAns": "Et ad in commodo culpa duis non deserunt proident nostrud mollit. Deserunt minim id laboris mollit laborum. Qui magna veniam anim mollit. Occaecat do magna commodo ex labore sit labore mollit Lorem. Eu commodo labore Lorem aliqua eiusmod amet culpa.\r\n"
+      "question": "What is an intent filter?",
+      "details": "Because every component needs to indicate which intents they can respond to, intent filters are used to filter out intents that these components are willing to receive. One or more intent filters are possible, depending on the services and activities that is going to make use of it. ",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It specifies the types of intents to which an activity, service, or broadcast receiver can respond to.",
+      "tag": "intent_filter"
+
+    },
+    {
+      "id": 12,
+      "question": "What is an intent filter?",
+      "details": "An intent filter specifies the types of intents to which an activity, service, or broadcast receiver can respond to by declaring the capabilities of a component. Android components register intent filters either statically in the AndroidManifest. xml or in case of a broadcast receiver also dynamically via code.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It declares the capabilities of its parent component.",
+      "tag": "intent_filter"
     }
   ]
 }
