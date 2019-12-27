@@ -30,7 +30,7 @@
     {
       "id": 3,
       "question": "What is an intent?",
-      "details": "It is connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser.etc.,
+      "details": "It is connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser, etc.",
       "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": "It is a declaration to do something.",
