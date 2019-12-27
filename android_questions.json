@@ -49,7 +49,7 @@
       "id": 5,
       "question": "What is AAPT?",
       "details": "AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents. This tool allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.",
-      "questionType": "multi,
+      "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": "It is a packaging tool and is included in the tools directory of the SDK.",
       "tag": "aapt"
