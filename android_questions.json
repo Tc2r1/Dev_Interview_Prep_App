@@ -279,6 +279,241 @@
       "trueOrFalse": false,
       "shortAns": "It receives messages and writes code on how to handle the message.",
       "tag": "handler"
+    },
+    {
+      "id": 31,
+      "question": "An Android service is a component that is used to perform operations on the main thread such as playing music",
+      "details": "Android service is a component that is used to perform operations on the background such as playing music, handle network transactions, interacting content providers etc.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "It performs background functionalities.",
+      "tag": "service"
+    },
+    {
+      "id": 32,
+      "question": "APK stands for Android Professional Kernal.",
+      "details": "The Android packaging key is compressed with classes, UI's, supportive assets and manifest. All files are compressed to a single file that is called the APK.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "apk"
+    },
+    {
+      "id": 33,
+      "question": "Intents are synchronous messages which allow application components to request functionality from other Android components.",
+      "details": "Intents are ASYNCHRONOUS messages. They are connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser, etc.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "It is a declaration to do something.",
+      "tag": "intent"
+    },
+    {
+      "id": 34,
+      "question": "The android manifest is an optional file.",
+      "details": "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. It is a resource file which contains all the details needed by the android system about the application. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "manifest"
+    },
+    {
+      "id": 35,
+      "question": "The AAPT allows developers the ability to package their apk for any platform.",
+      "details": "AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents. This tool allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "aapt"
+    },
+    {
+      "id": 36,
+      "question": "An Android activity is a group of screens displaying the Android app's user interface.",
+      "details": "An android activity is ONE screen. Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "activity"
+    },
+    {
+      "id": 37,
+      "question": "Users are unable to respond to intents.",
+      "details": "Intents displays notification messages to the user from within the Android enabled device. It can be used to alert the user of a particular state that occurred. Users can be made to respond to intents. ",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "intent"
+    },
+    {
+      "id": 38,
+      "question": "Containers cannot hold other containers.",
+      "details": "Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples. ",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "It holds objects and widgets together.",
+      "tag": "container"
+    },
+    {
+      "id": 39,
+      "question": "Orientation is called using setContentView().",
+      "details": "Orientation, which can be set using setOrientation(), dictates if the LinearLayout is represented as a row or as a column. Values are set as either HORIZONTAL or VERTICAL. As with almost all smartphones, Android supports two screen orientations: portrait and landscape. When the screen orientation of an Android device is changed, the current activity being displayed is destroyed and re-created automatically to redraw its content in the new orientation",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "orientation"
+    },
+    {
+      "id": 40,
+      "question": "Adb is the abbreiviating of Android Development Board.",
+      "details": "Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "adb"
+    },
+    {
+      "id": 41,
+      "question": "Intent filters advertise the capabilities of an activity and delimit the intents that can handle.",
+      "details": "The Android System uses intent filters, in order to find a suitable component to handle the intent. An Intent Filter defines the intent that a component can respond to. Therefore, intent filters advertise the capabilities of a COMPONENT and delimit the intents that can handle.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "intent_filter"
+
+    },
+    {
+      "id": 42,
+      "question": "Intent filters restrict the capabilities of an activity and limit the intents that can handle.",
+      "details": "An intent filter specifies the types of intents to which an activity, service, or broadcast receiver can respond to by declaring the capabilities of a component. Android components register intent filters either statically in the AndroidManifest. xml or in case of a broadcast receiver also dynamically via code.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "intent_filter"
+    },
+    {
+      "id": 43,
+      "question": "Each activity can only contain one fragment. In order to exchange fragments the previous one must be disposed.",
+      "details": "A single activity can contain multiple fragments and many fragments can be reused in many, different activities. It is not wrong if we say that a fragment is a type of sub-activity that can be utilized again in multiple activities.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "fragment"
+    },
+    {
+      "id": 44,
+      "question": "An intent that is used with a sticky filter, is called as sticky intent.",
+      "details": "An intent that is used with STICKY BROADCAST, is called as sticky intent. This intent will stick with android system for future broadcast receiver requests. It sticks with Android, for future broadcast listeners. For example if BATTERY_LOW event occurs then that Intent will stick with Android so that any future requests for BATTERY_LOW, will return the Intent.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "sticky_intent"
+    },
+    {
+      "id": 45,
+      "question": "An Android Action declares the intent action accepted, in the name attribute. The value must be the class constant.",
+      "details": "The value must be the LITERAL STRING VALUE OF AN ACTION, not the class constant.In Android development, an action is what the intent sender wants to do or expects to get as a response. Most application functionality is based on the intended action.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "action"
+    },
+    {
+      "id": 46,
+      "question": "Although each fragment has each own lifecycle, completetely independent of the Activity it belongs to, as such, fragments are not influenced by the activity of which they are attached.",
+      "details": "It is not wrong if we say that a fragment is a type of sub-activity that can be utilized again in multiple activities. Although each fragment has each own lifecycle, it is connected with the Activity it belongs to, so it’s lifecycle is directly influenced by the activity’s lifecycle.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "fragment"
+    },
+    {
+      "id": 47,
+      "question": "The ContextCompat class in Android is the base class within an Android app that contains all other components such as activities and services",
+      "details": "Application class is a base class within an Android application, that comprises of different components such as Activity, Service, Broadcast Receivers & Content Providers. These components communicate with each other with the help of Intents, Callbacks & other methods. Often, components depend on other components, for eg: initiating an activity on a button click.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "application"
+    },
+    {
+      "id": 48,
+      "question": "The application object is guaranteed to stay in memory forever, it will not get recycled.",
+      "details": "You should never store mutable instance data inside the Application object because if you assume that your data will stay there, your application will inevitably crash at some point with a NullPointerException. The application object is NOT GUARANTEED TO STAY IN MEMORY FOREVER, it will get killed. Contrary to popular belief, the app won’t be restarted from scratch. Android will create a new Application object and start the activity where the user was before to give the illusion that the application was never killed in the first place.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "application"
+    },
+    {
+      "id": 49,
+      "question": "getContext() or View.getContext() both return the Application context and will always be the same throughout the life cycle.",
+      "details": "getContext() or View.getContext(): Returns the context the view is running in, through which it can access the current theme, resources, etc. \n\n getApplicationContext() or Activity.getApplicationContext(): Application context is associated with the Applicaition and will always be the same throughout the life cycle.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "context"
+    },
+    {
+      "id": 50,
+      "question": "Context is used to get information about the device the OS is on.",
+      "details": " It lets newly-created objects understand what has been going on. Typically, you call it to get information regarding another part of your program (activity and package/application).",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "context"
+    },
+    {
+      "id": 51,
+      "question": "If your application  is intentionally being closed, or killed by the OS, a PendingIntent will also be closed or killed by the OS.",
+      "details": "A specific feature of the PendingIntent is that it is not related to the lifecycle of your application. Even if your application was intentionally being closed, or killed by the OS, the PendingIntent will remain and the processes to which it had been given will be able to use it.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "pending_intent"
+    },
+    {
+      "id": 52,
+      "question": "Content Resolver is used to manage access to structured set of data. They encapsulate the data and provide abstraction as well as the mechanism for defining data security.",
+      "details": "Content provider is used to manage access to a structured set of data. A content provider allows one app to share data with other applications. They encapsulate the data and provide abstraction as well as the mechanism for defining data security.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "content_provider"
+    },
+    {
+      "id": 53,
+      "question": "A thread does not run separate, so it will block the UI.",
+      "details": "A thread should be used in a long running process that would block the UI from updating. If it's more than a second or two you might want to put it into a background thread and notify the user with a dialog or spinner or something. If you lock the UI thread for more than 5 seconds the user will be prompted with a kill or wait option by the OS.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "thread"
+    },
+    {
+      "id": 54,
+      "question": "A developer can lock the UI thread for more than 10 seconds before the user will be prompted to kill the application.",
+      "details": "A thread should be used in a long running process that would block the UI from updating. If it's more than a second or two you might want to put it into a background thread and notify the user with a dialog or spinner or something. If you lock the UI thread for more than 5 seconds the user will be prompted with a kill or wait option by the OS.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "thread"
+    },
+    {
+      "id": 55,
+      "question": "When the Activity is restarted, your AsyncTask’s reference to the Activity is retained.",
+      "details": "When an app is rotated, the entire Activity is destroyed and recreated. When the Activity is restarted, your AsyncTask’s reference to the Activity is invalid, so onPostExecute() will have no effect on the new Activity. This can be confusing if you are implicitly referencing the current Activity by having AsyncTask as an inner class of the Activity.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "asynctask"
+    },
+    {
+      "id": 56,
+      "question": "There are many ways that an AsyncTask finishes early.",
+      "details": "Even if the Activity that originally spawned the AsyncTask is dead, the AsyncTask will continue running, even if you exit the entire application. The only way that an AsyncTask finishes early is if it is canceled via AsyncTask.cancel().",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "",
+      "tag": "asynctask"
     }
   ]
 }
