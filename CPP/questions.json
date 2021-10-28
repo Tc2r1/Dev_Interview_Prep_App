@@ -1,0 +1,31 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "question": "What is this example question?",
+      "details": "Expanded information on the correct answer to the question goes here",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "An example question shows correct syntax.",
+      "tag": "android"
+    },
+    {
+      "id": 1,
+      "question": "What is this example question?",
+      "details": "Expanded information on the correct answer to the question goes here",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "An example question shows correct syntax.",
+      "tag": "android"
+    },
+    {
+      "id": 2,
+      "question": "What is this example question?",
+      "details": "Expanded information on the correct answer to the question goes here",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "An example question shows correct syntax.",
+      "tag": "android"
+    }
+  ]
+}
