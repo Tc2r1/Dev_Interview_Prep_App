@@ -5,5 +5,4 @@
 | war0                 | [@war0](https://github.com/war0)                              |         1        |
 | Ankit                | [@sensaiankit](https://github.com/sensaiankit)                |         1        |
 | Samrat Mitra         | [@lionelsamrat10](https://github.com/lionelsamrat10)          |         1        |
-| Daksh Gupta         | [@dakshgupta2002](https://github.com/dakshgupta2002)          |         0       |
 
