@@ -1,13 +1,13 @@
 {
   "questions": [
     {
-      "id": 0,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "id": 1,
+      "question": "Are queue and stacks linear data structures",
+      "details": "Depends. If the queue/stack is implemented using array, it is a linear data structure. Else if implemented using linked list, it is not a linear. ",
       "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "trueOrFalse": "can't say",
+      "shortAns": "Depends.",
+      "tag": "stack-queue"
     },
     {
       "id": 1,
