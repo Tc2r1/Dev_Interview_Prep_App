@@ -2,30 +2,21 @@
   "questions": [
     {
       "id": 0,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "What are the advantages of C++?",
+      "details": "C++ doesn't only maintains all aspects from C language, it also simplifies memory management and adds several features like classes, inhertance etc.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "shortAns": "it is C++ is a highly portable language",
+      "tag": "C++"
     },
     {
       "id": 1,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "What are the different types of polymorphism in C++?",
+      "details": "Polymorphism means multiple forms. It means having more than one function with the same function name but with different functionalities",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
-    },
-    {
-      "id": 2,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "shortAns": "Runtime and Compile time polymorphism.",
+      "tag": "C++"
     }
   ]
 }
