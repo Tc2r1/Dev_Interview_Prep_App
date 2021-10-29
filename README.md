@@ -2,6 +2,8 @@
 
 Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
 
+# Don't forget to give ⭐ ( To give star you can see on your screen on top right hand side Just smash it 💥 :)
+
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
 
 This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
@@ -28,18 +30,23 @@ keep in mind that repo has hacktoberfest topic..
 ```
 
 
-
-
 <p align="center">
     <a href="https://hacktoberfest.digitalocean.com/">
-        <img src="https://raw.githubusercontent.com/keshavsingh4522/hacktoberfest2021/35fc6060c5ddead5792f29a2437fea160dbe9804/Assets/logo-hacktoberfest-full.f42e3b1.svg" width="30%">
+        <img src="https://raw.githubusercontent.com/Tc2r1/hacktoberfest2021/35fc6060c5ddead5792f29a2437fea160dbe9804/Assets/logo-hacktoberfest-full.f42e3b1.svg" width="30%">
     </a>
 </p>
 
 <h1 align="center"> Hacktoberfest 2021 🎉</h1>
 
 <div align="center">
-  
+<img src="https://img.shields.io/badge/hacktoberfest-2021-blueviolet" alt="Hacktober Badge"/>
+ <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+ <a href="https://github.com/Tc2r1" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
+
+<a href="https://github.com/Tc2r1/pulls"><img src="https://img.shields.io/github/issues-pr/Tc2r1" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/Tc2r1/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Tc2r1?color=2b9348"></a>
+<a href="https://github.com/Tc2r1/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Tc2r1?color=2b9348" alt="License Badge"/></a>
+
 </div>
 
 ### 🗣 Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2021 challenge and earn a limited edition T-shirt.
@@ -105,11 +112,11 @@ If you'd like to contribute to **answers.json**:
 2. Navigate to the language folder you would like to contribute to. 
 3. Open Answers.json, here copy the last item in the list, and fill in each label. 
 	 
-	 **answer**: A topic with a basic small description. 
-	 **details**: Detailed Information on the subject supplied in Answer, **no more than 150 characters.**
+ **answer**: A topic with a basic small description. 
+ **details**: Detailed Information on the subject supplied in Answer, **no more than 150 characters.**
 	
-	Please make sure to match the syntax of the previous items. Answers should end with a punctuation mark.
-	Example: 
+Please make sure to match the syntax of the previous items. Answers should end with a punctuation mark.
+Example: 
    {
       "answer": "**It is** everything you can see on the screen of the app.",
       "details": "Think of the individual UI elements like buttons, labels, and text fields."
@@ -125,6 +132,19 @@ If you'd like to contribute to **answers.json**:
 
 
 Contributions of any kind welcome!
+
+
+-Best of luck ✌️
+# Don't forget to give ⭐ ( To give star you can see on your screen on top right hand side Just smash it 💥 :)
+
+# Contributers List  🏆
+🙏 Thanks
+
+<a href="https://github.com/Tc2r1/DevInterview_Questions/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Tc2r1/DevInterview_Questions" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 >    NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
 
