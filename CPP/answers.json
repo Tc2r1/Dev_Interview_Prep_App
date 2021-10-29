@@ -1,16 +1,12 @@
 {
   "answers": [
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "C++ is an object-oriented programming language which includes the concepts such as classes, objects, inheritance, polymorphism, abstraction",
+      "details": "Data hiding helps the programmer to build secure programs so that the program cannot be attacked by the invaders."
     },
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
-    },
-    {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "Runtime and Compile time polymorphism..",
+      "details": "Polymorphism means multiple forms. It means having more than one function with the same function name but with different functionalities."
     }
   ]
 }
