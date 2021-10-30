@@ -17,6 +17,15 @@
       "trueOrFalse": false,
       "shortAns": "Runtime and Compile time polymorphism.",
       "tag": "C++"
+    },
+    {
+      "id": 2,
+      "question": "Define namespace in C++.",
+      "details": "The namespace is a logical division of the code which is designed to stop the naming conflict. The namespace defines the scope where the identifiers such as variables, class, functions are declared. The main purpose of using namespace in C++ is to remove the ambiguity. Ambiquity occurs when the different task occurs with the same name",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "The namespace is a logical division of the code which is designed to stop the naming conflict.",
+      "tag": "C++"
     }
   ]
 }
