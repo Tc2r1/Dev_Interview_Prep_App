@@ -7,6 +7,10 @@
     {
       "answer": "Runtime and Compile time polymorphism..",
       "details": "Polymorphism means multiple forms. It means having more than one function with the same function name but with different functionalities."
+    },
+    {
+      "answer": "The namespace is a logical division of the code which is designed to stop the naming conflict.",
+      "details": "The namespace is a logical division of the code which is designed to stop the naming conflict. The namespace defines the scope where the identifiers such as variables, class, functions are declared. The main purpose of using namespace in C++ is to remove the ambiguity. Ambiquity occurs when the different task occurs with the same name"
     }
   ]
 }
