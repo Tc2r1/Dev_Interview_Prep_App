@@ -29,11 +29,11 @@
 		},
 		{
 			"id": 3,
-			"question": "What are callbacks?",
-			"details": "Expanded information on the correct answer to the question goes here",
+			"question": "What is a callback?",
+			"details": "In javascript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function and can be used as a property of an object.",
 			"questionType": "multi",
 			"trueOrFalse": false,
-			"shortAns": "An example question shows correct syntax.",
+			"shortAns": "It is a function that will be executed after another function gets executed."",
 			"tag": "JavaScript"
 		}
 	]
