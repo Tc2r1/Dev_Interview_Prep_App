@@ -11,6 +11,10 @@
     {
       "answer": "It is an example of how you should right the answer, keep it short.",
       "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+    },
+    {
+      "answer": "It is an example of how you should right the answer, keep it short.",
+      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
     }
   ]
 }
