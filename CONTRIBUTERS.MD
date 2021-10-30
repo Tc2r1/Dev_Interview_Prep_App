@@ -6,3 +6,4 @@
 | Ankit             | [@sensaiankit](https://github.com/sensaiankit)       | 1                |
 | Samrat Mitra      | [@lionelsamrat10](https://github.com/lionelsamrat10) | 1                |
 | Shreyansh Mamgain | [@Shreyanshmmgn](https://github.com/Shreyanshmmgn)   | 1                |
+| Bean             | [@beanscribbles](https://github.com/beanscribbles)   | 1                |
