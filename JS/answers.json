@@ -1,16 +1,20 @@
 {
-  "answers": [
-    {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
-    },
-    {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
-    },
-    {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
-    }
-  ]
+	"answers": [
+		{
+			"answer": "It is an example of how you should right the answer, keep it short.",
+			"details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+		},
+		{
+			"answer": "It is an example of how you should right the answer, keep it short.",
+			"details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+		},
+		{
+			"answer": "It is an example of how you should right the answer, keep it short.",
+			"details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+		},
+		{
+			"answer": "It is a function that will be executed after another function gets executed.",
+			"details": "In javascript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function and can be used as a property of an object."
+		}
+	]
 }
