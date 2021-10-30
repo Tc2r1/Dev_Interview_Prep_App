@@ -2,12 +2,12 @@
   "questions": [
     {
       "id": 0,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "What is PHP?",
+      "details": "PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "shortAns": "It is an open-source language for web development, embedded in HTML.",
+      "tag": "PHP"
     },
     {
       "id": 1,

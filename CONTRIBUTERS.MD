@@ -8,3 +8,4 @@
 | Shreyansh Mamgain | [@Shreyanshmmgn](https://github.com/Shreyanshmmgn)   | 1                |
 | Bean              | [@beanscribbles](https://github.com/beanscribbles)   | 1                |
 | Krittiya Clark    | [@krittiyaclark](https://github.com/krittiyaclark)   | 0                |
+| Luna Bee          | [@constbeecoding](https://github.com/constbeecoding) | 1                |
