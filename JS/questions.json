@@ -43,7 +43,7 @@
 			"details": "In javascript, Promises are objects that can be in 1 of 3 states - pending, fullfilled or rejected. The condition or state can then be used to control a callback function",
 			"questionType": "multi",
 			"trueOrFalse": false,
-			"shortAns": "A Promise is an object that can be in 1 of 3 states depending on the condition of the code",
+			"shortAns": "It is an object that can be in 1 of 3 states depending on the condition of the code",
 			"tag": "JavaScript"
 		}
 	]
