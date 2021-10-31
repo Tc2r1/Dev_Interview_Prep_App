@@ -33,7 +33,17 @@
 			"details": "In javascript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function and can be used as a property of an object.",
 			"questionType": "multi",
 			"trueOrFalse": false,
-			"shortAns": "It is a function that will be executed after another function gets executed."",
+			"shortAns": "It is a function that will be executed after another function gets executed.",
+			"tag": "JavaScript"
+		},
+
+		{
+			"id": 4,
+			"question": "What is are Promises?",
+			"details": "In javascript, Promises are objects that can be in 1 of 3 states - pending, fullfilled or rejected. The condition or state can then be used to control a callback function",
+			"questionType": "multi",
+			"trueOrFalse": false,
+			"shortAns": "A Promise is an object that can be in 1 of 3 states depending on the condition of the code",
 			"tag": "JavaScript"
 		}
 	]
