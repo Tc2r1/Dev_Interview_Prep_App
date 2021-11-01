@@ -9,23 +9,50 @@
       "shortAns": "It is an open-source language for web development, embedded in HTML.",
       "tag": "PHP"
     },
-    {
-      "id": 1,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
-    },
-    {
-      "id": 2,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
-    }
+     {
+	"id": 1,
+	"question": "What is a callback?",
+	"details": "In javascript, functions are treated as first-class citizens, they can be used as an argument of another function, can be returned by another function and can be used as a property of an object.",
+	"questionType": "multi",
+	"trueOrFalse": false,
+	"shortAns": "It is a function that will be executed after another function gets executed.",
+	"tag": "JavaScript"
+	},
+	{
+	"id": 2,
+	"question": "What is a Promise?",
+	"details": "In javascript, Promises are objects that can be in 1 of 3 states - pending, fullfilled or rejected. The condition or state can then be used to control a callback function",
+	"questionType": "multi",
+	"trueOrFalse": false,
+	"shortAns": "It is an object that can be in 1 of 3 states depending on the condition of the code",
+	"tag": "JavaScript"
+	},
+  	{
+	"id": 3,
+ 	"question": "Please input a "What Is" question relevant to your language here.",
+ 	"details": "Expanded information on the correct answer to the question goes here.",
+ 	"questionType": "multi",
+        "trueOrFalse": false,
+        "shortAns": "Please input a short ''It is'' Ans to the question above here that ends with punctuation.",
+        "tag": "Your qestion's subject Here"
+    	},
+    	{
+       "id": 4,
+       "question": "What is a dog?",
+       "details": "The dog is characterized by an upturning tail. The dog derived from an ancient, extinct wolf, and the modern grey wolf is the dog's nearest living relative.",
+       "questionType": "multi",
+       "trueOrFalse": false,
+       "shortAns": "It is a domesticated descendant of the wolf.",
+       "tag": "pet"
+    	},
+    	{
+       "id": 5,
+       "question": "Is a train characterized by a rail transport?",
+       "details": "It is a form of transport consisting of a series of connected vehicles that generally run along a railroad track to transport passengers or cargo. The word train comes from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw". ",
+       "questionType": "bool",
+       "trueOrFalse": true,
+       "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
+       "tag": "Transportation"
+       }	
   ]
 }
