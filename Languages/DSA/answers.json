@@ -1,20 +1,16 @@
 {
   "answers": [
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "Type "It is," at the beginning of all answers/ input a description of something relavent to your language/ items here will populate incorrect answers for qestions.",
+      "details": "Here you would give a detailed description of the something used in the answer key above, for more information look at the .json in the android folder."
     },
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "EXAMPLE: It is a four legged animal that meows.",
+      "details": "EXAMPLE: The cat is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family."
     },
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
-    },
-    {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "EXAMPLE: It is a wheeled motor vehicle used for transportation.",
+      "details": "EXAMPLE: Most definitions of cars say that they run primarily on roads, seat one-to-eight people, have four wheels and mainly transport people rather than goods. Cars came into global use during the 20th century, and developed economies depend on them."
     }
   ]
 }
