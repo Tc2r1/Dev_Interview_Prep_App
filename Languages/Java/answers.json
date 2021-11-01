@@ -1,16 +1,20 @@
 {
   "answers": [
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "It is what specifies the return type may vary in the same direction as the subclass.",
+      "details": "Now, since java5, it is possible to override any method by changing the return type if the return type of the subclass overriding method is subclass type. It is known as Covariant Return Type."
     },
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "It is a variable that is not initialized at the time of declaration.",
+      "details": "We can't initialize the final blank variable directly. Instead, we have to initialize it by using the class constructor. It is useful in the case when the user has some data which must not be changed by others, for example, PAN Number."
     },
     {
-      "answer": "It is an example of how you should right the answer, keep it short.",
-      "details": "Here you would speak on more information for the incorrect answer you have referenced, for more information look at the .json in the android folder."
+      "answer": "It is a variable used to restrict the user from updating it.",
+      "details": "If we initialize the Final Variable, we can't change its value. In other words, we can say that the final variable once assigned to a value, can never be changed after that. The final variable which is not assigned to any value can only be assigned through the class constructor."
+    },
+    {
+      "answer": "It is the polymorphism technique which allows us to create multiple methods with the same name but different signature.",
+      "details": "Method Overloading increases the readability of the program. Method overloading is performed to figure out the program quickly."
     }
   ]
 }
