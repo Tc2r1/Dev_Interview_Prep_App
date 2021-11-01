@@ -9,3 +9,4 @@
 | Bean              | [@beanscribbles](https://github.com/beanscribbles)   | 1                |
 | Krittiya Clark    | [@krittiyaclark](https://github.com/krittiyaclark)   | 0                |
 | Luna Bee          | [@constbeecoding](https://github.com/constbeecoding) | 1                |
+| AndroidLion48     | [@androidlion48](https://github.com/androidlion48)   | 1                |
