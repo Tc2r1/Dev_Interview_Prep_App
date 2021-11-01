@@ -20,12 +20,12 @@
     },
     {
       "id": 2,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "Is python threading asynchronous?",
+      "details": "Can python threading module call for multiple operations at the same time, as allowed by the operating system",
       "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "trueOrFalse": true,
+      "shortAns": "",
+      "tag": "threading"
     }
   ]
 }
