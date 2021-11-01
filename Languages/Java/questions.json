@@ -2,30 +2,39 @@
   "questions": [
     {
       "id": 0,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "What is Java?",
+      "details": "Java is the high-level, object-oriented, robust, secure programming language, platform-independent, high performance, Multithreaded, and portable programming language. It was developed by James Gosling in June 1991.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "shortAns": "It is a high-level, object-oriented, secure programming language.",
+      "tag": "Java"
     },
     {
       "id": 1,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "What is a Java Virtual Machine?",
+      "details": "It is an abstract machine which provides the runtime environment in which Java bytecode can be executed. It is a specification which specifies the working of Java Virtual Machine.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "shortAns": "It is an abstract macine that acts like a run-time engine which calls the main method present in the Java code.",
+      "tag": "Java"
     },
     {
       "id": 2,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "What is a Java Virtual Machine?",
+      "details": "JVM is the specification which must be implemented in the computer system. The Java code is compiled by JVM to be a Bytecode which is machine independent and close to the native code.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "shortAns": "It is a virtual macine that enables the computer to run the Java program.",
+      "tag": "Java"
+    },
+    {
+      "id": 3,
+      "question": "What is a Java?",
+      "details": " It has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built. New, innovative products and digital services designed for the future continue to rely on Java.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a programming language and computing platform first released by Sun Microsystems in 1995.",
+      "tag": "Java"
     }
   ]
 }
