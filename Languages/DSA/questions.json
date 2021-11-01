@@ -1,31 +1,40 @@
 {
   "questions": [
-    {
-      "id": 1,
-      "question": "Are queue and stacks linear data structures",
-      "details": "Depends. If the queue/stack is implemented using array, it is a linear data structure. Else if implemented using linked list, it is not a linear. ",
+{
+      "id": 0,
+      "question": "Please input a "What Is" question relevant to your language here.",
+      "details": "Expanded information on the correct answer to the question goes here.",
       "questionType": "multi",
-      "trueOrFalse": "can't say",
-      "shortAns": "Depends.",
-      "tag": "stack-queue"
+      "trueOrFalse": false,
+      "shortAns": "Please input a short ''It is'' Ans to the question above here that ends with punctuation.",
+      "tag": "Your qestion's subject Here"
     },
     {
       "id": 1,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "What is a dog?",
+      "details": "The dog is characterized by an upturning tail. The dog derived from an ancient, extinct wolf, and the modern grey wolf is the dog's nearest living relative.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "shortAns": "It is a domesticated descendant of the wolf.",
+      "tag": "pet"
     },
     {
       "id": 2,
-      "question": "What is this example question?",
-      "details": "Expanded information on the correct answer to the question goes here",
+      "question": "Is a train characterized by a rail transport?",
+      "details": "It is a form of transport consisting of a series of connected vehicles that generally run along a railroad track to transport passengers or cargo. The word train comes from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw". ",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
+      "tag": "Transportation"
+    },
+    {
+      "id": 3,
+      "question": "What is the type of data structures of queues and stacks?",
+      "details": "If the queue/stack is implemented using an array it is a linear data structure. If the queue/stack is implemented using linked list it is not a linear.",
       "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "An example question shows correct syntax.",
-      "tag": "android"
+      "trueOrFalse": "false",
+      "shortAns": "It is dependant on how it is implemented.",
+      "tag": "stack-queue"
     }
   ]
 }
