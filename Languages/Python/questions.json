@@ -21,8 +21,8 @@
     {
       "id": 2,
       "question": "Is python threading asynchronous?",
-      "details": "Can python threading module call for multiple operations at the same time, as allowed by the operating system",
-      "questionType": "multi",
+      "details": "Python threading module calls for multiple operations at the same time, as allowed by the operating system",
+      "questionType": "bool",
       "trueOrFalse": true,
       "shortAns": "",
       "tag": "threading"
