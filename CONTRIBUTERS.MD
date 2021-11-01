@@ -10,3 +10,4 @@
 | Krittiya Clark    | [@krittiyaclark](https://github.com/krittiyaclark)   | 0                |
 | Luna Bee          | [@constbeecoding](https://github.com/constbeecoding) | 1                |
 | AndroidLion48     | [@androidlion48](https://github.com/androidlion48)   | 1                |
+| Nayra Kaline      | [@nykln](https://github.com/nykln)                   | 1                |
