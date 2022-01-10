@@ -1,6 +1,10 @@
 package com.dreams.androidquizapp.controllers
 
 import com.dreams.androidquizapp.models.Answer
+import retrofit2.Call
+import retrofit2.Retrofit
+import retrofit2.converter.scalars.ScalarsConverterFactory
+import retrofit2.http.GET
 import java.util.ArrayList
 
 class AnswersController {
@@ -52,7 +56,8 @@ class AnswersController {
         answer7.details =
             "Implicit Intent doesn't specifiy the component. In such case, intent " + "provides information of available components provided by the system that is to be invoked."
         answersList!!.add(answer7)
-    } //  // Creates an AsyncTask to make a call to my server php file to return
+    }
+    // Creates an AsyncTask to make a call to my server php file to return
     //  // a json String array of incorrect answers.
     //
     //  AsyncTask<String, Void, Void> task = new AsyncTask<String, Void, Void>()
