@@ -3,6 +3,7 @@ package com.dreams.androidquizapp.models
 import android.os.Parcel
 import android.os.Parcelable
 import android.os.Parcelable.Creator
+import com.google.gson.annotations.SerializedName
 
 /**
  * Created by Tc2r on 5/19/2017.
@@ -13,16 +14,20 @@ import android.os.Parcelable.Creator
 class Answer : DomainObject, Parcelable {
     private var id: Int? = null
 
-    // 	public Answer(String answer, String details) {
-    // 		this.answer = answer;
-    // 		this.details = details;
-    // 	}
-    // 	public Answer(String answer) {
-    // 		this.answer = answer;
-    // 		this.details = "";
-    // 	}
+    @SerializedName("answer")
     var answer: String? = null
+    @SerializedName("details")
     var details: String? = null
+
+    constructor(answer: String, details: String) {
+        this.answer = answer
+        this.details = details
+    }
+    constructor(answer: String) {
+        this.answer = answer
+        this.details = ""
+    }
+
     override fun getId(): Int {
         return id!!
     }

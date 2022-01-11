@@ -2,12 +2,20 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 31
     buildToolsVersion "25.0.3"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
     defaultConfig {
         applicationId "com.dreams.androidquizapp"
         minSdkVersion 25
-        targetSdkVersion 25
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -31,6 +39,14 @@ dependencies {
     //Retrofit & Scalar Converter
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+
+    //Moshi
+    implementation "com.squareup.moshi:moshi:1.9.3"
+    implementation "com.squareup.moshi:moshi-kotlin:1.9.3"
+    //Retrofit with Moshi converter
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    //GSON
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
 }
 repositories {
     mavenCentral()

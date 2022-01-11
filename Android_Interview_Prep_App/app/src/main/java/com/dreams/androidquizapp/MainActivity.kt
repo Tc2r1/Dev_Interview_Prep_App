@@ -14,7 +14,16 @@ import com.dreams.androidquizapp.models.Answer
 import com.dreams.androidquizapp.models.Question
 import java.util.*
 
+
+
+
+
+
+
 class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
+
+    // Static Variables
+    private val QUIZ_SIZE = 4
     // UI Variables
     private var fragContainer: LinearLayout? = null
     private var titleTv: TextView? = null
@@ -36,6 +45,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     private var score = 0.0
     private var questionsController: QuestionsController? = null
     private var answersController: AnswersController? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -49,21 +59,22 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         random = Random()
 
         // get Wrong answers from server
-        answers
-        questions
+        getAnswers()
+        getQuestions()
         createQuiz()
     }
+    fun getAnswers() {
+        answersController = AnswersController()
+        answersList = answersController!!.answers
+        Log.i("I/Main", "getAnswers: $answersList")
+    }
 
-    val answers: Unit
-        get() {
-            answersController = AnswersController()
-            answersList = answersController?.answers
-        }
-    val questions: Unit
-        get() {
-            questionsController = QuestionsController()
-            quizList = questionsController!!.questions
-        }
+    fun getQuestions() {
+        questionsController = QuestionsController()
+        quizList = questionsController!!.questions
+        Log.i("I/Main", "getQuestions: $quizList")
+    }
+
 
     private fun createQuiz() {
         Log.wtf(" Size: ", "QuestionList is: " + quizList!!.size)
@@ -133,8 +144,20 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
 
     override fun fragmentInitialized() {}
 
-    companion object {
-        // Static Variables
-        private const val QUIZ_SIZE = 4
-    }
+
 }
+//companion object {
+//    // Static Variables
+//    private const val QUIZ_SIZE = 4
+//}
+
+//    val answers: Unit
+//        get() {
+//            answersController = AnswersController()
+//            answersList = answersController?.answers
+//        }
+//    val questions: Unit
+//        get() {
+//            questionsController = QuestionsController()
+//            quizList = questionsController!!.questions
+//        }

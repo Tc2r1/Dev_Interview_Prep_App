@@ -6,7 +6,7 @@ package com.dreams.androidquizapp.models
  *
  * Description:
  */
-class Question private constructor(builder: Builder) {
+class Question constructor(builder: Builder) {
     val id: Int
     val question: String
     val details: String
@@ -23,13 +23,13 @@ class Question private constructor(builder: Builder) {
         // Optional Parameters - Initialized to default variables.
         var shortAns = ""
         var trueOrFalse = "false"
-        fun shortAns(`val`: String): Builder {
-            shortAns = `val`
+        fun shortAns(short: String): Builder {
+            shortAns = short
             return this
         }
 
-        fun trueOrFalse(`val`: String): Builder {
-            trueOrFalse = `val`
+        fun trueOrFalse(tF: String): Builder {
+            trueOrFalse = tF
             return this
         }
 

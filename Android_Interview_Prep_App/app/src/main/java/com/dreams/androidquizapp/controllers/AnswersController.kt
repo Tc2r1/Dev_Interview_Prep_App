@@ -1,18 +1,22 @@
 package com.dreams.androidquizapp.controllers
 
+import android.util.Log
 import com.dreams.androidquizapp.models.Answer
+import com.dreams.androidquizapp.network.AnswersApi
+import com.dreams.androidquizapp.network.AnswersResponse
 import retrofit2.Call
-import retrofit2.Retrofit
-import retrofit2.converter.scalars.ScalarsConverterFactory
-import retrofit2.http.GET
+import retrofit2.Callback
+import retrofit2.Response
 import java.util.ArrayList
 
 class AnswersController {
+    //@SerializedName("answers")
     private var answersList: ArrayList<Answer>? = null
     val answers: ArrayList<Answer?>
         get() {
             answersList = ArrayList()
-            loadAnswers()
+            //loadAnswers()
+            getAnswers()
             return answersList as ArrayList<Answer?>
         }
 
@@ -57,6 +61,41 @@ class AnswersController {
             "Implicit Intent doesn't specifiy the component. In such case, intent " + "provides information of available components provided by the system that is to be invoked."
         answersList!!.add(answer7)
     }
+
+    //private lateinit var response: String
+    private fun getAnswers() {
+        // Call AnswersApiService to enqueue Retrofit request (starts the call on background thread). Returns call object
+        AnswersApi.retrofitService.getAnswers().enqueue(object : Callback<AnswersResponse> {
+            override fun onFailure(call: Call<AnswersResponse>, t: Throwable) {
+                //response = "Failure:" + t.message
+                Log.i("I/getAnswersObject", "$call")
+                Log.i("I/onFailure", "${t.message}")
+            }
+
+            override fun onResponse(call: Call<AnswersResponse>, response: Response<AnswersResponse>) {
+                //response = "Success: ${response.body()?.size} answers received"
+                Log.i("I/onResponse", "Success: ${response.code()}")
+                val array = response.body()
+                val test = array?.answers?.get(1)?.answer.toString()
+                //val gsonObject = Gson().fromJson(response, Answer::class.java)
+                Log.i("I/onResponse", "Test $test")
+                val arraySize = array?.answers?.size
+                for (i in 0 until arraySize!!) {
+                    val tempAnswer = array.answers[i].answer
+                    val tempAnswerString: String = tempAnswer.toString()
+                    Log.i("I/Assign", "Answer: $tempAnswer $tempAnswerString")
+                    val tempDetail = array.answers[i].details
+                    val tempDetailsString: String = tempDetail.toString()
+                    Log.i("I/Assign", "Detail: $tempDetail $tempDetailsString")
+                    val temp = Answer(tempAnswerString, tempDetailsString)
+                    answersList?.add(temp)
+                }
+                //getQuestions()
+            }
+        })
+        //response = "Set API response here!"
+    }
+
     // Creates an AsyncTask to make a call to my server php file to return
     //  // a json String array of incorrect answers.
     //

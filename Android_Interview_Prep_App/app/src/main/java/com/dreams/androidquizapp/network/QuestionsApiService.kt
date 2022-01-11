@@ -5,7 +5,6 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
 private const val BASE_URL = "https://raw.githubusercontent.com/"
@@ -26,16 +25,16 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 // Implement API service interface that return JSON data as a string (through Scalars)
-interface AnswersApiService {
+interface QuestionsApiService {
     // Gets answers objects
-    @GET("Tc2r1/DevInterview_Questions/master/Languages/Android/answers.json")
-    fun getAnswers():
-        Call<AnswersResponse>
+    @GET("Tc2r1/DevInterview_Questions/master/Languages/Android/questions.json")
+    fun getQuestionsJson():
+            Call<QuestionsResponse>
 }
 
 // Creates API object using Retrofit to implement API Service
-object AnswersApi {
-    val retrofitService: AnswersApiService by lazy {
-        retrofit.create(AnswersApiService::class.java)
+object QuestionsApi {
+    val retrofitService: QuestionsApiService by lazy {
+        retrofit.create(QuestionsApiService::class.java)
     }
 }
