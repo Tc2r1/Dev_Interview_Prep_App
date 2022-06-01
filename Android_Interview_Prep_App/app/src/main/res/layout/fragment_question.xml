@@ -8,7 +8,7 @@
     android:background="#F5F4F4"
     tools:context="com.dreams.androidquizapp.fragments.QuestionFragment">
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/primaryColor"
@@ -34,9 +34,9 @@
             android:textColor="@color/primaryTextColor"
             android:textStyle="bold"/>
     </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="8dp"
@@ -262,7 +262,7 @@
             </LinearLayout>
         </ScrollView>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

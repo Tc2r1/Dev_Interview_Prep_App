@@ -13,8 +13,8 @@ class QuestionsController {
     val questions: ArrayList<Question>
         get() {
             questionsList = ArrayList()
-            //loadQuestions()
-            getQuestions()
+            loadQuestions()
+//            getQuestions()
             return questionsList as ArrayList<Question>
         }
 

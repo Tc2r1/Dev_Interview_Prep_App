@@ -17,9 +17,9 @@ import com.dreams.androidquizapp.R
 import com.dreams.androidquizapp.MainActivity
 import android.content.Intent
 import android.graphics.Color
-import android.support.v4.app.Fragment
 import android.view.View
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import com.dreams.androidquizapp.models.Question
 import java.lang.RuntimeException
 import java.util.*
@@ -72,10 +72,10 @@ class QuestionFragment : Fragment(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         // Get Arguments from bundle
         if (arguments != null) {
-            quizQuestion = arguments.getString(QUESTION)
-            quizAnswer = arguments.getString(KEY)
-            quizDetails = arguments.getString(DETAILS)
-            otherAnswers = arguments.getParcelableArrayList(FILLANSWERS)
+            quizQuestion = arguments!!.getString(QUESTION)
+            quizAnswer = arguments!!.getString(KEY)
+            quizDetails = arguments!!.getString(DETAILS)
+            otherAnswers = arguments!!.getParcelableArrayList(FILLANSWERS)
         }
     }
 
@@ -183,7 +183,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
                 val intent = Intent(activity, MainActivity::class.java)
                 startActivity(intent)
                 // remove previous from backstack
-                activity.finish()
+                activity?.finish()
             }
             R.id.answer_a_summary -> if (detailsA!!.visibility != View.VISIBLE) {
                 detailsA!!.visibility = View.VISIBLE

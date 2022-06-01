@@ -3,10 +3,10 @@ package com.dreams.androidquizapp
 // import com.dreams.androidquizapp.controllers.AnswersController.answers
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.dreams.androidquizapp.controllers.AnswersController
 import com.dreams.androidquizapp.controllers.QuestionsController
 import com.dreams.androidquizapp.fragments.QuestionFragment
@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
             ) + " of " + Integer.toString(QUIZ_SIZE)
             fragContainer = findViewById(R.id.fragment_container) as LinearLayout
             val ft = supportFragmentManager.beginTransaction()
-            ft.replace(fragContainer!!.id, newFragment)
+            ft.replace(fragContainer!!.id, newFragment!!)
             ft.commit()
         } else {
             // Quiz is over, go to final page!

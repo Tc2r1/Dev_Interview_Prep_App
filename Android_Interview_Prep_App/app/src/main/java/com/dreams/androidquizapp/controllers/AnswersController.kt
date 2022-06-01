@@ -15,8 +15,8 @@ class AnswersController {
     val answers: ArrayList<Answer?>
         get() {
             answersList = ArrayList()
-            //loadAnswers()
-            getAnswers()
+            loadAnswers()
+//            getAnswers()
             return answersList as ArrayList<Answer?>
         }
 
