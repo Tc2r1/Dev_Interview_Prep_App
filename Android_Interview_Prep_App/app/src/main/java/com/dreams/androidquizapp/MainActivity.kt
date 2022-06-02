@@ -12,6 +12,7 @@ import com.dreams.androidquizapp.controllers.QuestionsController
 import com.dreams.androidquizapp.fragments.QuestionFragment
 import com.dreams.androidquizapp.models.Answer
 import com.dreams.androidquizapp.models.Question
+import kotlinx.coroutines.*
 import java.util.*
 
 
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     private var newFragment: QuestionFragment? = null
     private var quizList: ArrayList<Question>? = null
     private var testList: ArrayList<Question>? = null
-    private var answersList: ArrayList<Answer?>? = null
+    private var answersList: ArrayList<Answer>? = null
     private lateinit var selectedQuestion: BooleanArray
 
     // Variables
@@ -58,27 +59,37 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         answersList = ArrayList()
         random = Random()
 
+        val job = Job()
+        val coroutineScope = CoroutineScope(Dispatchers.IO + job)
+        val coroutineExceptionHandler = CoroutineExceptionHandler{_, throwable ->
+            throwable.printStackTrace()
+        }
         // get Wrong answers from server
-        getAnswers()
-        getQuestions()
-        createQuiz()
+//        getAnswers()
+//        getQuestions()
+        coroutineScope.launch(Dispatchers.IO) {
+            answersList = AnswersController().getTheAnswers()
+            quizList = QuestionsController().getQuestions()
+            createQuiz()
+        }
     }
-    fun getAnswers() {
-        answersController = AnswersController()
-        answersList = answersController!!.answers
-        Log.i("I/Main", "getAnswers: $answersList")
-    }
+//    private fun getAnswers() {
+//        answersController = AnswersController()
+//        answersList = answersController!!.answers
+//        Log.i("I/Main", "getAnswers: $answersList")
+//    }
 
-    fun getQuestions() {
-        questionsController = QuestionsController()
-        quizList = questionsController!!.questions
-        Log.i("I/Main", "getQuestions: $quizList")
-    }
+//    private fun getQuestions() {
+//        questionsController = QuestionsController()
+//        quizList = questionsController!!.questions
+//        Log.i("I/Main", "getQuestions: $quizList")
+//    }
 
 
-    private fun createQuiz() {
+    private suspend fun createQuiz() {
         Log.wtf(" Size: ", "QuestionList is: " + quizList!!.size)
         Log.wtf(" Size: ", "AnswerList is: " + answersList!!.size)
+//        delay(300)
         // set booleanArray to be same size as quizList
         selectedQuestion = BooleanArray(quizList!!.size)
 
@@ -118,7 +129,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         }
         // if quiz is not complete, continue quiz with new QuestionFragment
         if (currentQuestion < QUIZ_SIZE) {
-            newFragment = QuestionFragment.newInstance(testList!![currentQuestion], answersList)
+            newFragment = QuestionFragment.newInstance(testList!![currentQuestion], answersList!!)
             currentQuestion++
             titleTv!!.text = getString(R.string.question_display_text) + Integer.toString(
                 currentQuestion
@@ -142,22 +153,5 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         }
     }
 
-    override fun fragmentInitialized() {}
-
-
+    override fun fragmentInitialized() { }
 }
-//companion object {
-//    // Static Variables
-//    private const val QUIZ_SIZE = 4
-//}
-
-//    val answers: Unit
-//        get() {
-//            answersController = AnswersController()
-//            answersList = answersController?.answers
-//        }
-//    val questions: Unit
-//        get() {
-//            questionsController = QuestionsController()
-//            quizList = questionsController!!.questions
-//        }

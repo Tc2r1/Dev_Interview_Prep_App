@@ -3,18 +3,28 @@ package com.dreams.androidquizapp.controllers
 import android.util.Log
 import com.dreams.androidquizapp.models.Question
 import com.dreams.androidquizapp.network.*
+import kotlinx.coroutines.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.util.ArrayList
 
 class QuestionsController {
+
+    val job = Job()
+    val coroutineScope = CoroutineScope(Dispatchers.IO + job)
+    val coroutineExceptionHandler = CoroutineExceptionHandler{_, throwable ->
+        throwable.printStackTrace()
+    }
+    private val TAG = "QCTEST"
     private var questionsList: ArrayList<Question>? = null
     val questions: ArrayList<Question>
         get() {
             questionsList = ArrayList()
             loadQuestions()
-//            getQuestions()
+            coroutineScope.launch {
+                getQuestions()
+            }
             return questionsList as ArrayList<Question>
         }
 
@@ -66,115 +76,50 @@ class QuestionsController {
         questionsList!!.add(question5)
     }
 
-    private fun getQuestions() {
-        // Call AnswersApiService to enqueue Retrofit request (starts the call on background thread). Returns call object
-        QuestionsApi.retrofitService.getQuestionsJson().enqueue(object : Callback<QuestionsResponse> {
-            override fun onFailure(call: Call<QuestionsResponse>, t: Throwable) {
-                //response = "Failure:" + t.message
-                Log.i("I/getAnswersObject", "$call")
-                Log.i("I/onFailure", "${t.message}")
-            }
+    suspend fun getQuestions(): ArrayList<Question> {
+        var questionsList: ArrayList<Question> = arrayListOf()
+        withContext(Dispatchers.IO){
+            // Call AnswersApiService to enqueue Retrofit request (starts the call on background thread). Returns call object
+            val response = QuestionsApi.retrofitService.getQuestionsJson()
+            val array = response.body()
+            Log.i(TAG, "onResponse Array: $array")
+            var count = 0
+            for (item in array?.questions!!) {
+                val tempId = item.id
+                val tempQuestion = item.question
+                val tempDetails = item.details
+                val tempType = item.questionType
+                val tempShortAns = item.shortAns
+                val tempTF = item.trueOrFalse
+                val temp: Question
+                Log.i(TAG, "TempQuestion: $tempQuestion $tempId")
 
-            override fun onResponse(call: Call<QuestionsResponse>, response: Response<QuestionsResponse>) {
-                //response = "Success: ${response.body()?.size} answers received"
-                Log.i("I/onResponse", "Success: ${response.code()}")
-                val array = response.body()
-                Log.i("I/onResponse", "Test $array")
-                val arraySize = array?.questions?.size
-
-                for (i in 0 until arraySize!!) {
-                    val tempId = array.questions[i].id
-                    val tempQuestion = array.questions[i].question
-                    val tempDetails = array.questions[i].details
-                    val tempType = array.questions[i].questionType
-                    val tempShortAns = array.questions[i].shortAns
-                    val tempTF = array.questions[i].trueOrFalse
-                    val temp: Question
-                    Log.i("I/Assign", "Question: $tempQuestion $tempId")
-
-                    if (tempShortAns != null) {
-                        temp = Question(
-                            Question.Builder(
-                                tempId,
-                                tempType,
-                                tempQuestion,
-                                tempDetails
-                            ).shortAns(tempShortAns).trueOrFalse(tempTF)
+                if (tempShortAns != null) {
+                    temp = Question(
+                        Question.Builder(
+                            tempId,
+                            tempType,
+                            tempQuestion,
+                            tempDetails
+                        ).shortAns(tempShortAns).trueOrFalse(tempTF)
+                    )
+                } else {
+                    temp = Question(
+                        Question.Builder(
+                            tempId,
+                            tempType,
+                            tempQuestion,
+                            tempDetails
                         )
-                    } else {
-                        temp = Question(
-                            Question.Builder(
-                                tempId,
-                                tempType,
-                                tempQuestion,
-                                tempDetails
-                            )
-                        )
-                    }
-                    questionsList?.add(temp)
+                    )
                 }
+                questionsList.add(temp)
+//                count++
+//                if (count == 3){
+//                    break
+//                }
             }
-        })
+        }
+        return questionsList
     }
 }
-//for (int i = 0; i < array.length(); i++) {
-//              JSONObject object = array.getJSONObject(i);
-//              String tempQuestion = object.getString("question");
-//              String tempKey = object.getString("key");
-//              Question temp;
-//
-//              if (object.getString("summary") != null) {
-//                String tempSummary = object.getString("summary");
-//                temp = new Question(tempQuestion, tempKey, tempSummary);
-//              } else {
-//                temp = new Question(tempQuestion, tempKey);
-//              }
-//              quizList.add(temp);
-//            }
-
-//      questionService.listAll();
-//      // Same as getAnswers
-//
-//      AsyncTask<String, Void, Void> task = new AsyncTask<String, Void, Void>() {
-//
-//        @Override
-//        protected Void doInBackground(String... strings) {
-//          OkHttpClient client = new OkHttpClient();
-//          Request request = new Request.Builder()
-//                                    .url("https://tchost.000webhostapp.com/getquiz_android.php?")
-//                                    .build();
-//
-//          try {
-//            Response response = client.newCall(request).execute();
-//            JSONArray array = new JSONArray(response.body().string());
-//
-//            for (int i = 0; i < array.length(); i++) {
-//              JSONObject object = array.getJSONObject(i);
-//              String tempQuestion = object.getString("question");
-//              String tempKey = object.getString("key");
-//              Question temp;
-//
-//              if (object.getString("summary") != null) {
-//                String tempSummary = object.getString("summary");
-//                temp = new Question(tempQuestion, tempKey, tempSummary);
-//              } else {
-//                temp = new Question(tempQuestion, tempKey);
-//              }
-//              quizList.add(temp);
-//            }
-//
-//          } catch (JSONException | IOException e) {
-//            e.printStackTrace();
-//          }
-//          return null;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(Void aVoid) {
-//          super.onPostExecute(aVoid);
-//
-//          // once questions and answers have been retrieved, create a quiz.
-//          createQuiz();
-//        }
-//      };
-//      task.execute();

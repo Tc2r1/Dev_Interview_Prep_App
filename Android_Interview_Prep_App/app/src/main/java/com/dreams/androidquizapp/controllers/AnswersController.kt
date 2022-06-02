@@ -3,20 +3,27 @@ package com.dreams.androidquizapp.controllers
 import android.util.Log
 import com.dreams.androidquizapp.models.Answer
 import com.dreams.androidquizapp.network.AnswersApi
-import com.dreams.androidquizapp.network.AnswersResponse
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import kotlinx.coroutines.*
 import java.util.ArrayList
 
 class AnswersController {
+
+    val job = Job()
+    val coroutineScope = CoroutineScope(Dispatchers.IO + job)
+    val coroutineExceptionHandler = CoroutineExceptionHandler{_, throwable ->
+        throwable.printStackTrace()
+    }
+
+    private val TAG = "ACTEST"
     //@SerializedName("answers")
     private var answersList: ArrayList<Answer>? = null
     val answers: ArrayList<Answer?>
         get() {
             answersList = ArrayList()
             loadAnswers()
-//            getAnswers()
+            coroutineScope.launch {
+                getTheAnswers()
+            }
             return answersList as ArrayList<Answer?>
         }
 
@@ -63,97 +70,29 @@ class AnswersController {
     }
 
     //private lateinit var response: String
-    private fun getAnswers() {
-        // Call AnswersApiService to enqueue Retrofit request (starts the call on background thread). Returns call object
-        AnswersApi.retrofitService.getAnswers().enqueue(object : Callback<AnswersResponse> {
-            override fun onFailure(call: Call<AnswersResponse>, t: Throwable) {
-                //response = "Failure:" + t.message
-                Log.i("I/getAnswersObject", "$call")
-                Log.i("I/onFailure", "${t.message}")
+    suspend fun getTheAnswers(): ArrayList<Answer> {
+        var answersList: ArrayList<Answer> = arrayListOf()
+        withContext(Dispatchers.IO) {
+            // Call AnswersApiService to enqueue Retrofit request (starts the call on background thread). Returns call object
+            val response = AnswersApi.retrofitService.requestAnswers()
+            Log.i(TAG, "getAnswers CALLED")
+            val responseCode = response.code()
+            Log.i(TAG, "$responseCode")
+            val array = response.body()
+            var count = 0
+            for (item in array?.answers!!) {
+                val tempAnswer = item.answer
+                Log.i(TAG, "onResponse TempAnswer: $tempAnswer")
+                val tempDetail = item.details
+                Log.i(TAG, "onResponse TempDetail: $tempDetail")
+                val temp = Answer(tempAnswer!!, tempDetail!!)
+                answersList.add(temp)
+//                count++
+//                if (count == 3){
+//                    break
+//                }
             }
-
-            override fun onResponse(call: Call<AnswersResponse>, response: Response<AnswersResponse>) {
-                //response = "Success: ${response.body()?.size} answers received"
-                Log.i("I/onResponse", "Success: ${response.code()}")
-                val array = response.body()
-                val test = array?.answers?.get(1)?.answer.toString()
-                //val gsonObject = Gson().fromJson(response, Answer::class.java)
-                Log.i("I/onResponse", "Test $test")
-                val arraySize = array?.answers?.size
-                for (i in 0 until arraySize!!) {
-                    val tempAnswer = array.answers[i].answer
-                    val tempAnswerString: String = tempAnswer.toString()
-                    Log.i("I/Assign", "Answer: $tempAnswer $tempAnswerString")
-                    val tempDetail = array.answers[i].details
-                    val tempDetailsString: String = tempDetail.toString()
-                    Log.i("I/Assign", "Detail: $tempDetail $tempDetailsString")
-                    val temp = Answer(tempAnswerString, tempDetailsString)
-                    answersList?.add(temp)
-                }
-                //getQuestions()
-            }
-        })
-        //response = "Set API response here!"
+        }
+        return answersList
     }
-
-    // Creates an AsyncTask to make a call to my server php file to return
-    //  // a json String array of incorrect answers.
-    //
-    //  AsyncTask<String, Void, Void> task = new AsyncTask<String, Void, Void>()
-    //  {
-    //
-    //    @Override
-    //    protected Void doInBackground(String... strings)
-    //    {
-    //      // Create client and request, this time using OkHttp.
-    //      OkHttpClient client = new OkHttpClient();
-    //      Request request = new Request.Builder()
-    //                                .url("https://tchost.000webhostapp.com/getquiz_ans_android.php?")
-    //                                .build();
-    //
-    //      try
-    //      {
-    //        // Check for a response, if recieved parse through it and assign rows to Answer Objects.
-    //        Response response = client.newCall(request).execute();
-    //        JSONArray array = new JSONArray(response.body().string());
-    //
-    //        for (int i = 0; i < array.length(); i++)
-    //        {
-    //          JSONObject object = array.getJSONObject(i);
-    //          String tempAnswer = object.getString("topic");
-    //
-    //          Answer temp;
-    //
-    //          if (object.getString("details") != null)
-    //          {
-    //            String tempDetails = object.getString("details");
-    //            temp = new Answer(tempAnswer, tempDetails);
-    //          } else
-    //          {
-    //            temp = new Answer(tempAnswer);
-    //          }
-    //          answersList.add(temp);
-    //        }
-    //
-    //      } catch (JSONException | IOException e)
-    //      {
-    //        e.printStackTrace();
-    //      }
-    //      return null;
-    //    }
-    //
-    //    @Override
-    //    protected void onPostExecute(Void aVoid)
-    //    {
-    //
-    //      super.onPostExecute(aVoid);
-    //      // Once complete
-    //      // Get Questions From Database Online
-    //      getQuestions();
-    //
-    //
-    //    }
-    //  };
-    //  // execute the AsyncTask created above
-    // 		task.execute();
 }

@@ -72,10 +72,10 @@ class QuestionFragment : Fragment(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         // Get Arguments from bundle
         if (arguments != null) {
-            quizQuestion = arguments!!.getString(QUESTION)
-            quizAnswer = arguments!!.getString(KEY)
-            quizDetails = arguments!!.getString(DETAILS)
-            otherAnswers = arguments!!.getParcelableArrayList(FILLANSWERS)
+            quizQuestion = requireArguments().getString(QUESTION)
+            quizAnswer = requireArguments().getString(KEY)
+            quizDetails = requireArguments().getString(DETAILS)
+            otherAnswers = requireArguments().getParcelableArrayList(FILLANSWERS)
         }
     }
 
@@ -288,7 +288,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
          * @param fillAnswers Accepts an array of Incorrect Answer objects
          * @return A new instance of fragment QuestionFragment.
          */
-        fun newInstance(question: Question, fillAnswers: ArrayList<Answer?>?): QuestionFragment {
+        fun newInstance(question: Question, fillAnswers: ArrayList<Answer>): QuestionFragment {
             // Create new instance of fragment
             val fragment = QuestionFragment()
             // Add arguments to bundle of new instance.
