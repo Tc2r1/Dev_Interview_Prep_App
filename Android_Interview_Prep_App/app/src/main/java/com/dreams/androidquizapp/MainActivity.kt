@@ -22,7 +22,7 @@ import java.util.*
 
 
 class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
-
+    private val TAG = "MAINTEST"
     // Static Variables
     private val QUIZ_SIZE = 4
     // UI Variables
@@ -44,8 +44,6 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     private var scorePer = 0
     private var pointPerQ = 0.0
     private var score = 0.0
-    private var questionsController: QuestionsController? = null
-    private var answersController: AnswersController? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,32 +62,18 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         val coroutineExceptionHandler = CoroutineExceptionHandler{_, throwable ->
             throwable.printStackTrace()
         }
-        // get Wrong answers from server
-//        getAnswers()
-//        getQuestions()
+
         coroutineScope.launch(Dispatchers.IO) {
             answersList = AnswersController().getTheAnswers()
             quizList = QuestionsController().getQuestions()
             createQuiz()
         }
     }
-//    private fun getAnswers() {
-//        answersController = AnswersController()
-//        answersList = answersController!!.answers
-//        Log.i("I/Main", "getAnswers: $answersList")
-//    }
-
-//    private fun getQuestions() {
-//        questionsController = QuestionsController()
-//        quizList = questionsController!!.questions
-//        Log.i("I/Main", "getQuestions: $quizList")
-//    }
-
 
     private suspend fun createQuiz() {
-        Log.wtf(" Size: ", "QuestionList is: " + quizList!!.size)
-        Log.wtf(" Size: ", "AnswerList is: " + answersList!!.size)
-//        delay(300)
+        delay(1000)
+        Log.i(TAG, "QuestionList is: " + quizList!!.size)
+        Log.i(TAG, "AnswerList is: " + answersList!!.size)
         // set booleanArray to be same size as quizList
         selectedQuestion = BooleanArray(quizList!!.size)
 

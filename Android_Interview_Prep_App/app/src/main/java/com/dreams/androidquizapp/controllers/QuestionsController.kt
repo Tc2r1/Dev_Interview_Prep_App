@@ -13,15 +13,12 @@ class QuestionsController {
 
     val job = Job()
     val coroutineScope = CoroutineScope(Dispatchers.IO + job)
-    val coroutineExceptionHandler = CoroutineExceptionHandler{_, throwable ->
-        throwable.printStackTrace()
-    }
     private val TAG = "QCTEST"
     private var questionsList: ArrayList<Question>? = null
     val questions: ArrayList<Question>
         get() {
             questionsList = ArrayList()
-            loadQuestions()
+//            loadQuestions()
             coroutineScope.launch {
                 getQuestions()
             }
@@ -29,50 +26,40 @@ class QuestionsController {
         }
 
     private fun loadQuestions() {
-        val question1 = Question.Builder(
+        val question1 = Question(
             1,
             "multi",
             "What is Android?",
-            "Android is a stack of software for mobile devices which includes an Operating System, middleware and some key applications. The application executes within its own process and its own instance of Dalvik Virtual Machine."
-        )
-            .shortAns("A stack of software for mobile devices.")
-            .build()
+            "Android is a stack of software for mobile devices which includes an Operating System, middleware and some key applications. The application executes within its own process and its own instance of Dalvik Virtual Machine.",
+            "A stack of software for mobile devices.")
         questionsList!!.add(question1)
-        val question2 = Question.Builder(
+        val question2 = Question(
             2,
             "multi",
             "What is a Service?",
-            "Android is a stack of software for mobile devices which includes an Operating System, middleware and some key applications. The application executes within its own process and its own instance of Dalvik Virtual Machine.A component that runs in the background to perform long term running operations, Services continue while app is destroyed."
-        )
-            .shortAns("It performs background functionalities.")
-            .build()
+            "Android is a stack of software for mobile devices which includes an Operating System, middleware and some key applications. The application executes within its own process and its own instance of Dalvik Virtual Machine.A component that runs in the background to perform long term running operations, Services continue while app is destroyed.",
+            "It performs background functionalities.")
         questionsList!!.add(question2)
-        val question3 = Question.Builder(
+        val question3 = Question(
             3,
             "multi",
             "What is the APK format?",
-            "The Android packaging key is compressed with classes,UI's, supportive assets and manifest.All files are compressed to a single file is called APK."
-        )
-            .shortAns("It is compressed with classes,UI's, supportive assets and manifest.")
-            .build()
+            "The Android packaging key is compressed with classes,UI's, supportive assets and manifest.All files are compressed to a single file is called APK.",
+            "It is compressed with classes,UI's, supportive assets and manifest.")
         questionsList!!.add(question3)
-        val question4 = Question.Builder(
+        val question4 = Question(
             4,
             "multi",
             "What is an intent?",
-            "It is connected to either the external world of application or internal world of application ,Such as, opening a pdf is an intent and connect to the web browser.etc."
-        )
-            .shortAns("It is a declaration to do something.")
-            .build()
+            "It is connected to either the external world of application or internal world of application ,Such as, opening a pdf is an intent and connect to the web browser.etc.",
+            "It is a declaration to do something.")
         questionsList!!.add(question4)
-        val question5 = Question.Builder(
+        val question5 = Question(
             5,
             "multi",
             "What is an android manifest file?",
-            "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code."
-        )
-            .shortAns(" It is a resource file which contains all the details needed by the android system about the application.")
-            .build()
+            "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
+            " It is a resource file which contains all the details needed by the android system about the application.")
         questionsList!!.add(question5)
     }
 
@@ -83,7 +70,6 @@ class QuestionsController {
             val response = QuestionsApi.retrofitService.getQuestionsJson()
             val array = response.body()
             Log.i(TAG, "onResponse Array: $array")
-            var count = 0
             for (item in array?.questions!!) {
                 val tempId = item.id
                 val tempQuestion = item.question
@@ -94,30 +80,18 @@ class QuestionsController {
                 val temp: Question
                 Log.i(TAG, "TempQuestion: $tempQuestion $tempId")
 
-                if (tempShortAns != null) {
-                    temp = Question(
-                        Question.Builder(
-                            tempId,
-                            tempType,
-                            tempQuestion,
-                            tempDetails
-                        ).shortAns(tempShortAns).trueOrFalse(tempTF)
-                    )
-                } else {
-                    temp = Question(
-                        Question.Builder(
-                            tempId,
-                            tempType,
-                            tempQuestion,
-                            tempDetails
+                // Skips boolean type questions. Implement feature later
+                if (tempType == "bool") continue
+
+                temp = Question(
+                        tempId,
+                        tempType,
+                        tempQuestion,
+                        tempDetails,
+                        tempShortAns,
+                        tempTF
                         )
-                    )
-                }
                 questionsList.add(temp)
-//                count++
-//                if (count == 3){
-//                    break
-//                }
             }
         }
         return questionsList

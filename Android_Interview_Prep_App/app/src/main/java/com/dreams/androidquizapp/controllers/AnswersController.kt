@@ -10,9 +10,6 @@ class AnswersController {
 
     val job = Job()
     val coroutineScope = CoroutineScope(Dispatchers.IO + job)
-    val coroutineExceptionHandler = CoroutineExceptionHandler{_, throwable ->
-        throwable.printStackTrace()
-    }
 
     private val TAG = "ACTEST"
     //@SerializedName("answers")
@@ -20,7 +17,7 @@ class AnswersController {
     val answers: ArrayList<Answer?>
         get() {
             answersList = ArrayList()
-            loadAnswers()
+//            loadAnswers()
             coroutineScope.launch {
                 getTheAnswers()
             }
@@ -69,7 +66,6 @@ class AnswersController {
         answersList!!.add(answer7)
     }
 
-    //private lateinit var response: String
     suspend fun getTheAnswers(): ArrayList<Answer> {
         var answersList: ArrayList<Answer> = arrayListOf()
         withContext(Dispatchers.IO) {
@@ -87,10 +83,6 @@ class AnswersController {
                 Log.i(TAG, "onResponse TempDetail: $tempDetail")
                 val temp = Answer(tempAnswer!!, tempDetail!!)
                 answersList.add(temp)
-//                count++
-//                if (count == 3){
-//                    break
-//                }
             }
         }
         return answersList
