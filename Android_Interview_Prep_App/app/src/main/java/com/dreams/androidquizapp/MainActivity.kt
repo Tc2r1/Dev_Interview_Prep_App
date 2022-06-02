@@ -7,19 +7,13 @@ import android.util.Log
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.dreams.androidquizapp.controllers.AnswersController
-import com.dreams.androidquizapp.controllers.QuestionsController
+import com.dreams.androidquizapp.repository.AnswersRepository
+import com.dreams.androidquizapp.repository.QuestionsRepository
 import com.dreams.androidquizapp.fragments.QuestionFragment
 import com.dreams.androidquizapp.models.Answer
 import com.dreams.androidquizapp.models.Question
 import kotlinx.coroutines.*
 import java.util.*
-
-
-
-
-
-
 
 class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     private val TAG = "MAINTEST"
@@ -64,8 +58,8 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         }
 
         coroutineScope.launch(Dispatchers.IO) {
-            answersList = AnswersController().getTheAnswers()
-            quizList = QuestionsController().getQuestions()
+            answersList = AnswersRepository().getTheAnswers()
+            quizList = QuestionsRepository().getQuestions()
             createQuiz()
         }
     }

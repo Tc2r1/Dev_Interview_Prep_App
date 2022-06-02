@@ -1,29 +1,57 @@
-package com.dreams.androidquizapp.controllers
+package com.dreams.androidquizapp.repository
 
 import android.util.Log
 import com.dreams.androidquizapp.models.Question
 import com.dreams.androidquizapp.network.*
 import kotlinx.coroutines.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import java.util.ArrayList
 
-class QuestionsController {
+class QuestionsRepository {
 
-    val job = Job()
-    val coroutineScope = CoroutineScope(Dispatchers.IO + job)
     private val TAG = "QCTEST"
+
     private var questionsList: ArrayList<Question>? = null
     val questions: ArrayList<Question>
         get() {
             questionsList = ArrayList()
 //            loadQuestions()
-            coroutineScope.launch {
-                getQuestions()
-            }
             return questionsList as ArrayList<Question>
         }
+
+    suspend fun getQuestions(): ArrayList<Question> {
+        var questionsList: ArrayList<Question> = arrayListOf()
+        withContext(Dispatchers.IO){
+
+            val response = QuestionsApi.retrofitService.getQuestionsJson()
+            val array = response.body()
+            Log.i(TAG, "onResponse Array: $array")
+
+            for (item in array?.questions!!) {
+                val tempId = item.id
+                val tempQuestion = item.question
+                val tempDetails = item.details
+                val tempType = item.questionType
+                val tempShortAns = item.shortAns
+                val tempTF = item.trueOrFalse
+
+                // Skips boolean type questions. Implement feature later
+                if (tempType == "bool") continue
+
+                val temp = Question(
+                    item.id,
+                    item.questionType,
+                    item.question,
+                    tempDetails,
+                    tempShortAns,
+                    tempTF
+                )
+
+                Log.i(TAG, "TempQuestion: $tempQuestion $tempId")
+                questionsList.add(temp)
+            }
+        }
+        return questionsList
+    }
 
     private fun loadQuestions() {
         val question1 = Question(
@@ -63,37 +91,4 @@ class QuestionsController {
         questionsList!!.add(question5)
     }
 
-    suspend fun getQuestions(): ArrayList<Question> {
-        var questionsList: ArrayList<Question> = arrayListOf()
-        withContext(Dispatchers.IO){
-            // Call AnswersApiService to enqueue Retrofit request (starts the call on background thread). Returns call object
-            val response = QuestionsApi.retrofitService.getQuestionsJson()
-            val array = response.body()
-            Log.i(TAG, "onResponse Array: $array")
-            for (item in array?.questions!!) {
-                val tempId = item.id
-                val tempQuestion = item.question
-                val tempDetails = item.details
-                val tempType = item.questionType
-                val tempShortAns = item.shortAns
-                val tempTF = item.trueOrFalse
-                val temp: Question
-                Log.i(TAG, "TempQuestion: $tempQuestion $tempId")
-
-                // Skips boolean type questions. Implement feature later
-                if (tempType == "bool") continue
-
-                temp = Question(
-                        tempId,
-                        tempType,
-                        tempQuestion,
-                        tempDetails,
-                        tempShortAns,
-                        tempTF
-                        )
-                questionsList.add(temp)
-            }
-        }
-        return questionsList
-    }
 }

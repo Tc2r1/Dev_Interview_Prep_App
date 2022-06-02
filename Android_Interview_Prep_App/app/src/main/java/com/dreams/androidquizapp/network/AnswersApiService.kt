@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
-private const val BASE_URL = "https://raw.githubusercontent.com/Tc2r1/DevInterview_Questions/master/Languages/Android/"
+private const val BASE_URL = "https://raw.githubusercontent.com/"
 
 // Fetches JSON response. Create Retrofit Builder using scalars converter factory & give base url of web service.
 private val retrofit = Retrofit.Builder()
@@ -15,7 +15,7 @@ private val retrofit = Retrofit.Builder()
 
 // Implement API service interface that return JSON data as a string (through Scalars)
 interface AnswersApiService {
-    @GET("answers.json")
+    @GET("Tc2r1/DevInterview_Questions/master/Languages/Android/answers.json")
     suspend fun requestAnswers():
         Response<AnswersResponse>
 }

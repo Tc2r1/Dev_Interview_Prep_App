@@ -1,4 +1,4 @@
-package com.dreams.androidquizapp.controllers
+package com.dreams.androidquizapp.repository
 
 import android.util.Log
 import com.dreams.androidquizapp.models.Answer
@@ -6,23 +6,42 @@ import com.dreams.androidquizapp.network.AnswersApi
 import kotlinx.coroutines.*
 import java.util.ArrayList
 
-class AnswersController {
-
-    val job = Job()
-    val coroutineScope = CoroutineScope(Dispatchers.IO + job)
+class AnswersRepository {
 
     private val TAG = "ACTEST"
-    //@SerializedName("answers")
+
     private var answersList: ArrayList<Answer>? = null
     val answers: ArrayList<Answer?>
         get() {
             answersList = ArrayList()
 //            loadAnswers()
-            coroutineScope.launch {
-                getTheAnswers()
-            }
             return answersList as ArrayList<Answer?>
         }
+
+    suspend fun getTheAnswers(): ArrayList<Answer> {
+        var answersList: ArrayList<Answer> = arrayListOf()
+        withContext(Dispatchers.IO) {
+
+            val response = AnswersApi.retrofitService.requestAnswers()
+            val array = response.body()
+
+            val responseCode = response.code()
+            Log.i(TAG, "$responseCode")
+
+            for (item in array?.answers!!) {
+
+                val tempAnswer = item.answer
+                val tempDetail = item.details
+
+                val temp = Answer(tempAnswer, tempDetail)
+
+                Log.i(TAG, "onResponse TempAnswer: $tempAnswer")
+                Log.i(TAG, "onResponse TempDetail: $tempDetail")
+                answersList.add(temp)
+            }
+        }
+        return answersList
+    }
 
     private fun loadAnswers() {
         val answer1 = Answer()
@@ -66,25 +85,5 @@ class AnswersController {
         answersList!!.add(answer7)
     }
 
-    suspend fun getTheAnswers(): ArrayList<Answer> {
-        var answersList: ArrayList<Answer> = arrayListOf()
-        withContext(Dispatchers.IO) {
-            // Call AnswersApiService to enqueue Retrofit request (starts the call on background thread). Returns call object
-            val response = AnswersApi.retrofitService.requestAnswers()
-            Log.i(TAG, "getAnswers CALLED")
-            val responseCode = response.code()
-            Log.i(TAG, "$responseCode")
-            val array = response.body()
-            var count = 0
-            for (item in array?.answers!!) {
-                val tempAnswer = item.answer
-                Log.i(TAG, "onResponse TempAnswer: $tempAnswer")
-                val tempDetail = item.details
-                Log.i(TAG, "onResponse TempDetail: $tempDetail")
-                val temp = Answer(tempAnswer!!, tempDetail!!)
-                answersList.add(temp)
-            }
-        }
-        return answersList
-    }
+
 }
