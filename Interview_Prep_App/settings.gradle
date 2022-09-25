@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "InterviewPrepApp"
+include ':native_kotlin:base'
+include ':native_java:base'
+include ':native_kotlin:template'
+include ':native_java:template'
+include ':native_kotlin:retrofit'
+include ':native_java:retrofit'
