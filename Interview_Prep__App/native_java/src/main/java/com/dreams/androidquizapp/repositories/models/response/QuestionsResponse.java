@@ -1,6 +1,6 @@
-package com.dreams.androidquizapp.repository.reponseModels;
+package com.dreams.androidquizapp.repositories.models.response;
 
-import com.dreams.androidquizapp.repository.models.Question;
+import com.dreams.androidquizapp.repositories.models.Question;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;

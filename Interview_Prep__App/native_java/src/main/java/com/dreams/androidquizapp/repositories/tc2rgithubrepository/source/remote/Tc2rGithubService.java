@@ -1,7 +1,8 @@
-package com.dreams.androidquizapp.network;
+package com.dreams.androidquizapp.repositories.tc2rgithubrepository.source.remote;
 
-import com.dreams.androidquizapp.repository.reponseModels.AnswersResponse;
-import com.dreams.androidquizapp.repository.reponseModels.QuestionsResponse;
+
+import com.dreams.androidquizapp.repositories.models.response.AnswersResponse;
+import com.dreams.androidquizapp.repositories.models.response.QuestionsResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

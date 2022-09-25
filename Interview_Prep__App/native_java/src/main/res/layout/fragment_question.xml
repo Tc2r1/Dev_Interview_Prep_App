@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F5F4F4"
-    tools:context="com.dreams.androidquizapp.fragments.QuestionFragment">
+    tools:context="com.dreams.androidquizapp.ui.questions.QuestionFragment">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

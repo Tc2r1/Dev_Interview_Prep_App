@@ -1,4 +1,4 @@
-package com.dreams.androidquizapp.repository.models;
+package com.dreams.androidquizapp.repositories.models;
 
 /**
  * Created by Tc2r on 5/19/2017.

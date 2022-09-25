@@ -1,4 +1,4 @@
-package com.dreams.androidquizapp.repository.models;
+package com.dreams.androidquizapp.repositories.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

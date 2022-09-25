@@ -1,4 +1,4 @@
-package com.dreams.androidquizapp;
+package com.dreams.androidquizapp.ui.main;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,12 +9,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.dreams.androidquizapp.fragments.QuestionFragment;
-import com.dreams.androidquizapp.repository.Tc2rGithubRepository;
-import com.dreams.androidquizapp.repository.models.Answer;
-import com.dreams.androidquizapp.repository.models.Question;
-import com.dreams.androidquizapp.repository.reponseModels.AnswersResponse;
-import com.dreams.androidquizapp.repository.reponseModels.QuestionsResponse;
+import com.dreams.androidquizapp.util.OnFragmentInteractionListener;
+import com.dreams.androidquizapp.R;
+import com.dreams.androidquizapp.ui.questions.QuestionFragment;
+import com.dreams.androidquizapp.repositories.Tc2rGithubRepository;
+import com.dreams.androidquizapp.repositories.models.Answer;
+import com.dreams.androidquizapp.repositories.models.Question;
+import com.dreams.androidquizapp.repositories.models.response.AnswersResponse;
+import com.dreams.androidquizapp.repositories.models.response.QuestionsResponse;
+import com.dreams.androidquizapp.ui.score.ScoreActivity;
 
 import java.util.ArrayList;
 import java.util.Locale;
@@ -51,8 +54,8 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
         setContentView(R.layout.activity_main);
 
         // Initalize and assignments
-        titleTv = (TextView) findViewById(R.id.title_tv);
-        scoreTv = (TextView) findViewById(R.id.score_tv);
+        titleTv = findViewById(com.dreams.androidquizapp.R.id.title_tv);
+        scoreTv = findViewById(com.dreams.androidquizapp.R.id.score_tv);
         testList = new ArrayList<>();
         quizList = new ArrayList<>();
         answersList = new ArrayList<>();
@@ -120,9 +123,9 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
         while(i < QUIZ_SIZE) {
             // if boolean at randNum in selectedQuestion is false
             if(!selectedQuestion[randNum] && quizList
-                                                     .get(randNum)
-                                                     .getQuestionType()
-                                                     .equals("multi")) {
+                    .get(randNum)
+                    .getQuestionType()
+                    .equals("multi")) {
                 // Add position randNum to test list;
                 testList.add(quizList.get(randNum));
                 // set this question selected to true.
@@ -159,7 +162,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
                                           getString(R.string.question_display_text),
                                           currentQuestion, QUIZ_SIZE));
             // UI Variables
-            LinearLayout fragContainer = (LinearLayout) findViewById(R.id.fragment_container);
+            LinearLayout fragContainer = findViewById(com.dreams.androidquizapp.R.id.fragment_container);
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(fragContainer.getId(), newFragment);
             ft.commit();

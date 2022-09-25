@@ -1,4 +1,4 @@
-package com.dreams.androidquizapp;
+package com.dreams.androidquizapp.util;
 
 /**
  * This interface must be implemented by activities that contain this
