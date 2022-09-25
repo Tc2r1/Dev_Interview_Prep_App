@@ -1,4 +1,4 @@
-package com.nudennie.interview_prep_app
+package com.nudennie.interviewprepapp
 
 import org.junit.Test
 
