@@ -1,0 +1,64 @@
+# macOS DS_Store files
+.DS_Store
+
+# Visual Studio Code workspaces
+.vscode
+
+# CI/CD Env Values
+.env
+.firebase-service-account.json
+
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Generated files
+*.dex
+*.class
+build/
+
+# Gradle files
+.gradle/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Log Files and Reports
+*.log
+**/reports/*
+reports/
+*/reports/
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder for layout inspector
+captures/
+
+# IntelliJ
+*.iml
+**/.idea/*
+!.idea/runConfigurations/
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+.cxx/
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+/fastlane/README.md
+/fastlane/report.xml
+/fastlane/.env
+
+# lint
+lint/
+
+# Python
+*.hprof
+/env
+/java_pi*
