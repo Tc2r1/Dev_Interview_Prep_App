@@ -13,7 +13,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Interview_Prep_App"
+rootProject.name = "InterviewPrepApp"
 include ':native_kotlin'
 include ':native_java'
-
