@@ -35,6 +35,15 @@
       "trueOrFalse": false,
       "shortAns": "It is a [(==) and .euqals()] primary functionalities are to compare the values, but the secondary functionality is different.",
       "tag": "Java"
+    },
+    {
+      "id": 4,
+      "question": "Do final, finally and finalize keywords have the same function?",
+      "details": "",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "No",
+      "tag": "Java"
     }
   ]
 }
