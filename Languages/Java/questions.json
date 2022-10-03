@@ -3,7 +3,7 @@
     {
       "id": 0,
       "question": "What is Java?",
-      "details": "Java is the high-level, object-oriented, robust, secure programming language, platform-independent, high performance, Multithreaded, and portable programming language. It was developed by James Gosling in June 1991.",
+      "details": "Java is the high-level, object-oriented, robust, secure programming language, platform-independent, high performance, Multithreading, and portable programming language. It was developed by James Gosling in June 1991.",
       "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": "It is a high-level, object-oriented, secure programming language.",
@@ -15,25 +15,25 @@
       "details": "It is an abstract machine which provides the runtime environment in which Java bytecode can be executed. It is a specification which specifies the working of Java Virtual Machine.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is an abstract macine that acts like a run-time engine which calls the main method present in the Java code.",
+      "shortAns": "It is an abstract machine that acts like a run-time engine which calls the main method present in the Java code.",
       "tag": "Java"
     },
     {
       "id": 2,
-      "question": "What is a Java Virtual Machine?",
-      "details": "JVM is the specification which must be implemented in the computer system. The Java code is compiled by JVM to be a Bytecode which is machine independent and close to the native code.",
+      "question": "What is a Higher Order Function?",
+      "details": "The result of one higher-order function can be used as the input to another higher-order function. Any time we pass a lambda expression to a method, that method is a higher-order function.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is a virtual macine that enables the computer to run the Java program.",
+      "shortAns": "It is a function that either accept other functions as arguments, or return a function as a result.",
       "tag": "Java"
     },
     {
       "id": 3,
-      "question": "What is a Java?",
-      "details": " It has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built. New, innovative products and digital services designed for the future continue to rely on Java.",
+      "question": "What is a difference between equals() method and equality operator (==) in Java?",
+      "details": "The (==) equals operator used to compare the equality of the values. But in the terms of object-oriented programming, to deal with the values in the form of objects. And this object may contain multiple types of data. So using the (==) operator does not work with this case. So we need to go with the .equals() method.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is a programming language and computing platform first released by Sun Microsystems in 1995.",
+      "shortAns": "It is a [(==) and .euqals()] primary functionalities are to compare the values, but the secondary functionality is different.",
       "tag": "Java"
     }
   ]
