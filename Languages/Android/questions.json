@@ -517,7 +517,7 @@
     },
     {
       "id": 57,
-      "question": "How many types of activity lifecycle are there in android?",
+      "question": "Are there 8 lifecycle methods in Android Activity?",
       "details": "There are  7 lifecycle methods of android activity. They are onCreate(), onStart(), onResume(), onPause(), onStop(), onRestart(), onDestroy().",
       "questionType": "bool",
       "trueOrFalse": false,
