@@ -1,4 +1,4 @@
-package com.dreams.interviewprepapp.repositories.models;
+package com.dreams.interviewprepapp.repositories.models.response;
 
 public interface DomainObject
 {

@@ -8,4 +8,8 @@
     <color name="secondaryDarkColor">#6a0080</color>
     <color name="primaryTextColor">#000000</color>
     <color name="secondaryTextColor">#ffffff</color>
+    <color name="light_gray">#DDDDDD</color>
+    <color name="bright_green">#6DCD19</color>
+    <color name="bright_red">#DC1414</color>
+
 </resources>

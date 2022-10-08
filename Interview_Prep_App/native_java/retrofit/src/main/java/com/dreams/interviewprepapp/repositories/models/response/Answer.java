@@ -1,4 +1,4 @@
-package com.dreams.interviewprepapp.repositories.models;
+package com.dreams.interviewprepapp.repositories.models.response;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -33,6 +33,10 @@ public class Answer implements DomainObject, Parcelable {
 	public Answer() {
 	}
 
+  public Answer(String answer, String details) {
+      this.answer = answer;
+      this.details = details;
+  }
 	public String getAnswer() {
 		return answer;
 	}

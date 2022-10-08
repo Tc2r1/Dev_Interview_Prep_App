@@ -11,10 +11,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.dreams.interviewprepapp.R;
 import com.dreams.interviewprepapp.repositories.Tc2rGithubRepository;
-import com.dreams.interviewprepapp.repositories.models.Answer;
-import com.dreams.interviewprepapp.repositories.models.Question;
+import com.dreams.interviewprepapp.repositories.models.response.Answer;
 import com.dreams.interviewprepapp.repositories.models.response.AnswersResponse;
+import com.dreams.interviewprepapp.repositories.models.response.Question;
 import com.dreams.interviewprepapp.repositories.models.response.QuestionsResponse;
+import com.dreams.interviewprepapp.ui.questions.DialogFragment;
 import com.dreams.interviewprepapp.ui.questions.QuestionFragment;
 import com.dreams.interviewprepapp.ui.score.ScoreActivity;
 import com.dreams.interviewprepapp.util.OnFragmentInteractionListener;
@@ -22,6 +23,7 @@ import com.dreams.interviewprepapp.util.OnFragmentInteractionListener;
 import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Random;
+import java.util.concurrent.Callable;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -140,6 +142,22 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
         // On first run, start quiz without updating score
         nextQuestion(false);
     }
+
+    public String goToNextQuestion(boolean isAnswerCorrect) {
+        nextQuestion(isAnswerCorrect);
+        return "True";
+    }
+
+    public void showDetails(Answer answer, boolean isAnswerCorrect) {
+        DialogFragment myDialogFragment = new DialogFragment(answer, new Callable<String>() {
+            public String call() {
+                return goToNextQuestion(isAnswerCorrect);
+            }});
+        myDialogFragment.show(getSupportFragmentManager(), "details");
+
+    }
+
+
 
     public void nextQuestion(boolean correctAnswer) {
         // if previous question was answered correctly

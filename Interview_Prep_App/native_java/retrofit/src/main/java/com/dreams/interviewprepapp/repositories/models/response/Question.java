@@ -1,4 +1,4 @@
-package com.dreams.interviewprepapp.repositories.models;
+package com.dreams.interviewprepapp.repositories.models.response;
 
 /**
  * Created by Tc2r on 5/19/2017.

@@ -50,11 +50,95 @@
                 android:layout_height="100dp"
                 android:orientation="vertical">
 
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <RadioGroup
+                    android:id="@+id/radio_group_answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The answer is A"
+                        android:textColor="@color/secondaryLightColor"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The answer is B"
+                        android:textColor="@color/secondaryLightColor"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The Answer is C"
+                        android:textColor="@color/secondaryLightColor"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The answer is D"
+                        android:textColor="@color/secondaryLightColor"
+                        android:textSize="16sp"/>
+                </RadioGroup>
+            </LinearLayout>
                 <LinearLayout
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
+
 
 
                     <LinearLayout
@@ -256,6 +340,7 @@
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:textColor="@color/primaryTextColor" />
                 </LinearLayout>
+
             </LinearLayout>
         </ScrollView>
 
