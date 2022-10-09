@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.dreams.interviewprepapp.R;
 import com.dreams.interviewprepapp.repositories.models.response.Answer;
 
 import java.util.concurrent.Callable;
@@ -52,10 +51,10 @@ public class DialogFragment extends androidx.fragment.app.DialogFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        View view = inflater.inflate(R.layout.fragment_dialog, container, false);
+        View view = inflater.inflate(com.dreams.interviewprepapp.R.layout.fragment_dialog, container, false);
 
-        shortAnswerTv = view.findViewById(R.id.short_ans_tv);
-        detailTv = view.findViewById(R.id.details_tv);
+        shortAnswerTv = view.findViewById(com.dreams.interviewprepapp.R.id.short_ans_tv);
+        detailTv = view.findViewById(com.dreams.interviewprepapp.R.id.details_tv);
         shortAnswerTv.setText("\"" + answer.getAnswer() + "\"");
         detailTv.setText(answer.getDetails());
         return view;

@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "25.0.3"
+    buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.dreams.interviewprepapp"
         minSdkVersion 25
@@ -23,6 +23,7 @@ android {
 }
 
 dependencies {
+    implementation project (':sharedresources')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.appcompat:appcompat:1.0.0'

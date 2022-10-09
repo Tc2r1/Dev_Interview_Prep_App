@@ -1,6 +1,6 @@
 package com.nudennie.interviewprepapp.controllers
 
-import com.nudennie.interviewprepapp.models.Question
+import com.nudennie.interviewprepapp.repositories.models.response.Question
 
 class QuestionsController {
     private var questionsList: ArrayList<Question>? = null

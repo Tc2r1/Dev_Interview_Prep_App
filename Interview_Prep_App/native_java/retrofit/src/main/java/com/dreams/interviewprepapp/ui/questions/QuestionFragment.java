@@ -18,22 +18,12 @@ import com.dreams.interviewprepapp.repositories.models.MultipleChoiceQuestion;
 import com.dreams.interviewprepapp.repositories.models.response.Answer;
 import com.dreams.interviewprepapp.repositories.models.response.Question;
 import com.dreams.interviewprepapp.ui.main.MainActivity;
-import com.dreams.interviewprepapp.util.OnFragmentInteractionListener;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link QuestionFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class QuestionFragment extends Fragment implements View.OnClickListener {
 
     // Declare Constants
@@ -42,6 +32,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
     private static final String DETAILS = "Details";
     private static final String FILLANSWERS = "Fill";
 
+    // Declare UI Variables
     private RadioGroup answersRadioGroup;
 
     // Declare Variables
@@ -106,12 +97,12 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
         RadioButton fourthAnswerRadioButton = mView.findViewById(id.radio_button_answer_d);
         Button submitButton = mView.findViewById(id.submitButton);
 
-        //Set Listeners
+        // Set Listeners
         newBtn.setOnClickListener(this);
         submitButton.setOnClickListener(this);
 
 
-        // Create random.
+        // Create random
         Random random = new Random(System.currentTimeMillis());
 
         // Create the question: Multiple choice!
@@ -179,11 +170,12 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
                     boolean correct;
                     if(shuffledAnswers.get(answerIndex) == mCquestion.getAnswers().get(0)) {
                         correct = true;
-                        radioButton.setBackgroundResource(R.drawable.green_bordered_background);
+                        radioButton.setBackgroundResource(com.tc2r.sharedresources.R.drawable.green_bordered_background);
                     } else {
                         correct = false;
-                        radioButton.setBackgroundResource(R.drawable.red_bordered_background);
+                        radioButton.setBackgroundResource(com.tc2r.sharedresources.R.drawable.red_bordered_background);
                     }
+
                     ((MainActivity) getActivity()).showDetails(shuffledAnswers.get(answerIndex), correct);
                 }
                 break;

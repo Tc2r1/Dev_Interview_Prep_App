@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.nudennie.interviewprepapp.MainActivity"
+            android:name="com.nudennie.interviewprepapp.ui.main.MainActivity"
             android:exported="true"
             tools:node="merge"
             android:theme="@style/AppTheme"
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.nudennie.interviewprepapp.ScoreActivity"
+            android:name="com.nudennie.interviewprepapp.ui.score.ScoreActivity"
             android:screenOrientation="portrait" />
     </application>
 
