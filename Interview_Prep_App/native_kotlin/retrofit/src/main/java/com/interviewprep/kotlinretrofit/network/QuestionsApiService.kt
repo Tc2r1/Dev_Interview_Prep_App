@@ -17,8 +17,7 @@ private val retrofit = Retrofit.Builder()
 interface QuestionsApiService {
     // Gets answers objects
     @GET("Tc2r1/DevInterview_Questions/master/Languages/Android/questions.json")
-    suspend fun getQuestionsJson():
-            Response<QuestionsResponse>
+    suspend fun getQuestionsJson(): Response<QuestionsResponse>
 }
 
 // Creates API object using Retrofit to implement API Service

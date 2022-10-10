@@ -3,7 +3,6 @@ package com.interviewprep.kotlinretrofit
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -40,10 +39,10 @@ class ScoreActivity : AppCompatActivity() {
         setContentView(R.layout.activity_score)
 
         // Assign/initiate variables
-        totalQuestionsTV = findViewById(R.id.numofquestions_tv) as TextView
-        commentTV = findViewById(R.id.comment_tv) as TextView
-        totalCorrectTV = findViewById(R.id.numcorrect_tv) as TextView
-        finalGradeTV = findViewById(R.id.finalgrade_tv) as TextView
+        totalQuestionsTV = findViewById(R.id.numofquestions_tv)
+        commentTV = findViewById(R.id.comment_tv)
+        totalCorrectTV = findViewById(R.id.numcorrect_tv)
+        finalGradeTV = findViewById(R.id.finalgrade_tv)
 
         // Set UI Objects Text values
         totalQuestionsTV!!.text = "There were $quizSize Questions."
@@ -64,13 +63,13 @@ class ScoreActivity : AppCompatActivity() {
         }
     }
 
-    fun startOver(view: View?) {
+    fun startOver() {
         // Returns to MainActivity page.
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
-    fun closeApp(view: View?) {
+    fun closeApp() {
         // Closes the App
         finishAffinity()
     }

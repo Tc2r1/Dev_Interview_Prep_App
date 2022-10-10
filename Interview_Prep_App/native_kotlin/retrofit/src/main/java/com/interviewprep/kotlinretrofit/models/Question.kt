@@ -11,7 +11,7 @@ import kotlinx.parcelize.Parcelize
  * Description:
  */
 @Parcelize
-class Question (
+data class Question(
     @SerializedName("id")
     var id: Int,
     @SerializedName("questionType")

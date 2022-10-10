@@ -54,10 +54,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
         mListener = if (context is OnFragmentInteractionListener) {
             context
         } else {
-            throw RuntimeException(
-                context.toString() +
-                    " must implement OnFragmentInteractionListener"
-            )
+            throw RuntimeException(context.toString() + " must implement OnFragmentInteractionListener")
         }
     }
 

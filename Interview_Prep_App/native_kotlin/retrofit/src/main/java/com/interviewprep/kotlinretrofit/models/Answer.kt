@@ -11,9 +11,9 @@ import kotlinx.parcelize.Parcelize
  * Description:
  */
 @Parcelize
-class Answer(
+data class Answer(
     @SerializedName("answer")
     var answer: String? = null,
     @SerializedName("details")
     var details: String? = null
-) :  Parcelable
+) : Parcelable

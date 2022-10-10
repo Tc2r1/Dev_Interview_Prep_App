@@ -6,15 +6,13 @@ import android.util.Log
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.interviewprep.kotlinretrofit.fragments.QuestionFragment
 import com.interviewprep.kotlinretrofit.models.Answer
 import com.interviewprep.kotlinretrofit.models.Question
 import com.interviewprep.kotlinretrofit.repository.AnswersRepository
 import com.interviewprep.kotlinretrofit.repository.QuestionsRepository
-import kotlinx.coroutines.CoroutineExceptionHandler
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import java.util.Random
@@ -22,8 +20,10 @@ import java.util.Random
 class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     private val TAG = "MAINTEST"
 
-    // Static Variables
-    private val QUIZ_SIZE = 10
+    companion object {
+        // Static Variables
+        private const val QUIZ_SIZE = 4
+    }
 
     // UI Variables
     private var fragContainer: LinearLayout? = null
@@ -49,21 +49,15 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Initalize and assignments
+        // Initialize and assignments
         titleTv = findViewById(R.id.title_tv)
-        scoreTv = findViewById(R.id.score_tv) as TextView
+        scoreTv = findViewById(R.id.score_tv)
         testList = ArrayList()
         quizList = ArrayList()
         answersList = ArrayList()
         random = Random()
 
-        val job = Job()
-        val coroutineScope = CoroutineScope(Dispatchers.IO + job)
-        val coroutineExceptionHandler = CoroutineExceptionHandler { _, throwable ->
-            throwable.printStackTrace()
-        }
-
-        coroutineScope.launch(Dispatchers.IO) {
+        lifecycleScope.launch(Dispatchers.IO) {
             answersList = AnswersRepository().getTheAnswers()
             quizList = QuestionsRepository().getQuestions()
             createQuiz()
@@ -115,10 +109,8 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         if (currentQuestion < QUIZ_SIZE) {
             newFragment = QuestionFragment.newInstance(testList!![currentQuestion], answersList!!)
             currentQuestion++
-            titleTv!!.text = getString(com.tc2r.sharedresources.R.string.question_display_text) + Integer.toString(
-                currentQuestion
-            ) + " of " + Integer.toString(QUIZ_SIZE)
-            fragContainer = findViewById(R.id.fragment_container) as LinearLayout
+            titleTv!!.text = getString(com.tc2r.sharedresources.R.string.question_display_text) + Integer.toString(currentQuestion) + " of " + Integer.toString(QUIZ_SIZE)
+            fragContainer = findViewById(R.id.fragment_container)
             val ft = supportFragmentManager.beginTransaction()
             ft.replace(fragContainer!!.id, newFragment!!)
             ft.commit()
