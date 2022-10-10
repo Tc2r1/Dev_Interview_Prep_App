@@ -1,6 +1,5 @@
 package com.dreams.interviewprepapp.repositories.models.response;
 
-import com.dreams.interviewprepapp.repositories.models.Question;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.ArrayList;
