@@ -1,0 +1,168 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dreams.interviewprepapp.ui.questions.QuestionFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="14dp"
+        android:background="@drawable/app_gradient"
+        app:cardElevation="8dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:background="@drawable/app_gradient"
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="What Is An Activity?"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:elevation="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/secondaryLightColor">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radio_group_answers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/submitButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The answer is A"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The answer is B"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The Answer is C"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="16sp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_button_answer_d"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:background="@drawable/radio_background"
+                        android:button="@null"
+                        android:drawablePadding="16dp"
+                        android:minHeight="80dp"
+                        android:paddingStart="16dp"
+                        android:paddingTop="24dp"
+                        android:paddingEnd="16dp"
+                        android:paddingBottom="24dp"
+                        android:text="The answer is D"
+                        android:textColor="@color/secondaryTextColor"
+                        android:textSize="16sp"/>
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="270dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radio_group_answers"
+                    app:layout_constraintVertical_bias=".5"
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    android:background="@drawable/submit_button_background"
+                    android:text="@string/submit_button" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/newQuizBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:textColor="@color/primaryTextColor"
+        android:background="@drawable/radio_bordered_background"
+        android:backgroundTint="@color/primaryLightColor"
+        android:text="@string/question_new_quiz" />
+
+</LinearLayout>
