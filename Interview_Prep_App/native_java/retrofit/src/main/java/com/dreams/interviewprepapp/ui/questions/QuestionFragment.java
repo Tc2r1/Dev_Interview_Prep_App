@@ -1,34 +1,29 @@
 package com.dreams.interviewprepapp.ui.questions;
 
-import android.content.Context;
+import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 import com.dreams.interviewprepapp.R;
-import com.dreams.interviewprepapp.repositories.models.Answer;
-import com.dreams.interviewprepapp.repositories.models.Question;
+import com.dreams.interviewprepapp.R.id;
+import com.dreams.interviewprepapp.repositories.models.MultipleChoiceQuestion;
+import com.dreams.interviewprepapp.repositories.models.response.Answer;
+import com.dreams.interviewprepapp.repositories.models.response.Question;
 import com.dreams.interviewprepapp.ui.main.MainActivity;
-import com.dreams.interviewprepapp.util.OnFragmentInteractionListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
-
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link QuestionFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class QuestionFragment extends Fragment implements View.OnClickListener {
 
     // Declare Constants
@@ -38,20 +33,15 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
     private static final String FILLANSWERS = "Fill";
 
     // Declare UI Variables
-    private TextView questionTV;
-    private TextView detailsA, detailsB, detailsC, detailsD;
-    private TextView answerA, answerB, answerC, answerD;
+    private RadioGroup answersRadioGroup;
 
     // Declare Variables
+    private final List<Answer> answerList = new ArrayList<>();
+
     private String quizQuestion;
     private String quizAnswer, quizDetails;
-    private ArrayList<Answer> otherAnswers;
-    private Button nextBtn, newBtn;
-    private boolean[] answerCheck = new boolean[4];
-    private OnFragmentInteractionListener mListener;
-    private int keyPosition;
-    private boolean answered = false;
-    private boolean correct = false;
+    private ArrayList<Answer> otherAnswers, shuffledAnswers;
+    private MultipleChoiceQuestion mCquestion;
 
     public QuestionFragment() {
         // Required empty public constructor
@@ -65,8 +55,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
      * @param fillAnswers Accepts an array of Incorrect Answer objects
      * @return A new instance of fragment QuestionFragment.
      */
-    public static QuestionFragment newInstance(Question question,
-                                               ArrayList<Answer> fillAnswers) {
+    public static QuestionFragment newInstance(Question question, ArrayList<Answer> fillAnswers) {
         // Create new instance of fragment
         QuestionFragment fragment = new QuestionFragment();
         // Add arguments to bundle of new instance.
@@ -78,17 +67,6 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
 
         fragment.setArguments(args);
         return fragment;
-    }
-
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if(context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString() + " must implement OnFragmentInteractionListener");
-        }
     }
 
     @Override
@@ -109,204 +87,101 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
         View mView = inflater.inflate(R.layout.fragment_question, container, false);
 
         // Assign Variables to Object Ids
-        questionTV = mView.findViewById(com.dreams.interviewprepapp.R.id.question);
-        answerA = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_a_summary);
-        detailsA = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_a_details);
-        answerB = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_b_summary);
-        detailsB = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_b_details);
-        answerC = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_c_summary);
-        detailsC = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_c_details);
-        answerD = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_d_summary);
-        detailsD = mView.findViewById(com.dreams.interviewprepapp.R.id.answer_d_details);
-        nextBtn = mView.findViewById(com.dreams.interviewprepapp.R.id.nextBtn);
-        newBtn = mView.findViewById(com.dreams.interviewprepapp.R.id.newQuizBtn);
+        // Declare UI Variables
+        TextView questionTV = mView.findViewById(id.question);
+        Button newBtn = mView.findViewById(R.id.newQuizBtn);
+        answersRadioGroup = mView.findViewById(id.radio_group_answers);
+        RadioButton firstAnswerRadioButton = mView.findViewById(id.radio_button_answer_a);
+        RadioButton secondAnswerRadioButton = mView.findViewById(id.radio_button_answer_b);
+        RadioButton thirdAnswerRadioButton = mView.findViewById(id.radio_button_answer_c);
+        RadioButton fourthAnswerRadioButton = mView.findViewById(id.radio_button_answer_d);
+        Button submitButton = mView.findViewById(id.submitButton);
 
-        //Set Listeners
-        nextBtn.setOnClickListener(this);
+        // Set Listeners
         newBtn.setOnClickListener(this);
-        answerA.setOnClickListener(this);
-        answerB.setOnClickListener(this);
-        answerC.setOnClickListener(this);
-        answerD.setOnClickListener(this);
+        submitButton.setOnClickListener(this);
+
+
+        // Create random
+        Random random = new Random(System.currentTimeMillis());
+
+        // Create the question: Multiple choice!
+        answerList.add(new Answer(quizAnswer, quizDetails));
+
+        for(int j = 0; j < 3; j++) {
+            // if position in answer check =/= true, fill with random answer
+            int randomAnswer = random.nextInt(otherAnswers.size());
+            answerList.add(otherAnswers.get(randomAnswer));
+        }
+        MultipleChoiceQuestion.Builder builder = new MultipleChoiceQuestion.Builder();
+        mCquestion = builder.quizQuestion(quizQuestion).possibleAnswers(answerList).build();
+
+        shuffledAnswers = new ArrayList<>();
+        shuffledAnswers.addAll(answerList);
+        Collections.shuffle(shuffledAnswers);
+
+        firstAnswerRadioButton.setText(shuffledAnswers.get(0).getAnswer());
+        secondAnswerRadioButton.setText(shuffledAnswers.get(1).getAnswer());
+        thirdAnswerRadioButton.setText(shuffledAnswers.get(2).getAnswer());
+        fourthAnswerRadioButton.setText(shuffledAnswers.get(3).getAnswer());
 
 
         // Set the Question Text
-        questionTV.setText(quizQuestion);
-
-        // Create random and int for key positioning.
-        Random random = new Random(System.currentTimeMillis());
-        keyPosition = random.nextInt(4);
-
-        // Position Key according to random int.
-        switch(keyPosition) {
-            case 0:
-                answerA.setText(quizAnswer);
-                detailsA.setText(quizDetails);
-                answerCheck[0] = true;
-                break;
-            case 1:
-                answerB.setText(quizAnswer);
-                detailsB.setText(quizDetails);
-                answerCheck[1] = true;
-                break;
-            case 2:
-                answerC.setText(quizAnswer);
-                detailsC.setText(quizDetails);
-                answerCheck[2] = true;
-                break;
-            case 3:
-                answerD.setText(quizAnswer);
-                detailsD.setText(quizDetails);
-                answerCheck[3] = true;
-                break;
-        }
-        int randomAnswer;
-        for(int j = 0; j < answerCheck.length; j++) {
-            // if position in answer check =/= true, fill with random answer
-            if(!answerCheck[j]) {
-                randomAnswer = random.nextInt(otherAnswers.size());
-                switch(j) {
-                    case 0:
-                        answerA.setText((String.valueOf(otherAnswers.get(randomAnswer).getAnswer())));
-                        detailsA.setText((String.valueOf(otherAnswers.get(randomAnswer).getDetails())));
-                        answerCheck[0] = true;
-                        break;
-                    case 1:
-                        answerB.setText((String.valueOf(otherAnswers.get(randomAnswer).getAnswer())));
-                        detailsB.setText((String.valueOf(otherAnswers.get(randomAnswer).getDetails())));
-                        answerCheck[1] = true;
-                        break;
-                    case 2:
-                        answerC.setText((String.valueOf(otherAnswers.get(randomAnswer).getAnswer())));
-                        detailsC.setText((String.valueOf(otherAnswers.get(randomAnswer).getDetails())));
-                        answerCheck[2] = true;
-                        break;
-                    case 3:
-                        answerD.setText((String.valueOf(otherAnswers.get(randomAnswer).getAnswer())));
-                        detailsD.setText((String.valueOf(otherAnswers.get(randomAnswer).getDetails())));
-                        answerCheck[3] = true;
-                        break;
-                }
-            }
-        }
+        questionTV.setText(mCquestion.getQuestion());
 
         return mView;
     }
 
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View view) {
 
         // Switch statement for what is clicked.
         switch(view.getId()) {
-            case R.id.nextBtn:
-                ((MainActivity) getActivity()).nextQuestion(correct);
-                break;
-            case R.id.newQuizBtn:
+            case id.newQuizBtn:
                 // start main Activity over
                 Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
                 // remove previous from backstack
                 getActivity().finish();
                 break;
-            case R.id.answer_a_summary:
-                if(detailsA.getVisibility() != View.VISIBLE) {
-                    detailsA.setVisibility(View.VISIBLE);
 
-                    // Check if question has not been answered
-                    if(!answered) {
 
-                        // Check if this selection is correct answer
-                        if(keyPosition == 0) {
-                            // Right answer is A
-                            detailsA.setTextColor(Color.GREEN);
-                            answerA.setTextColor(Color.GREEN);
-
-                            // Register the correct answer
-                            correct = true;
-                        } else {
-                            // Incorrect Answer Selected
-                            detailsA.setTextColor(Color.RED);
-                            answerA.setTextColor(Color.RED);
-                        }
-                        answered = true;
+            case id.submitButton:
+                int checkedId = answersRadioGroup.getCheckedRadioButtonId();
+                // Do nothing if nothing is checked. (id == -1)
+                if(checkedId != -1 && getActivity() !=  null) {
+                    int answerIndex = 0;
+                    switch(checkedId) {
+                        case id.radio_button_answer_b:
+                            answerIndex = 1;
+                            break;
+                        case id.radio_button_answer_c:
+                            answerIndex = 2;
+                            break;
+                        case id.radio_button_answer_d:
+                            answerIndex = 3;
+                            break;
                     }
+
+                    // The first answer in the original question is always the correct one, so if our
+                    // answer matches, we have the correct answer.
+                    RadioButton radioButton = (RadioButton) getActivity().findViewById(checkedId);
+                    boolean correct;
+                    if(shuffledAnswers.get(answerIndex) == mCquestion.getAnswers().get(0)) {
+                        correct = true;
+                        radioButton.setBackgroundResource(com.tc2r.sharedresources.R.drawable.green_bordered_background);
+                    } else {
+                        correct = false;
+                        radioButton.setBackgroundResource(com.tc2r.sharedresources.R.drawable.red_bordered_background);
+                    }
+
+                    ((MainActivity) getActivity()).showDetails(shuffledAnswers.get(answerIndex), correct);
                 }
                 break;
-            case R.id.answer_b_summary:
-                if(detailsB.getVisibility() != View.VISIBLE) {
-                    detailsB.setVisibility(View.VISIBLE);
 
-                    // Check if question has not been answered
-                    if(!answered) {
-
-                        // Check if this selection is correct answer
-                        if(keyPosition == 1) {
-                            // Right answer is A
-                            detailsB.setTextColor(Color.GREEN);
-                            answerB.setTextColor(Color.GREEN);
-
-                            // Register the correct answer
-                            correct = true;
-                        } else {
-                            // Incorrect Answer Selected
-                            detailsB.setTextColor(Color.RED);
-                            answerB.setTextColor(Color.RED);
-                        }
-                        answered = true;
-                    }
-                }
-                break;
-            case R.id.answer_c_summary:
-                if(detailsC.getVisibility() != View.VISIBLE) {
-                    detailsC.setVisibility(View.VISIBLE);
-
-                    // Check if question has not been answered
-                    if(!answered) {
-
-                        // Check if this selection is correct answer
-                        if(keyPosition == 2) {
-                            // Right answer is A
-                            detailsC.setTextColor(Color.GREEN);
-                            answerC.setTextColor(Color.GREEN);
-
-                            // Register the correct answer
-                            correct = true;
-                        } else {
-                            // Incorrect Answer Selected
-                            detailsC.setTextColor(Color.RED);
-                            answerC.setTextColor(Color.RED);
-                        }
-                        answered = true;
-                    }
-                }
-                break;
-            case R.id.answer_d_summary:
-                if(detailsD.getVisibility() != View.VISIBLE) {
-                    detailsD.setVisibility(View.VISIBLE);
-                    // Check if question has not been answered
-                    if(!answered) {
-                        // Check if this selection is correct answer
-                        if(keyPosition == 3) {
-                            // Right answer is A
-                            detailsD.setTextColor(Color.GREEN);
-                            answerD.setTextColor(Color.GREEN);
-                            // Register the correct answer
-                            correct = true;
-                        } else {
-                            // Incorrect Answer Selected
-                            detailsD.setTextColor(Color.RED);
-                            answerD.setTextColor(Color.RED);
-                        }
-                        answered = true;
-                    }
-                }
-                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + view.getId());
         }
     }
 }

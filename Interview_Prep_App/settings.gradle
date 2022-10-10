@@ -3,14 +3,23 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 }
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
+        gradlePluginPortal()
         google()
         mavenCentral()
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
     }
 }
 rootProject.name = "InterviewPrepApp"
@@ -20,3 +29,4 @@ include ':native_kotlin:template'
 include ':native_java:template'
 include ':native_kotlin:retrofit'
 include ':native_java:retrofit'
+include ':sharedresources'
