@@ -41,7 +41,7 @@ class DialogFragment(private val func: () -> Unit) : DialogFragment() {
         val view: View = inflater.inflate(R.layout.fragment_dialog, container, false)
         shortAnswerTv = view.findViewById(R.id.short_ans_tv)
         detailTv = view.findViewById(R.id.details_tv)
-        shortAnswerTv.text = "\"" + (answer?.answer) + "\""
+        shortAnswerTv.text = "\"" + answer?.answer + "\""
         detailTv.text = answer?.details
         return view
     }
