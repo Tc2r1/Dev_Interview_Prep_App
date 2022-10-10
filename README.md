@@ -12,49 +12,14 @@ This repository is open to all members of the GitHub community. Any member may c
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
 
 
-
-## What is Hacktoberfest?
-A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
-
-
-
-<h1 align="center"> Hacktoberfest 2022 🎉</h1>
-
-<div align="center">
-<img src="https://img.shields.io/badge/hacktoberfest-2022-blueviolet" alt="Hacktober Badge"/>
- <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
- <a href="https://github.com/Tc2r1" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
-
-<a href="https://github.com/Tc2r1/pulls"><img src="https://img.shields.io/github/issues-pr/Tc2r1" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/Tc2r1/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Tc2r1?color=2b9348"></a>
-<a href="https://github.com/Tc2r1/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Tc2r1?color=2b9348" alt="License Badge"/></a>
-
-</div>
-
-### 🗣 Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2021 challenge and earn a limited edition T-shirt.
-
-📢 **Register [here](https://hacktoberfest.com/auth/) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
-
-
-## Rules
-
-- Don't use filthy words and be welcome for beginners and other people in this community.
-
----
-
-## Github Contribution Rules
-- Pull requests can be submitted to any opted-in repository on GitHub or GitLab.
-- The pull request must contain commits you made yourself.
-- If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.
-- If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
-- To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.
-- This year, the first 50,000 participants can earn a T-shirt.
----
-
 ## STEPS FOR CONTRIBUTING
 
-We are using Json to create a list of frequently given interview questions  and answers. for different languages!
-In every directory, you will find two files, `questions and answers
+
+
+### Level 1 Contributions - Add a minimal of 3 objects to the questions or answers json of your choice. 
+
+We are using Json to create a list of frequently given interview questions and answers for different languages!
+In every directory, you will find two files `questions` and `answers`
 
 If you'd like to contribute to **questions.json**:
 1. Fork this repo
@@ -150,6 +115,83 @@ Example:
 5. Make Pull Request.
 
 
+
+
+### LEVEL 2 CONTRIBUTIONS - RESOLVE A SMALL "ISSUE" TICKET!
+
+Want to get your hands wet with some programming? Look at the open issues and find one that allows you to contribute to one of the modules! These will vary but should be easy enough. 
+
+1. Find an issue and ask for rights/claim to work on it. 
+2. A Maintiner will grant said permissions. 
+3. Fork the repo and create a branch to save your work to. 
+4. Resolve the issue
+5. Pull latest changes from master branch into your branch and resolve all merge conflicts. 
+6. Create a PR!
+7. Your PR will be reviewed, after resolving all request, your PR will be accepted
+8. Open Contributors.md file and add your name and relevant information. 
+9. CELEBRATE GOOD TIMES COME ON!!
+10. RINSE REPEAT! You're a fireball!
+
+
+
+
+### LEVEL 3 CONTRIBUTIONS - BUILD A MODULE OF THE PROJECT :O!! YOU'RE A BOSS!
+
+Want a challenge? Here you will rebuild the project with options to use the supplied UI. You will focus on showing off a few different libraries and an architecture of your choice (MVP, MVC, MVVM, HILT, Coroutines, etc etc etc endless possibilities) To show other developers different ways in which these things can be combined to build the quiz application. Please focus on and gain experience with the repository layer, dependency injection, view models, and whatever else you like! Lets see how many different modules we can create! 
+
+1. navigate to `https://github.com/Tc2r1/DevInterview_Questions/tree/master/Interview_Prep_App/`
+2. decide if you want to work in Native_Java or Native_Kotlin, or something else (for something else skip to 6b) open the folder you choose.
+3. Fork the repo and create a branch to save your work to. 
+4. copy the template application folder and rename it based on what your project will showcase. for example "retrofit, coroutines, viewmodel, jetpack compose" along with your username (IE: retrofit2_tc2r1) 
+
+5. Open the "Interview_Prep_App" folder in android studio and add your module to the settings.gradle file.
+6. Rename the module id com.interviewprep.unique_folder_name_from_step_3
+6b. For those who want to work in something besides native android, create a folder with your application type in `Interview_Prep_App` folder: "SwiftUI" "Html5" etc. 
+
+7. Use your skills and libraries of choice to recreate the project.
+8. Pull latest changes from master branch into your branch and resolve all merge conflicts. 
+9. Open Contributors.md file and add your name and relevant information.
+10. Add a README.md to the base of your project folder/ module that list what makes your version of the quiz app special (aka libraries you used, patterns, languages, etc)
+11. Create a PR (With detailed information and images if possible of your work)!
+12. Your PR will be reviewed, after resolving all request, your PR will be accepted
+13. CELEBRATE GOOD TIMES COME ON!!
+14. RINSE REPEAT! You're a fireball!
+
+
+## What is Hacktoberfest?
+A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
+
+
+
+<h1 align="center"> Hacktoberfest 2022 🎉</h1>
+
+<div align="center">
+<img src="https://img.shields.io/badge/hacktoberfest-2022-blueviolet" alt="Hacktober Badge"/>
+<img src="https://img.shields.io/badge/hacktoberfest-2021-blueviolet" alt="Hacktober Badge"/>
+ <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
+ <a href="https://github.com/Tc2r1" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions"/></a>
+
+</div>
+
+### 🗣 Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2021 challenge and earn a limited edition T-shirt.
+
+📢 **Register [here](https://hacktoberfest.com/auth/) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
+
+
+## Rules
+
+- Don't use filthy words and be welcome for beginners and other people in this community.
+
+---
+
+## Github Contribution Rules
+- Pull requests can be submitted to any opted-in repository on GitHub or GitLab.
+- The pull request must contain commits you made yourself.
+- If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.
+- If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
+- To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.
+- This year, the first 50,000 participants can earn a T-shirt.
+---
 
 Contributions of any kind welcome!
 
