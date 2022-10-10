@@ -29,11 +29,11 @@
     },
     {
       "id": 3,
-      "question": "What is a difference between equals() method and equality operator (==) in Java?",
+      "question": "What is an .equals() method in Java?",
       "details": "The (==) equals operator used to compare the equality of the values. But in the terms of object-oriented programming, to deal with the values in the form of objects. And this object may contain multiple types of data. So using the (==) operator does not work with this case. So we need to go with the .equals() method.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is a [(==) and .euqals()] primary functionalities are to compare the values, but the secondary functionality is different.",
+      "shortAns": "it is used to compare objects.",
       "tag": "Java"
     },
     {
