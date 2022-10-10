@@ -35,6 +35,15 @@
       "trueOrFalse": "false",
       "shortAns": "It is dependant on how it is implemented.",
       "tag": "stack-queue"
+    },
+    {
+      "id": 4,
+      "question": "What is a linked-list?",
+      "details": "A linked-list is a list of data-items connected with links i.e. pointers or references. Most modern high-level programming language does not provide the feature of directly accessing memory location, therefore, linked-list are not supported in them or available in form of inbuilt functions.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a list of data-items connected with links.",
+      "tag": "linked-list"
     }
   ]
 }
