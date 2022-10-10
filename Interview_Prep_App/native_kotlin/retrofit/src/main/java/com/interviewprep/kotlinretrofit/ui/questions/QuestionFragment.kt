@@ -1,4 +1,4 @@
-package com.nudennie.interviewprepapp.ui.questions
+package com.interviewprep.kotlinretrofit.ui.questions
 
 import android.content.Context
 import android.content.Intent
@@ -11,15 +11,23 @@ import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.nudennie.interviewprepapp.R
-import com.nudennie.interviewprepapp.repositories.models.MultipleChoiceQuestion
-import com.nudennie.interviewprepapp.repositories.models.response.Answer
-import com.nudennie.interviewprepapp.repositories.models.response.Question
-import com.nudennie.interviewprepapp.ui.main.MainActivity
-import com.nudennie.interviewprepapp.util.OnFragmentInteractionListener
+import com.interviewprep.kotlinretrofit.R
+import com.interviewprep.kotlinretrofit.repository.models.Answer
+import com.interviewprep.kotlinretrofit.repository.models.MultipleChoiceQuestion
+import com.interviewprep.kotlinretrofit.repository.models.Question
+import com.interviewprep.kotlinretrofit.ui.main.MainActivity
+import com.interviewprep.kotlinretrofit.util.OnFragmentInteractionListener
 import com.tc2r.sharedresources.R.drawable
 import java.util.Random
 
+/**
+ * A simple [Fragment] subclass.
+ * Activities that contain this fragment must implement the
+ * [OnFragmentInteractionListener] interface
+ * to handle interaction events.
+ * Use the [QuestionFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
 class QuestionFragment : Fragment(), View.OnClickListener {
     companion object {
         // Declare Constants

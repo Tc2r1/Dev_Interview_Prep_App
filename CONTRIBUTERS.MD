@@ -11,3 +11,4 @@
 | Luna Bee          | [@constbeecoding](https://github.com/constbeecoding) | 1                |
 | AndroidLion48     | [@androidlion48](https://github.com/androidlion48)   | 1                |
 | Nayra Kaline      | [@nykln](https://github.com/nykln)                   | 1                |
+| DistantFutures    | [@distantfutures](https://github.com/distantfutures) | 1                |

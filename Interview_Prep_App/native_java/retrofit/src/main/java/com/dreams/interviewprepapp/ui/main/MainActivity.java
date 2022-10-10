@@ -29,6 +29,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static com.tc2r.sharedresources.R.*;
+
 public class MainActivity extends AppCompatActivity implements OnFragmentInteractionListener {
     // Static Variables
     private final static int QUIZ_SIZE = 10;
@@ -169,7 +171,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
             numOfCorrect++;
             score += pointPerQ;
             scorePer = (int) (score * 100);
-            scoreTv.setText(String.format(Locale.US, "%s%d", getString(com.tc2r.sharedresources.R.string.score_display_text), scorePer));
+            scoreTv.setText(String.format(Locale.US, "%s%d", getString(string.score_display_text), scorePer));
         }
 
         // if quiz is not complete, continue quiz with new QuestionFragment
@@ -179,7 +181,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
                     testList.get(currentQuestion), answersList);
             currentQuestion++;
             titleTv.setText(String.format(Locale.US, "%s%d of %d",
-                                          getString(com.tc2r.sharedresources.R.string.question_display_text),
+                                          getString(string.question_display_text),
                                           currentQuestion, QUIZ_SIZE));
             // UI Variables
             LinearLayout fragContainer = findViewById(R.id.fragment_container);
