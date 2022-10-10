@@ -11,6 +11,7 @@
 | Luna Bee          | [@constbeecoding](https://github.com/constbeecoding) | 1                |
 | AndroidLion48     | [@androidlion48](https://github.com/androidlion48)   | 1                |
 | Nayra Kaline      | [@nykln](https://github.com/nykln)                   | 1                |
+| Amandeep Singh    | [@Amandeep404](https://github.com/Amandeep404)       | 1                |
 | Aman Singh        | [@shinigami9450](https://github.com/shinigami9450)   | 1                |
 | Bhavesh Salunke   | [@bhaveshsalunke](https://github.com/BhaveshSalunke) | 1                |
 | DistantFutures    | [@distantfutures](https://github.com/distantfutures) | 1                |
