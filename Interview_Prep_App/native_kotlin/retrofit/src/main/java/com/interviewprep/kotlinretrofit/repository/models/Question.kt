@@ -1,4 +1,4 @@
-package com.interviewprep.kotlinretrofit.models
+package com.interviewprep.kotlinretrofit.repository.models
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

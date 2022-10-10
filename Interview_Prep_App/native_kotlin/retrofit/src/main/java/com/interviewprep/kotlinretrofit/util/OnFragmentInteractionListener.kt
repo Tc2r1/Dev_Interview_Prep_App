@@ -1,4 +1,4 @@
-package com.interviewprep.kotlinretrofit
+package com.interviewprep.kotlinretrofit.util
 
 /**
  * This interface must be implemented by activities that contain this

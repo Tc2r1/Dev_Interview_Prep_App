@@ -1,10 +1,13 @@
-package com.interviewprep.kotlinretrofit
+package com.interviewprep.kotlinretrofit.ui.score
 
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.interviewprep.kotlinretrofit.R.id
+import com.interviewprep.kotlinretrofit.R.layout
+import com.interviewprep.kotlinretrofit.ui.main.MainActivity
 
 /**
  * Created by Tc2r on 5/31/2017.
@@ -36,13 +39,13 @@ class ScoreActivity : AppCompatActivity() {
             quizSize = extras.getInt("quizSize", 0)
             numCorrect = extras.getInt("numCorrect", 0)
         }
-        setContentView(R.layout.activity_score)
+        setContentView(layout.activity_score)
 
         // Assign/initiate variables
-        totalQuestionsTV = findViewById(R.id.numofquestions_tv)
-        commentTV = findViewById(R.id.comment_tv)
-        totalCorrectTV = findViewById(R.id.numcorrect_tv)
-        finalGradeTV = findViewById(R.id.finalgrade_tv)
+        totalQuestionsTV = findViewById(id.numofquestions_tv)
+        commentTV = findViewById(id.comment_tv)
+        totalCorrectTV = findViewById(id.numcorrect_tv)
+        finalGradeTV = findViewById(id.finalgrade_tv)
 
         // Set UI Objects Text values
         totalQuestionsTV!!.text = "There were $quizSize Questions."

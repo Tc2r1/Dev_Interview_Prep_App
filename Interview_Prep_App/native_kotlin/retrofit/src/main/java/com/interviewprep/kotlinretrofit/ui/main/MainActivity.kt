@@ -1,4 +1,4 @@
-package com.interviewprep.kotlinretrofit
+package com.interviewprep.kotlinretrofit.ui.main
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,11 +7,14 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.interviewprep.kotlinretrofit.fragments.QuestionFragment
-import com.interviewprep.kotlinretrofit.models.Answer
-import com.interviewprep.kotlinretrofit.models.Question
-import com.interviewprep.kotlinretrofit.repository.AnswersRepository
-import com.interviewprep.kotlinretrofit.repository.QuestionsRepository
+import com.interviewprep.kotlinretrofit.R
+import com.interviewprep.kotlinretrofit.repository.models.Answer
+import com.interviewprep.kotlinretrofit.repository.models.Question
+import com.interviewprep.kotlinretrofit.repository.tc2rgithubrepository.Tc2rGithubRepository
+import com.interviewprep.kotlinretrofit.ui.questions.DialogFragment
+import com.interviewprep.kotlinretrofit.ui.questions.QuestionFragment
+import com.interviewprep.kotlinretrofit.ui.score.ScoreActivity
+import com.interviewprep.kotlinretrofit.util.OnFragmentInteractionListener
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -22,7 +25,11 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
 
     companion object {
         // Static Variables
-        private const val QUIZ_SIZE = 4
+        private const val QUIZ_SIZE = 10
+    }
+
+    private val tc2rGithubRepository: Tc2rGithubRepository by lazy {
+        Tc2rGithubRepository()
     }
 
     // UI Variables
@@ -58,8 +65,8 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         random = Random()
 
         lifecycleScope.launch(Dispatchers.IO) {
-            answersList = AnswersRepository().getTheAnswers()
-            quizList = QuestionsRepository().getQuestions()
+            answersList = tc2rGithubRepository.getTheAnswers()
+            quizList = tc2rGithubRepository.getQuestions()
             createQuiz()
         }
     }
@@ -94,6 +101,18 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
         }
         // On first run, start quiz without updating score
         nextQuestion(false)
+    }
+
+    fun showDetails(answer: Answer, isAnswerCorrect: Boolean) {
+        // Show a details dialog fragment on top of the current screen.
+        val dialogFragment = DialogFragment.newInstance(
+            answer = answer,
+            func = {
+                // after user dismisses the dialogFragment, move on to the next question.
+                nextQuestion(isAnswerCorrect)
+            }
+        )
+        dialogFragment.show(supportFragmentManager, "details")
     }
 
     fun nextQuestion(correctAnswer: Boolean) {

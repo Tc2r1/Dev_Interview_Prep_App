@@ -7,10 +7,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
     }
 
     kotlinOptions {
@@ -19,7 +23,7 @@ android {
     defaultConfig {
         applicationId "com.interviewprep.kotlinretrofit"
         minSdkVersion 25
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -38,13 +42,13 @@ android {
 dependencies {
     implementation project (':sharedresources')
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-//    implementation 'com.android.support:support-v4:25.3.1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
 
     //Retrofit & Scalar Converter
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
@@ -55,9 +59,9 @@ dependencies {
 
 
     // Coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
 
     //Retrofit with Moshi converter
     implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
