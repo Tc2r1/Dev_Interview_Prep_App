@@ -1,45 +1,27 @@
+
+![https://hacktoberfest.digitalocean.com/](https://pbs.twimg.com/profile_banners/1040669393255055360/1662652901/1500x500)
+
 # 🎃 HacktoberFest Starter Project 🎃
 
 Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
+
+This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
 
 # Don't forget to give ⭐ ( To give star you can see on your screen on top right hand side Just smash it 💥 :)
 
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
 
-This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
 
 
 ## What is Hacktoberfest?
 A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
 
-[https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
 
 
-# Special Note For Everyone
-```py
-'''
-always make more then 4 pull request
-lets you have made only 4 pull request to different projects
-but one project is excluded from hackoctoberfest event then your pull request will not be count and 
-then you have remains 3 valid pull request if these projects is not excluded.
-if you fail to make 4 pull request then you cant get swags or t-shirts.
-
-i will recommend you make pull request to your own repo which is very very saffest side for you..
-keep in mind that repo has hacktoberfest topic..
-'''
-```
-
-
-<p align="center">
-    <a href="https://hacktoberfest.digitalocean.com/">
-        <img src="https://raw.githubusercontent.com/Tc2r1/hacktoberfest2021/35fc6060c5ddead5792f29a2437fea160dbe9804/Assets/logo-hacktoberfest-full.f42e3b1.svg" width="30%">
-    </a>
-</p>
-
-<h1 align="center"> Hacktoberfest 2021 🎉</h1>
+<h1 align="center"> Hacktoberfest 2022 🎉</h1>
 
 <div align="center">
-<img src="https://img.shields.io/badge/hacktoberfest-2021-blueviolet" alt="Hacktober Badge"/>
+<img src="https://img.shields.io/badge/hacktoberfest-2022-blueviolet" alt="Hacktober Badge"/>
  <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
  <a href="https://github.com/Tc2r1" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions" /></a>
 
@@ -51,7 +33,7 @@ keep in mind that repo has hacktoberfest topic..
 
 ### 🗣 Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2021 challenge and earn a limited edition T-shirt.
 
-📢 **Register [here](https://hacktoberfest.digitalocean.com) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
+📢 **Register [here](https://hacktoberfest.com/auth/) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS 🔥.**
 
 
 ## Rules
@@ -189,7 +171,6 @@ Made with [contrib.rocks](https://contrib.rocks).
 >    NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
 
 ## License
+[![By-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Nudennie White](https://www.linkedin.com/in/nudennie-w-99411075/) has waived all copyright and related or neighboring rights to this work.
+[Nudennie White](https://www.linkedin.com/in/nudennie-w-99411075/)
