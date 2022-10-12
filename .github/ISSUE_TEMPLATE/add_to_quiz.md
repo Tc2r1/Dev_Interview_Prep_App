@@ -1,8 +1,8 @@
 ---
 name: 🚀 Add To Question Or Answers Json. 
 about: Add Quiz Question and Answers 
-title: "Add Quiz Question and Answers"
-labels: good first time, hacktorberfest-accepted, help-wanted
+title: "[FEATURE NAME]"
+labels: good first time, hacktoberfest-accepted, help-wanted
 ---
 
 ## Level 1 Contributions - Add a minimal of 3 objects to the questions or answers json of your choice. 
@@ -10,7 +10,7 @@ labels: good first time, hacktorberfest-accepted, help-wanted
 We are using Json to create a list of frequently given interview questions and answers for different languages!
 In every directory, you will find two files `questions` and `answers`
 
-##If you'd like to contribute to **questions.json**:
+## If you'd like to contribute to **questions.json**:
 1. Fork this repo
 2. Navigate to the language folder you would like to contribute to. 
 3. Open Questions, here copy the last item in the list, and fill in each label. 
@@ -73,7 +73,7 @@ In every directory, you will find two files `questions` and `answers`
 Json Objects in the Answers.json are terms that will be used to hide the correct answer supplied by an item from Questions. json.  Please Make sure to start "Answer" with "It is" (ie if the answer is "a cat" then say "It is a cat." 
 
 
-##If you'd like to contribute to **answers.json**:
+## If you'd like to contribute to **answers.json**:
 1. Fork this repo
 2. Navigate to the language folder you would like to contribute to. 
 3. Open Answers.json, here copy the last item in the list, and fill in each label. 
