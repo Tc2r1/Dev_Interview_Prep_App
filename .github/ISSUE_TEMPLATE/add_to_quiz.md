@@ -2,7 +2,7 @@
 name: 🚀 Add To Question Or Answers Json. 
 about: Add Quiz Question and Answers 
 title: "[FEATURE NAME]"
-labels: good first time, hacktoberfest-accepted, help-wanted
+labels: [good first issue], hacktoberfest-accepted, "help wanted"
 ---
 
 ## Level 1 Contributions - Add a minimal of 3 objects to the questions or answers json of your choice. 
