@@ -26,6 +26,52 @@
       "trueOrFalse": true,
       "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
       "tag": "Transportation"
-    }
+    },
+    {
+      "id": 4,
+
+      "question": "What is Inflation?",
+
+      "details": "The rate at which purchasing power drops can be reflected in the average price increase of a basket of selected goods and services over some period of time.",
+
+      "questionType": "multi",
+
+      "trueOrFalse": false,
+
+      "shortAns": "Inflation is rise in price.",
+
+      "tag": "economics"
+      },
+      {
+      "id": 5,
+
+      "question": "Is too much Inflation bad?",
+
+      "details": "While high inflation can be harmful, too little inflation can also weaken the economy.",
+
+      "questionType": "bool",
+
+      "trueOrFalse": true,
+
+      "shortAns": " ",
+
+      "tag": "economics"
+      }",
+
+      {
+      "id": 6,
+
+      "question": "Is reading books helpful?",
+
+      "details": "it improves your focus, memory, empathy, and communication skills. It can reduce stress, improve your mental health, and help you live longer. Reading also allows you to learn new things to help you succeed in your work and relationships.",
+
+      "questionType": "bool",
+
+      "trueOrFalse": true,
+
+      "shortAns": " ",
+
+      "tag": "knowledge"
+      }
   ]
 }
