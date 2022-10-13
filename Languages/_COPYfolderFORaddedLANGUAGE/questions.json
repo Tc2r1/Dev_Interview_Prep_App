@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": 0,
-      "question": "Please input a "What Is" question relevant to your language here.",
+      "question": "Please input a 'What Is' question relevant to your language here.",
       "details": "Expanded information on the correct answer to the question goes here.",
       "questionType": "multi",
       "trueOrFalse": false,
@@ -24,7 +24,7 @@
       "details": "It is a form of transport consisting of a series of connected vehicles that generally run along a railroad track to transport passengers or cargo. The word train comes from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw". ",
       "questionType": "bool",
       "trueOrFalse": true,
-      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
+      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS = ''",
       "tag": "Transportation"
     },
     {
