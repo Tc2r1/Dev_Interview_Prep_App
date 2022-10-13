@@ -15,3 +15,4 @@
 | Aman Singh        | [@shinigami9450](https://github.com/shinigami9450)   | 1                |
 | Bhavesh Salunke   | [@bhaveshsalunke](https://github.com/BhaveshSalunke) | 1                |
 | DistantFutures    | [@distantfutures](https://github.com/distantfutures) | 1                |
+| Om Shah           | [@Omm2005](https://github.com/Omm2005)               | 1                |
