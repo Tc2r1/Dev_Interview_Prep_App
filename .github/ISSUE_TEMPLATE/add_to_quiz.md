@@ -1,8 +1,8 @@
 ---
 name: 🚀 Add To Question Or Answers Json. 
-about: Add Quiz Question and Answers 
-title: "[FEATURE NAME]"
-labels: [good first issue], hacktoberfest-accepted, "help wanted"
+about: Add Quiz Question and Answers, beginner friendly, first timers welcome. 
+title: "Add 3 Quiz Questions or Answers to Json"
+labels: good first issue, hacktoberfest-accepted, help-wanted, help wanted
 ---
 
 ## Level 1 Contributions - Add a minimal of 3 objects to the questions or answers json of your choice. 
