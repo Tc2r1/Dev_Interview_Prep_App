@@ -45,6 +45,42 @@
        "trueOrFalse": true,
        "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
        "tag": "Transportation"
-       }	
+       },
+	{
+	"id": 5,
+	"question": "What are the advantages of JavaScript over other web technologies?",
+	"details": "JavaScript is a scripting language. It is different from Java language. It is object-based, lightweight, cross-platform translated language. It is widely used for client-side validation.",
+	"questionType": "multi",
+	"trueOrFalse": false,
+	"shortAns": "Enhanced Interaction,Quick Feedback,Rich User Interface,Less server interaction.",
+	"tag": "JavaScript"
+	},
+	{
+		"id": 6,
+		"question": "What is a callback?",
+		"details": "Case sensitivity is a feature that helps to ensure that the same code will run on different computers. When a programmer uses case sensitivity, they must use different case for different identifiers to make sure that the code will run on different computers.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Yes, JavaScript is a case sensitive language.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 7,
+		"question": "Can you assign an anonymous function to a variable and pass it as an argument to another function?",
+		"details": "In javascript, It is a function that has no name. These functions are declared dynamically at runtime using the function operator instead of the function declaration.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 8,
+		"question": "What is BOM?",
+		"details": "The window object provides various properties like document, history, screen, navigator, location, innerHeight, innerWidth. You can call all the functions of the window by specifying the window or directly.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "BOM stands for Browser Object Model. It provides interaction with the browser. The default object of a browser is a window.",
+		"tag": "JavaScript"
+		}
    ]
 }

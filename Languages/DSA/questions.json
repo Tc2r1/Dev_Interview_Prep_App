@@ -44,6 +44,33 @@
       "trueOrFalse": false,
       "shortAns": "It is a list of data-items connected with links.",
       "tag": "linked-list"
+    },
+    {
+      "id": 5,
+      "question": "What is linear data structure?",
+      "details": "A data structure is a particular way of organizing data in a computer so that it can be used effectively. The idea is to reduce the space and time complexities of different tasks.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "In this elements of a data structure form a sequence or a linear list.",
+      "tag": "linked-list"
+    },
+    {
+      "id": 6,
+      "question": "What is a queue?",
+      "details": "A queue is a data structure that can simulate a list or stream of data. In this structure, new elements are inserted at one end, and existing elements are removed from the other end and the operations are performed in First In First Out (FIFO) order. ",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "A linear data structure that is open at both ends.",
+      "tag": "linked-list"
+    },
+    {
+      "id": 7,
+      "question": "What do you understand about Postfix Expressions?",
+      "details": "Postfix Expression is extremely beneficial in computing terms since it doesn’t require any grouping of sub-expressions into parenthesis or even consider operator precedence.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "Postfix Expression is an expression where operators follow the operands.",
+      "tag": "linked-list"
     }
   ]
 }
