@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": 0,
-      "question": "Please input a "What Is" question relevant to your language here.",
+      "question": "Please input a 'What Is' question relevant to your language here.",
       "details": "Expanded information on the correct answer to the question goes here.",
       "questionType": "multi",
       "trueOrFalse": false,
@@ -24,8 +24,35 @@
       "details": "It is a form of transport consisting of a series of connected vehicles that generally run along a railroad track to transport passengers or cargo. The word train comes from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw". ",
       "questionType": "bool",
       "trueOrFalse": true,
-      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
+      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS = ''",
       "tag": "Transportation"
+    },
+    {
+       "id": 3,
+      "question": "Is programming worth lerning?",
+      "details": "Programming is the future. As the technology increases so does the demnd for proramming jobs.",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "",
+      "tag": "Programing"
+    },
+    {
+     "id": 4,
+      "question": "What is programming?",
+      "details": "Programming is the process of creating a set of instructions that tell a computer how to perform a task.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is the process or activity of writing computer programs.",
+      "tag": "Programming"
+    },
+     {
+     "id": 5,
+      "question": "Why to learn programming?",
+      "details": "Proramming is the future of this world. It will dominate the world. Everything around is technology or because of technology(like the mobile phones, T.V , AC , etc)",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is an exercise for your brain that eventually improves your problem-solving and logical ability. ",
+      "tag": "Programming"
     }
   ]
 }
