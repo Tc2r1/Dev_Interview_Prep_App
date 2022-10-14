@@ -63,24 +63,24 @@
 		"trueOrFalse": false,
 		"shortAns": "Yes, JavaScript is a case sensitive language.",
 		"tag": "JavaScript"
-		},
-		{
-			"id": 7,
-			"question": "Can you assign an anonymous function to a variable and pass it as an argument to another function?",
-			"details": "In javascript, It is a function that has no name. These functions are declared dynamically at runtime using the function operator instead of the function declaration.",
-			"questionType": "multi",
-			"trueOrFalse": false,
-			"shortAns": "Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function.",
-			"tag": "JavaScript"
-			},
-			{
-				"id": 8,
-				"question": "What is BOM?",
-				"details": "The window object provides various properties like document, history, screen, navigator, location, innerHeight, innerWidth. You can call all the functions of the window by specifying the window or directly.",
-				"questionType": "multi",
-				"trueOrFalse": false,
-				"shortAns": "BOM stands for Browser Object Model. It provides interaction with the browser. The default object of a browser is a window.",
-				"tag": "JavaScript"
-				}
+	},
+	{
+		"id": 7,
+		"question": "Can you assign an anonymous function to a variable and pass it as an argument to another function?",
+		"details": "In javascript, It is a function that has no name. These functions are declared dynamically at runtime using the function operator instead of the function declaration.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Yes! An anonymous function can be assigned to a variable. It can also be passed as an argument to another function.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 8,
+		"question": "What is BOM?",
+		"details": "The window object provides various properties like document, history, screen, navigator, location, innerHeight, innerWidth. You can call all the functions of the window by specifying the window or directly.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "BOM stands for Browser Object Model. It provides interaction with the browser. The default object of a browser is a window.",
+		"tag": "JavaScript"
+		}
    ]
 }
