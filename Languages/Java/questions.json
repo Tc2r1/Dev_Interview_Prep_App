@@ -44,6 +44,33 @@
       "trueOrFalse": true,
       "shortAns": "No",
       "tag": "Java"
+    },
+    {
+      "id": 5,
+      "question":"In an instance method or a constructor, 'this' is a reference to the current object?",
+      "details": "",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 6,
+      "question":"Constructor overloading is not possible in Java?",
+      "details": "",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 7,
+      "question":"Java programming is not statically-typed, means all variables need not first be declared before they can be used.",
+      "details": "",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
     }
   ]
 }
