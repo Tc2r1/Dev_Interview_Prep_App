@@ -17,3 +17,4 @@
 | DistantFutures     | [@distantfutures](https://github.com/distantfutures)          | 1                |
 | SahilChandravanshi | [@SahilChandravanshi](https://github.com/SahilChandravanshi/) | 1                |
 | Srashti            | [@SDtw20](https://github.com/SDtw20)                          | 1                |
+| Om Shah            | [@Omm2005](https://github.com/Omm2005)                        | 1                |
