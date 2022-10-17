@@ -71,6 +71,15 @@
       "trueOrFalse": false,
       "shortAns": "No",
       "tag": "Java"
+    },
+    {
+    "id": 8,
+      "question":"The modifiers public and static cannot written in either order "public static" or "static public".",
+      "details": "It will not affect the code , as we can declare first or at the second position",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "NO",
+      "tag": "Java"
     }
   ]
 }
