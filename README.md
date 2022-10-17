@@ -1,16 +1,21 @@
 
-![https://hacktoberfest.digitalocean.com/](https://pbs.twimg.com/profile_banners/1040669393255055360/1662652901/1500x500)
-<h1 align="center">🎃 HacktoberFest Starter Project 🎃
+<div align="center">
+	<br>
+	<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/tree/master/Interview_Prep_App">
+		<img src="Assets/developer_interview_app.svg" width="1080" height="250" alt="Dev Interview App for Hacktoberfest!">
+	</a>
+	<br>
+</div> 
 
-
-<p float="center">
+<h1 align="center">
+<p float="center">🎃
 <img src="Assets/quiz_01.png?raw=true" height="500">
 <img src="Assets/quiz_02.png?raw=true" height="500">
-<img src="Assets/quiz_03.png?raw=true" height="500">
+<img src="Assets/quiz_03.png?raw=true" height="500">🎃
 </p>
 </h1>	
 
-<h3 align="center"> Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
+<h3 align="center">🎃 Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!🎃
 </h3>
 
 	
@@ -21,12 +26,16 @@ This repository is open to all members of the GitHub community. Any member may c
 
 Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in this project.
 
+<div align="left">
+	<br>
+<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/issues">
+		<img src="Assets/steps_for_contributing.svg" width="400px" height="200px" alt="Add Some Code!">
+			</a>
+</div> 
 
-## STEPS FOR CONTRIBUTING
 
 
-
-### Level 1 Contributions - Add a minimal of 3 objects to the questions or answers json of your choice. 
+### 🎃🎃Level 1 Contributions🎃🎃 - Add a minimal of 3 objects to the questions or answers json of your choice. 
 
 We are using Json to create a list of frequently given interview questions and answers for different languages!
 In every directory, you will find two files `questions` and `answers`
@@ -125,9 +134,11 @@ Example:
 5. Make Pull Request.
 
 
+<br>
+<br>
+<br>
 
-
-### LEVEL 2 CONTRIBUTIONS - RESOLVE A SMALL "ISSUE" TICKET!
+### 🎃🎃LEVEL 2 CONTRIBUTIONS🎃🎃 - RESOLVE A SMALL "ISSUE" TICKET!
 
 Want to get your hands wet with some programming? Look at the open issues and find one that allows you to contribute to one of the modules! These will vary but should be easy enough. 
 
@@ -143,9 +154,11 @@ Want to get your hands wet with some programming? Look at the open issues and fi
 10. RINSE REPEAT! You're a fireball!
 
 
+<br>
+<br>
+<br>
 
-
-### LEVEL 3 CONTRIBUTIONS - BUILD A MODULE OF THE PROJECT :O!! YOU'RE A BOSS!
+### 🎃🎃LEVEL 3 CONTRIBUTIONS🎃🎃 - BUILD A MODULE OF THE PROJECT :O!! YOU'RE A BOSS!
 
 Want a challenge? Here you will rebuild the project with options to use the supplied UI. You will focus on showing off a few different libraries and an architecture of your choice (MVP, MVC, MVVM, HILT, Coroutines, etc etc etc endless possibilities) To show other developers different ways in which these things can be combined to build the quiz application. Please focus on and gain experience with the repository layer, dependency injection, view models, and whatever else you like! Lets see how many different modules we can create! 
 
@@ -168,8 +181,16 @@ Want a challenge? Here you will rebuild the project with options to use the supp
 14. RINSE REPEAT! You're a fireball!
 
 
-## What is Hacktoberfest?
+<div align="left">
+	<br>
+<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/issues">
+		<img src="Assets/what_is_hacktoberfest.svg" width="400px" height="200px" alt="What Is HacktoberFest?">
+			</a>
+	<br>
+</div>
+<div align="center">
 A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
+</div>
 
 
 
@@ -210,9 +231,16 @@ Contributions of any kind welcome!
 # Don't forget to give ⭐ ( To give star you can see on your screen on top right hand side Just smash it 💥 :) ) 
 
 
-# Contributers List  🏆
 
-🙏 Thanks
+<div align="center">
+	<br>
+<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/issues">
+		<img src="Assets/contributers_list.svg" width="400px" height="200px" alt="Thanks For Your Help!?">🏆
+			</a>
+	<br>
+
+
+🏆🙏 Thanks🙏🏆
 
 <a href="https://github.com/Tc2r1/DevInterview_Questions/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Tc2r1/DevInterview_Questions" />
@@ -221,6 +249,9 @@ Contributions of any kind welcome!
 Made with [contrib.rocks](https://contrib.rocks).
 
 >    NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
+</div> 
+<br>
+<br>
 
 ## License
 [![By-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
