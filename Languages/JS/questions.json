@@ -81,6 +81,33 @@
 		"trueOrFalse": false,
 		"shortAns": "BOM stands for Browser Object Model. It provides interaction with the browser. The default object of a browser is a window.",
 		"tag": "JavaScript"
-		}
+	},
+	{
+		"id": 9,
+		"question": "What does being weakly typed mean for JavaScript?",
+		"details": "Strict typing is a method in programming languages that assigns each variable a data type that any assignment must adhere to. Weak typed languages, such as JavaScript, do not enforce any such rule. This means a variable can be assigned as an integer, and a string can be concatenated to it, casting the entire thing to a string.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Weakly typed means that you can assign a variable without delclaring what data type the variable uses.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 10,
+		"question": "What does the === operator mean?",
+		"details": "As JavaScript is weakly typed, variables can have the same value without being the same type. For example, 10 would be equal to '10'. Using three equal signs equates both the value and the type without conversion. As the second value in our example is a string, it would fail to match against the integer.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "That either side of the operater are of same value and type without conversion.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 11,
+		"question": "What does 'this' keyword mean?",
+		"details": "The keyword 'this' refers to an object, which one depends on where it is being called from. It gives reference to that object, allowing JavaScript to update the object. For example, 'this' may refer to a Person object, JavaScript will have access to properties of the object such as 'this.firstName' or functions like 'this.setHeight(180)'.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "In JavaScript, 'this' refers to an object, depending where the code was called from.",
+		"tag": "JavaScript"
+	}
    ]
 }
