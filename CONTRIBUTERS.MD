@@ -19,3 +19,4 @@
 | Srashti            | [@SDtw20](https://github.com/SDtw20)                          | 1                |
 | Om Shah            | [@Omm2005](https://github.com/Omm2005)                        | 1                |
 | gvadam             | [@gvadam](https://github.com/gvadam)                          | 1                |
+| Kanupriya Jain     | [@Kanupriya](https://github.com/Kanupriya-Jain)               | 1                |
