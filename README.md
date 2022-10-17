@@ -34,7 +34,7 @@ Celebrate [Hacktoberfest](https://hacktoberfest.digitalocean.com/) by getting in
 </div> 
 
 
-
+Type "!assign" in a comment under issues to be assigned an issue!
 ### 🎃🎃Level 1 Contributions🎃🎃 - Add a minimal of 3 objects to the questions or answers json of your choice. 
 
 We are using Json to create a list of frequently given interview questions and answers for different languages!
