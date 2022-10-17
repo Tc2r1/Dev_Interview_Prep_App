@@ -71,6 +71,33 @@
       "trueOrFalse": false,
       "shortAns": "Postfix Expression is an expression where operators follow the operands.",
       "tag": "linked-list"
+    },
+    {
+      "id": 8,
+      "question": "What is a hashmap in data structure?",
+      "details": "Hashmap is a data structure that uses an implementation of a hash table data structure which allows access to data in constant time (O(1)) complexity if you have the key",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is is an implementation of a hashtable to store a key value pair",
+      "tag": "hashmap"
+    },
+    {
+      "id": 9,
+      "question": "What is an asymptotic analysis of an algorithm?",
+      "details": "Asymptotic analysis of an algorithm defines the run-time performance as per its mathematical boundations. Asymptotic analysis helps us articulate the best case(Omega Notation, Ω), average case(Theta Notation, θ), and worst case(Big Oh Notation, Ο) performance of an algorithm",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a mathematical measure of the performance of an algorithm",
+      "tag": "asymptotic-analysis"
+    },
+    {
+      "id": 10,
+      "question": "What is binary search?",
+      "details": "Binary search follows the divide and conquer approach in which the list is divided into two halves, and the item is compared with the middle element of the list. If the match is found then, the location of the middle element is returned. Otherwise, we search into either of the halves depending upon the result produced through the match.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is an efficient algorithm to search an element in a sorted list",
+      "tag": "binary-search"
     }
   ]
 }
