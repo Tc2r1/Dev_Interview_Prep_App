@@ -17,7 +17,7 @@ jobs:
           echo "Issue title: ${{ github.event.issue.title }}"
           echo "Issue body: ${{ github.event.issue.body }}"
 
-        uses: wow-actions/auto-comment@v1
+      - uses: wow-actions/auto-comment@v1
           with:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             issuesAssignedReactions: 'hooray, +1'
