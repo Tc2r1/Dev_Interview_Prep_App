@@ -1,5 +1,6 @@
 name: Auto Assign Issue
 on:
+  workflow_dispatch:
   issue_comment:
     types: [created, edited]
 
@@ -11,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2.4.2
 
       - name: Cache Node Modules
         id: cache-node-modules
