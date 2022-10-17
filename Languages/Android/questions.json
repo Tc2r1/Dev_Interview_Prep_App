@@ -553,21 +553,21 @@
     },
     {
       "id": 61,
-      "question": "To pass an object to different activities, which interface should the object implement?",
-      "details": "To pass an object to different activities, the object should implement either Serializable or Parcelable interface.",
+      "question": "What is a coroutine and why is it used?",
+      "details": "Coroutines are lightweight threads. They provide us with an easy way to do synchronous and asynchronous programming. Coroutines help to manage long-running tasks that might otherwise block the main thread and cause your app to become unresponsive. The simplest solution to move the execution off the main thread is to create a new coroutine and execute the code on an it.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It should implement either serializable or parcelable.",
-      "tag": "intent"
+      "shortAns": "It is used to perform asynchronous tasks.",
+      "tag": "coroutines"
     },
     {
       "id": 62,
-      "question": "What is a dangerous permission?",
-      "details": "Permissions that are dangerous include those that affect user data in some way. For example reading or writing data from device's storage",
+      "question": "What is safeArgs?",
+      "details": "SafeArgs is a gradle plugin that allows you to Pass data to destination UI components. It generates simple object and builder classes for type-safe navigation and access to any associated arguments. SafeArgs is strongly recommended for navigating and passing data because it ensures type-safety.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is a permission that may affect user's privacy.",
-      "tag": "permissions"
+      "shortAns": "It is used for passing data.",
+      "tag": "navigation"
     },
     {
       "id": 63,
