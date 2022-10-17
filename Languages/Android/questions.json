@@ -523,6 +523,33 @@
       "trueOrFalse": false,
       "shortAns": "",
       "tag": "lifecycle"
+    }, 
+    {
+      "id": 58,
+      "question": "Activities can keep track of what is currently on screen for the user.",
+      "details": "True, activities can keep track of what is on screen to ensure that the system keeps running the process that is hosting the activity.",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "True",
+      "tag": "activity"
+    },
+    {
+      "id": 59,
+      "question": "What does the fragment implement to manage the lifecycle?",
+      "details": "Fragments maintain a LifecycleOwner for their view.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "LifecycleOwner",
+      "tag": "fragment"
+    },
+    {
+      "id": 60,
+      "question": "Other than the fragment lifecycle, what else is the FragmentManager responsible for?",
+      "details": "The FragmentManager is also responsible for attaching fragments to their host activity and detaching them when the fragment is no longer in use.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It attaches and detaches fragments from their host activity.",
+      "tag": "fragment"
     }
   ]
 }
