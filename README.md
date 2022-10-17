@@ -1,10 +1,20 @@
 
 ![https://hacktoberfest.digitalocean.com/](https://pbs.twimg.com/profile_banners/1040669393255055360/1662652901/1500x500)
+<h1 align="center">🎃 HacktoberFest Starter Project 🎃
 
-# 🎃 HacktoberFest Starter Project 🎃
 
-Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
+<p float="center">
+<img src="Assets/quiz_01.png?raw=true" height="500">
+<img src="Assets/quiz_02.png?raw=true" height="500">
+<img src="Assets/quiz_03.png?raw=true" height="500">
+</p>
+</h1>	
 
+<h3 align="center"> Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to a public repository before doing the real thing!
+</h3>
+
+	
+	
 This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
 
 # Don't forget to give ⭐ ( To give star you can see on your screen on top right hand side Just smash it 💥 :)
