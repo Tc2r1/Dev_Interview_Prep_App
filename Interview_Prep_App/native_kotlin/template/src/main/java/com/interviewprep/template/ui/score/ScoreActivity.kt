@@ -3,6 +3,7 @@ package com.interviewprep.template.ui.score
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.interviewprep.template.R
@@ -45,6 +46,16 @@ class ScoreActivity : AppCompatActivity() {
         commentTV = findViewById(R.id.comment_tv)
         totalCorrectTV = findViewById(R.id.numcorrect_tv)
         finalGradeTV = findViewById(R.id.finalgrade_tv)
+
+        val closeButton = findViewById<Button>(R.id.close_button)
+        val restartButton = findViewById<Button>(R.id.restart_button)
+        closeButton.setOnClickListener {
+            closeApp()
+        }
+
+        restartButton.setOnClickListener {
+            startOver()
+        }
 
         // Set UI Objects Text values
         totalQuestionsTV!!.text = "There were $quizSize Questions."

@@ -28,7 +28,6 @@
                 android:id="@+id/finished_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
                 android:textColor="@color/secondaryTextColor"
                 android:textAppearance="?android:attr/textAppearanceLarge"
@@ -138,10 +137,7 @@
 
             </LinearLayout>
 
-
-
         </RelativeLayout>
-
 
     </androidx.cardview.widget.CardView>
 

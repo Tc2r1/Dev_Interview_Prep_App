@@ -3,10 +3,10 @@ package com.interviewprep.kotlinretrofit.ui.score
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.interviewprep.kotlinretrofit.R.id
-import com.interviewprep.kotlinretrofit.R.layout
+import com.interviewprep.kotlinretrofit.R
 import com.interviewprep.kotlinretrofit.ui.main.MainActivity
 
 /**
@@ -39,13 +39,23 @@ class ScoreActivity : AppCompatActivity() {
             quizSize = extras.getInt("quizSize", 0)
             numCorrect = extras.getInt("numCorrect", 0)
         }
-        setContentView(layout.activity_score)
+        setContentView(R.layout.activity_score)
 
         // Assign/initiate variables
-        totalQuestionsTV = findViewById(id.numofquestions_tv)
-        commentTV = findViewById(id.comment_tv)
-        totalCorrectTV = findViewById(id.numcorrect_tv)
-        finalGradeTV = findViewById(id.finalgrade_tv)
+        totalQuestionsTV = findViewById(R.id.numofquestions_tv)
+        commentTV = findViewById(R.id.comment_tv)
+        totalCorrectTV = findViewById(R.id.numcorrect_tv)
+        finalGradeTV = findViewById(R.id.finalgrade_tv)
+
+        val closeButton = findViewById<Button>(R.id.close_button)
+        val restartButton = findViewById<Button>(R.id.restart_button)
+        closeButton.setOnClickListener {
+            closeApp()
+        }
+
+        restartButton.setOnClickListener {
+            startOver()
+        }
 
         // Set UI Objects Text values
         totalQuestionsTV!!.text = "There were $quizSize Questions."
@@ -55,7 +65,7 @@ class ScoreActivity : AppCompatActivity() {
             finalGradeTV!!.setTextColor(Color.GREEN)
             commentTV!!.setTextColor(Color.GREEN)
             commentTV!!.text = "OMEGA GOOD JOB!"
-        } else if (scorePer > 50 && scorePer < 79) {
+        } else if (scorePer in 51..78) {
             finalGradeTV!!.setTextColor(Color.YELLOW)
             commentTV!!.setTextColor(Color.YELLOW)
             commentTV!!.text = "YOU'RE ALMOST THERE!"
@@ -66,13 +76,13 @@ class ScoreActivity : AppCompatActivity() {
         }
     }
 
-    fun startOver() {
+    private fun startOver() {
         // Returns to MainActivity page.
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 
-    fun closeApp() {
+    private fun closeApp() {
         // Closes the App
         finishAffinity()
     }
