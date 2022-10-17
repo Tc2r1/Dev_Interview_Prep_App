@@ -1,39 +1,9 @@
-#name: Auto Assign Issue
-#on:
-#  workflow_dispatch:
-#  issues:
-#
-#jobs:
-##  auto_track:
-##    if: startsWith(github.event.comment.body, '!assign')
-#
-#    runs-on: ubuntu-latest
-#
-#    steps:
-#      - name: Issue data
-#        run: |
-#          echo "USERNAME: ${{ github.event.comment.user.login }}"
-#          echo "Issue number: ${{ github.event.issue.number }}"
-#          echo "Issue title: ${{ github.event.issue.title }}"
-#          echo "Issue body: ${{ github.event.issue.body }}"
-#
-#      - name: Auto Comment
-#        uses: wow-actions/auto-comment@v1
-#          with:
-#            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#            issuesAssignedReactions: 'hooray, +1'
-#            issuesAssignedComment: |
-#              👋 @{{ author }}
-#              You've been assigned this issue, Please fork the repository and create a branch to
-#              work on the issue assigned here 💻. When you are done make a Pull Request. Good Luck!
-
-#      - name: Assign Issue
-#        uses: ./action/
-#        with:
-#          USERNAME: ${{ github.event.comment.user.login }}
-#          ISSUE_NUMBER: ${{ github.event.issue.number }}
-#          AUTO_ASSIGN_ISSUE: true
-
+---
+#################################
+#################################
+######### Auto Comment ##########
+#################################
+#################################
 name: Auto Comment
 on: [issues, pull_request]
 jobs:
@@ -43,10 +13,10 @@ jobs:
       - name: Auto Comment
         uses: actions/checkout@v3
 #        uses: wow-actions/auto-comment@v1.1.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issuesOpenedReactions: 'hooray, +1'
-          issuesOpenedComment: |
-            👋 @{{ author }}
-            Thank you for raising an issue. We will investigate into the matter and get back to you as soon as possible.
-            Please make sure you have given us as much context as possible.
+#        with:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          issuesOpenedReactions: 'hooray, +1'
+#          issuesOpenedComment: |
+#            👋 @{{ author }}
+#            Thank you for raising an issue. We will investigate into the matter and get back to you as soon as possible.
+#            Please make sure you have given us as much context as possible.
