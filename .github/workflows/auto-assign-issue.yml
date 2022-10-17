@@ -1,41 +1,75 @@
-name: Auto Assign Issue
+#---
+##################################
+##################################
+########## Auto Comment ##########
+##################################
+##################################
+#name: Auto Comment
+#on: [issues, pull_request]
+#
+#jobs:
+#  run:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Auto Comment
+#        uses: actions/checkout@v3
+##        uses: wow-actions/auto-comment@v1.1.2
+##        with:
+##          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+##          issuesOpenedReactions: 'hooray, +1'
+##          issuesOpenedComment: |
+##            👋 @{{ author }}
+##            Thank you for raising an issue. We will investigate into the matter and get back to you as soon as possible.
+##            Please make sure you have given us as much context as possible.
+
+---
+#################################
+#################################
+## Super Linter GitHub Actions ##
+#################################
+#################################
+name: Lint Code Base
+
+#############################
+# Start the job on all push #
+#############################
 on:
-  workflow_dispatch:
-  issue_comment:
-    types: [created, edited]
+  push:
+    branches-ignore: [master, main]
+    # Remove the line above to run when pushing to master
+  pull_request:
+    branches: [master, main]
 
+###############
+# Set the Job #
+###############
 jobs:
-  auto_track:
-    if: startsWith(github.event.comment.body, '!assign')
-
+  build:
+    # Name the Job
+    name: Lint Code Base
+    # Set the agent to run on
     runs-on: ubuntu-latest
 
+    ##################
+    # Load all steps #
+    ##################
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2.4.2
-
-      - name: Cache Node Modules
-        id: cache-node-modules
-        uses: actions/cache@v2
+      ##########################
+      # Checkout the code base #
+      ##########################
+      - name: Checkout Code
+        uses: actions/checkout@v3
         with:
-          path: node_modules
-          key: node-modules-${{ hashFiles('yarn.lock') }}
+          # Full git history is needed to get a proper
+          # list of changed files within `super-linter`
+          fetch-depth: 0
 
-      - name: Yarn
-        if: steps.cache-node-modules.outputs.cache-hit != 'true'
-        run: |
-          yarn
-
-      - name: Issue data
-        run: |
-          echo "USERNAME: ${{ github.event.comment.user.login }}"
-          echo "Issue number: ${{ github.event.issue.number }}"
-          echo "Issue title: ${{ github.event.issue.title }}"
-          echo "Issue body: ${{ github.event.issue.body }}"
-
-      - name: Assign Issue
-        uses: ./action/
-        with:
-          USERNAME: ${{ github.event.comment.user.login }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
-          AUTO_ASSIGN_ISSUE: true
+      ################################
+      # Run Linter against code base #
+      ################################
+      - name: Lint Code Base
+        uses: github/super-linter:slim-v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
