@@ -41,7 +41,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Auto Comment
-        uses: wow-actions/auto-comment@v1.1.2
+        uses: actions/checkout@v3
+#        uses: wow-actions/auto-comment@v1.1.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           issuesOpenedReactions: 'hooray, +1'
