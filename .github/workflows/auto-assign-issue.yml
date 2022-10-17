@@ -1,7 +1,7 @@
 name: Auto Assign Issue
 on:
   issue_comment:
-    types: [created]
+    types: [created, edited]
 
 jobs:
   auto_track:
@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.PAT }}
 
       - name: Cache Node Modules
         id: cache-node-modules
@@ -24,8 +22,8 @@ jobs:
 
       - name: Yarn
         if: steps.cache-node-modules.outputs.cache-hit != 'true'
-          run: |
-            yarn
+        run: |
+          yarn
 
       - name: Issue data
         run: |
@@ -40,4 +38,3 @@ jobs:
           USERNAME: ${{ github.event.comment.user.login }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           AUTO_ASSIGN_ISSUE: true
-          TOKEN: ${{ secrets.PAT }}
