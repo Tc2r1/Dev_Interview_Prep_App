@@ -102,29 +102,29 @@
     },
         {
       "id": 11,
-      "question":"What is the difference between String and String Builder?",
-      "details": "String is immutable datatype whereas String Builder is a mutable type",
-      "questionType": "multi",
+      "question": "String is a mutable Datatype",
+      "details": "String is an immutable datatype",
+      "questionType": "bool",
       "trueOrFalse": false,
       "shortAns": "No",
       "tag": "Java"
     },
     {
       "id": 12,
-      "question":"How many different access modifiers are there in Java?",
-      "details": "There are four access modifiers namely default, public, private, and protected.",
+      "question": "What are Access Modifiers?",
+      "details": "The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "No",
+      "shortAns": "It is used to specify accessibility of classes",
       "tag": "Java"
     },
     {
       "id": 13,
-      "question":"What is an Exception?",
+      "question": "What is an Exception?",
       "details": " An Exception is a problem that can occur during the normal flow of execution of a program.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "No",
+      "shortAns": "It is a problem that occurs while running the program",
       "tag": "Java"
     }
   ]
