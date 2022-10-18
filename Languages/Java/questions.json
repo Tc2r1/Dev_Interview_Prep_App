@@ -76,28 +76,49 @@
     {
       "id": 8,
       "question": " When an array is passed to a method, what does the method receive?",
+
       "details": "When an array is passed to a method, a reference of the array is received by the method",
       "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": "The reference of the array",
+=======
+      "details": "When an array is passed to a method, a reference of the array is received by the method.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is the reference of the array.",
+
       "tag": "Java"
     },
     {
       "id": 9,
+
       "question": "compareTo() returns",
       "details": "compareTo() returns an int value",
       "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": " an int value",
+=======
+      "question": "compareTo() returns?",
+      "details": "compareTo() returns an int value.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is an int value.",
+
       "tag": "Java"
     },
     {
       "id": 10,
       "question": " Where does the system stores parameters and local variables whenever a method is invoked?",
+
       "details": "The system stores parameters and local vaiables in stack in java",
       "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": "Stack",
+=======
+      "details": "The system stores parameters and local vaiables in stack in java.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": " It is stored in stack.",
       "tag": "Java"
     }
   ]
