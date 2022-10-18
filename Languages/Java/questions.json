@@ -97,7 +97,7 @@
       "details": "The system stores parameters and local vaiables in stack in java.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is stored in stack.",
+      "shortAns": " It is stored in stack.",
       "tag": "Java"
     }
   ]
