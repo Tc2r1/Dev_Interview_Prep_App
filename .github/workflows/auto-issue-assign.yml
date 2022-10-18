@@ -2,7 +2,7 @@ name: Auto Issue Assign
 
 on:
   schedule:
-    - cron: 0 */1 * * *
+    - cron: 0 */12 * * *
   issue_comment:
     types: [created, edited]
   workflow_dispatch:
@@ -21,4 +21,4 @@ jobs:
         with:
           github_token: '${{ secrets.GITHUB_TOKEN }}'
           assigned_label: Is-Assigned # you can change this label if you wish
-          required_label: good first issue
+          required_label: ""
