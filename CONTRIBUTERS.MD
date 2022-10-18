@@ -21,4 +21,3 @@
 | gvadam             | [@gvadam](https://github.com/gvadam)                          | 1                |
 | Sparsh Chadha      | [@Sparsh011](https://github.com/Sparsh011)                    | 1                |
 | Scott Evans        | [@scottajevans](https://github.com/scottajevans)              | 1                |
-| Pawan Sahu         | [@poseidon2060](https://github.com/poseidon2060)              | 1                |
