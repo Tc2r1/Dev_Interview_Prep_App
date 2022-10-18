@@ -96,7 +96,7 @@
       "details": "'synchronized' isolates a thread so that other threads using the same resource(s) cannot interrupt it.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It isolates a thread.",
+      "shortAns": "It is used to isolate a thread.",
       "tag": "Java"
     }
 
