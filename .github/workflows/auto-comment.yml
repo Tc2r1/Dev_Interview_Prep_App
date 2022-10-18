@@ -1,0 +1,23 @@
+---
+#################################
+#################################
+######### Auto Comment ##########
+#################################
+#################################
+name: Auto Comment
+on: [issues, pull_request]
+
+###############
+# Set the Job #
+###############
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Comment
+        uses: wow-actions/auto-comment@v1.1.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          issuesAssignedReactions: 'hooray, +1'
+          issuesAssignedComment: |
+            👋 You've been assigned this issue, Please fork the repository and create a branch to work on the issue assigned here 💻. When you are done make a Pull Request. Good Luck!
