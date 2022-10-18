@@ -47,7 +47,7 @@
     },
     {
       "id": 5,
-      "question":"In an instance method or a constructor, 'this' is a reference to the current object?",
+      "question": "In an instance method or a constructor, 'this' is a reference to the current object?",
       "details": "this keyword refers to the current object in a method or constructor and helps to eliminate the confusion between class attributes and parameters with the same name",
       "questionType": "bool",
       "trueOrFalse": true,
@@ -56,7 +56,7 @@
     },
     {
       "id": 6,
-      "question":"Constructor overloading is not possible in Java?",
+      "question": "Constructor overloading is not possible in Java?",
       "details": "Java supports constructor overloading. Overloaded constructor is called based upon the parameters specified when new is executed.",
       "questionType": "bool",
       "trueOrFalse": false,
@@ -65,21 +65,12 @@
     },
     {
       "id": 7,
-      "question":"Java programming is not statically-typed, means all variables need not first be declared before they can be used.",
+      "question": "Java programming is not statically-typed, means all variables need not first be declared before they can be used.",
       "details": "Every variable in java needs to be declared first before use, else it throws compilation error",
       "questionType": "bool",
       "trueOrFalse": false,
       "shortAns": "No",
       "tag": "Java"
     },
-    {
-    "id": 8,
-      "question":"The modifiers public and static cannot written in either order "public static" or "static public".",
-      "details": "It will not affect the code , as we can declare first or at the second position",
-      "questionType": "bool",
-      "trueOrFalse": true,
-      "shortAns": "NO",
-      "tag": "Java"
-    }
   ]
 }

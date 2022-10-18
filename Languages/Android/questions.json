@@ -550,6 +550,33 @@
       "trueOrFalse": false,
       "shortAns": "It attaches and detaches fragments from their host activity.",
       "tag": "fragment"
+    },
+    {
+      "id": 61,
+      "question": "What is a coroutine and why is it used?",
+      "details": "Coroutines are lightweight threads. They provide us with an easy way to do synchronous and asynchronous programming. Coroutines help to manage long-running tasks that might otherwise block the main thread and cause your app to become unresponsive. The simplest solution to move the execution off the main thread is to create a new coroutine and execute the code on an it.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used to perform asynchronous tasks.",
+      "tag": "coroutines"
+    },
+    {
+      "id": 62,
+      "question": "What is safeArgs?",
+      "details": "SafeArgs is a gradle plugin that allows you to Pass data to destination UI components. It generates simple object and builder classes for type-safe navigation and access to any associated arguments. SafeArgs is strongly recommended for navigating and passing data because it ensures type-safety.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used for passing data.",
+      "tag": "navigation"
+    },
+    {
+      "id": 63,
+      "question": "What is a pending intent?",
+      "details": "A PendingIntent object wraps the functionality of an Intent object while allowing your app to specify something that another app should do, on your app’s behalf, in response to a future action. For example, the wrapped intent might be invoked when an alarm goes off, or when the user taps on a notification.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It allows foreign applications to execute our app's code",
+      "tag": "pending_intent"
     }
   ]
 }
