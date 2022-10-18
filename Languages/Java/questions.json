@@ -71,6 +71,34 @@
       "trueOrFalse": false,
       "shortAns": "No",
       "tag": "Java"
+    },
+    {
+      "id": 8,
+      "question":"What is a wrapper class?",
+      "details": "A wrapper class converts a primitive type into an object. An example would be the Integer class.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used to turn a primitive into an object",
+      "tag": "Java"
+    },
+    {
+      "id": 9,
+      "question":"Java supports multiple inheritance",
+      "details": "One class cannot inherit multiple classes. We can simulate this by implementing multiple interfaces.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 10,
+      "question":"What does the 'synchronized' keyword do?",
+      "details": "'synchronized' isolates a thread so that other threads using the same resource(s) cannot interrupt it.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It isolates a thread.",
+      "tag": "Java"
     }
+
   ]
 }
