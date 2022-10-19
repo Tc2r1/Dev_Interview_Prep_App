@@ -1,10 +1,11 @@
-
+[![GitHub Super-Linter](https://github.com/Tc2r1/Hacktoberfest_Interview_App/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 <div align="center">
 	<br>
 	<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/tree/master/Interview_Prep_App">
 		<img src="Assets/developer_interview_app.svg" width="1080" height="250" alt="Dev Interview App for Hacktoberfest!">
 	</a>
 	<br>
+	
 </div> 
 
 <h1 align="center">
