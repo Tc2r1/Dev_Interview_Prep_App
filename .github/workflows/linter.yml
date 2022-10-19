@@ -46,6 +46,17 @@ jobs:
       - name: Lint Code Base
         uses: github/super-linter/slim@v4
         env:
-          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ##FILTER_REGEX_EXCLUDE: .*.git/.*|.*.idea/.*|.*metadata/.*|.**.gradle/.*|.*/build/.*|
+          ##.*gradle/.*|.*.gradle/.*|.*/gradle.properties|.*/gradle*|.*/gradlew*|.*/gradlew.*|
+          ##.*/github/.*|.*/result.md|.*/build.gradle|./*/build.gradle
+          IGNORE_GENERATED_FILES: true
+          VALIDATE_NATURAL_LANGUAGE: false
+          VALIDATE_BASH: false
+          VALIDATE_GITHUB_ACTIONS: false
+          VALIDATE_GROOVY: false
+          VALIDATE_MARKDOWN: false
+          VALIDATE_POWERSHELL: false
+          VALIDATE_XML: false
