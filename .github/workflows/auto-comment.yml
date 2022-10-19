@@ -5,7 +5,7 @@
 #################################
 #################################
 name: Auto Comment
-on: [issues, pull_request]
+on: [issues]
 
 ###############
 # Set the Job #
