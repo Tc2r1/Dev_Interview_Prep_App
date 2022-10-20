@@ -584,7 +584,7 @@
       "details": "Paging is an Android Jetpack feature that is used to load and display small amounts of data from a remote server. It uses less network bandwidth. ",
       "questionType": "multi ",
       "trueOrFalse": false,
-      "shortAns": "It is used to load in the form of small chunks.",
+      "shortAns": "It is used to load in the form of small amounts of data.",
       "tag": "Paging"
     },
     {
