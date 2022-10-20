@@ -74,7 +74,7 @@
     },
     {
       "id": 8,
-      "question":"What is a wrapper class?",
+      "question": "What is a wrapper class?",
       "details": "A wrapper class converts a primitive type into an object. An example would be the Integer class.",
       "questionType": "multi",
       "trueOrFalse": false,
@@ -92,7 +92,7 @@
     },
     {
       "id": 10,
-      "question":"Java supports multiple inheritance",
+      "question": "Java supports multiple inheritance",
       "details": "One class cannot inherit multiple classes. We can simulate this by implementing multiple interfaces.",
       "trueOrFalse": false,
       "shortAns": "No",
@@ -127,7 +127,7 @@
     },
     {
       "id": 14,
-      "question":"What does the 'synchronized' keyword do?",
+      "question": "What does the 'synchronized' keyword do?",
       "details": "'synchronized' isolates a thread so that other threads using the same resource(s) cannot interrupt it.",
       "questionType": "multi",
       "trueOrFalse": false,
@@ -151,6 +151,33 @@
       "trueOrFalse": false,
       "shortAns": "It is a problem that occurs while running the program",
       "tag": "Java"
+    },
+    {
+      "id": 17,
+      "question": "What is a key difference between Error and Exception?",
+      "details": "An Exception is recoverable while an Error is irrecoverable, example of error: IOError, OutOfMemoryError, example of exception: IllegalStateException, RuntimeException",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "An Exception is recoverable while an Error is irrecoverable",
+      "tag": "Exception"
+    },
+    {
+      "id": 18,
+      "question": "What is the difference between throw and throws in Java?",
+      "details": "The throw keyword is used to throw an exception explicitly while the throws keyword can be used to declare multiple exceptions, separated by a comma.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "throw is used in a function, throws is used in method signature",
+      "tag": "Exception"
+    },
+    {
+      "id": 19,
+      "question": "In Java 11, what would be the output of this line: (var s1, String y) -> s1 + y;",
+      "details": "cannot mix 'var' and explicitly-typed parameters, Java 11 introduced Local-Variable Syntax for Lambda Parameters, but mixing is not allowed",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "cannot mix 'var' and explicitly-typed parameters",
+      "tag": "Java 11"
     }
   ]
 }
