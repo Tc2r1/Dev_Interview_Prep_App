@@ -72,9 +72,17 @@
       "shortAns": "No",
       "tag": "Java"
     },
-
     {
       "id": 8,
+      "question":"What is a wrapper class?",
+      "details": "A wrapper class converts a primitive type into an object. An example would be the Integer class.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used to turn a primitive into an object",
+      "tag": "Java"
+    },
+    {
+      "id": 9,
       "question": " When an array is passed to a method, what does the method receive?",
       "details": "When an array is passed to a method, a reference of the array is received by the method.",
       "questionType": "multi",
@@ -83,7 +91,15 @@
       "tag": "Java"
     },
     {
-      "id": 9,
+      "id": 10,
+      "question":"Java supports multiple inheritance",
+      "details": "One class cannot inherit multiple classes. We can simulate this by implementing multiple interfaces.",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 11,
       "question": "compareTo() returns?",
       "details": "compareTo() returns an int value.",
       "questionType": "multi",
@@ -92,12 +108,48 @@
       "tag": "Java"
     },
     {
-      "id": 10,
+      "id": 12,
       "question": " Where does the system stores parameters and local variables whenever a method is invoked?",
       "details": "The system stores parameters and local vaiables in stack in java.",
       "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": " It is stored in stack.",
+      "tag": "Java"
+    },
+    {
+      "id": 13,
+      "question": "String is a mutable Datatype",
+      "details": "String is an immutable datatype",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 14,
+      "question":"What does the 'synchronized' keyword do?",
+      "details": "'synchronized' isolates a thread so that other threads using the same resource(s) cannot interrupt it.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used to isolate a thread.",
+      "tag": "Java"
+    },
+    {
+      "id": 15,
+      "question": "What are Access Modifiers?",
+      "details": "The access modifiers in Java specifies the accessibility or scope of a field, method, constructor, or class.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used to specify accessibility of classes",
+      "tag": "Java"
+    },
+    {
+      "id": 16,
+      "question": "What is an Exception?",
+      "details": " An Exception is a problem that can occur during the normal flow of execution of a program.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a problem that occurs while running the program",
       "tag": "Java"
     }
   ]

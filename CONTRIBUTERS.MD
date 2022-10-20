@@ -1,3 +1,4 @@
+# Contributors List
 | Name               | Github                                                        | Starred the repo |
 | -----------------  | ------------------------------------------------------------- | ---------------- |
 | Tc2r1              | [@Tc2r1](https://github.com/Tc2r1)                            | 1                |
@@ -19,6 +20,7 @@
 | Srashti            | [@SDtw20](https://github.com/SDtw20)                          | 1                |
 | Om Shah            | [@Omm2005](https://github.com/Omm2005)                        | 1                |
 | gvadam             | [@gvadam](https://github.com/gvadam)                          | 1                |
+| Kanupriya Jain     | [@Kanupriya](https://github.com/Kanupriya-Jain)               | 1                |
 | Sparsh Chadha      | [@Sparsh011](https://github.com/Sparsh011)                    | 1                |
 | Scott Evans        | [@scottajevans](https://github.com/scottajevans)              | 1                |
 | pantbibek21        | [@pantbibek21](https://github.com/pantbibek21)                | 1                |
