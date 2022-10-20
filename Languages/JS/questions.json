@@ -43,7 +43,7 @@
        "details": "NaN property represents the \"Not-a-Number\" value. It indicates that the specified value is not a legal number. Example. \"a\" * 5 will result in NaN.",
        "questionType": "multi",
        "trueOrFalse": false,
-       "shortAns": "It is a property of JavaScript that indicates that the specified value is not a legal number.",
+       "shortAns": "It is a value to indicate not a legal number in JavaScript.",
        "tag": "JavaScript"
        },
 	{
