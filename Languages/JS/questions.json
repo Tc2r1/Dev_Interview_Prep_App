@@ -21,30 +21,30 @@
 	},
   	{
 	"id": 2,
- 	"question": "Please input a "What Is" question relevant to your language here.",
- 	"details": "Expanded information on the correct answer to the question goes here.",
+ 	"question": "What is the  == and === in JavaScript?",
+ 	"details": "Loose equality (==) and Strict equality (===) are two ways of checking the equality in JavaScript. Double equlity (==) only check the value of data rather than the data type whereas strict equality (===) checks for both value of data and datatype of data as well. Inherently type coercion is being performed in double equality so data type cannot be identifed as distinct.",
  	"questionType": "multi",
         "trueOrFalse": false,
-        "shortAns": "Please input a short ''It is'' Ans to the question above here that ends with punctuation.",
-        "tag": "Your qestion's subject Here"
+        "shortAns": "It is a way of checking equality in JavaScript. Both have their use cases in different situations.",
+        "tag": "JavaScript"
     	},
     	{
        "id": 3,
-       "question": "What is a dog?",
-       "details": "The dog is characterized by an upturning tail. The dog derived from an ancient, extinct wolf, and the modern grey wolf is the dog's nearest living relative.",
+       "question": "What is hoisting in JavaScript?",
+       "details": "Hoisting is the behaviour of JavaScript where all the function declarations and variable declarations are moved to the top of code block.",
        "questionType": "multi",
        "trueOrFalse": false,
-       "shortAns": "It is a domesticated descendant of the wolf.",
-       "tag": "pet"
+       "shortAns": "It is a default behavior of JavaScript to move declarations to the top.",
+       "tag": "JavaScript"
     	},
     	{
        "id": 4,
-       "question": "Is a train characterized by a rail transport?",
-       "details": "It is a form of transport consisting of a series of connected vehicles that generally run along a railroad track to transport passengers or cargo. The word train comes from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw". ",
-       "questionType": "bool",
-       "trueOrFalse": true,
-       "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
-       "tag": "Transportation"
+       "question": "What is NaN property in JavaScript?",
+       "details": "NaN property represents the \"Not-a-Number\" value. It indicates that the specified value is not a legal number. Example. \"a\" * 5 will result in NaN.",
+       "questionType": "multi",
+       "trueOrFalse": false,
+       "shortAns": "It is a value to indicate not a legal number in JavaScript.",
+       "tag": "JavaScript"
        },
 	{
 	"id": 5,
