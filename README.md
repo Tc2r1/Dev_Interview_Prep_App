@@ -32,7 +32,60 @@ this project.
 </div> 
 
 
-Type "!assign" in a comment under issues to be assigned an issue!
+## Type "!assign" in a comment under issues to be assigned an issue!
+
+### 🎃🎃LEVEL 3 CONTRIBUTIONS🎃🎃 - BUILD A MODULE OF THE PROJECT :O!! YOU'RE A BOSS!
+
+Want a challenge? Here you will rebuild the project with options to use the supplied UI. You will focus on showing off a few different libraries and
+an architecture of your choice (MVP, MVC, MVVM, HILT, Coroutines, etc etc etc endless possibilities) To show other developers different ways in which
+these things can be combined to build the quiz application. Please focus on and gain experience with the repository layer, dependency injection, view
+models, and whatever else you like!
+Lets see how many different modules we can create!
+
+1. navigate to `https://github.com/Tc2r1/DevInterview_Questions/tree/master/Interview_Prep_App/`
+2. decide if you want to work in Native_Java or Native_Kotlin, or something else (for something else skip to 6b) open the folder you choose.
+3. Fork the repo and create a branch to save your work to.
+4. copy the template application folder and rename it based on what your project will showcase. for example "retrofit, coroutines, viewmodel, jetpack
+   compose" along with your username (IE:
+   retrofit2_tc2r1)
+
+5. Open the "Interview_Prep_App" folder in android studio and add your module to the settings.gradle file.
+6. Rename the module id com.interviewprep.unique_folder_name_from_step_3 6b. For those who want to work in something besides native android, create a
+   folder with your application type in `Interview_Prep_App` folder: "SwiftUI" "Html5" etc.
+
+7. Use your skills and libraries of choice to recreate the project.
+8. Pull latest changes from master branch into your branch and resolve all merge conflicts.
+9. Open Contributors.md file and add your name and relevant information.
+10. Add a README.md to the base of your project folder/ module that list what makes your version of the quiz app special (aka libraries you used,
+    patterns, languages, etc)
+11. Create a PR (With detailed information and images if possible of your work)!
+12. Your PR will be reviewed, after resolving all request, your PR will be accepted
+13. CELEBRATE GOOD TIMES COME ON!!
+14. RINSE REPEAT! You're a fireball!
+
+<br>
+<br>
+<br>
+
+### 🎃🎃LEVEL 2 CONTRIBUTIONS🎃🎃 - RESOLVE A SMALL "ISSUE" TICKET!
+
+Want to get your hands wet with some programming? Look at the open issues and find one that allows you to contribute to one of the modules! These will
+vary but should be easy enough.
+
+1. Find an issue and ask for rights/claim to work on it.
+2. A Maintainer will grant said permissions.
+3. Fork the repo and create a branch to save your work to.
+4. Resolve the issue
+5. Pull latest changes from master branch into your branch and resolve all merge conflicts.
+6. Create a PR!
+7. Your PR will be reviewed, after resolving all request, your PR will be accepted
+8. Open Contributors.md file and add your name and relevant information.
+9. CELEBRATE GOOD TIMES COME ON!!
+10. RINSE REPEAT! You're a fireball!
+
+<br>
+<br>
+<br>
 
 ### 🎃🎃Level 1 Contributions🎃🎃 - Add a minimal of 3 objects to the questions or answers json of your choice.
 
@@ -136,59 +189,6 @@ Please make sure to match the syntax of the previous items. Answers should end w
 
 4. Open Contributors.md file and add your name and relevant information.
 5. Make Pull Request.
-
-<br>
-<br>
-<br>
-
-### 🎃🎃LEVEL 2 CONTRIBUTIONS🎃🎃 - RESOLVE A SMALL "ISSUE" TICKET!
-
-Want to get your hands wet with some programming? Look at the open issues and find one that allows you to contribute to one of the modules! These will
-vary but should be easy enough.
-
-1. Find an issue and ask for rights/claim to work on it.
-2. A Maintainer will grant said permissions.
-3. Fork the repo and create a branch to save your work to.
-4. Resolve the issue
-5. Pull latest changes from master branch into your branch and resolve all merge conflicts.
-6. Create a PR!
-7. Your PR will be reviewed, after resolving all request, your PR will be accepted
-8. Open Contributors.md file and add your name and relevant information.
-9. CELEBRATE GOOD TIMES COME ON!!
-10. RINSE REPEAT! You're a fireball!
-
-<br>
-<br>
-<br>
-
-### 🎃🎃LEVEL 3 CONTRIBUTIONS🎃🎃 - BUILD A MODULE OF THE PROJECT :O!! YOU'RE A BOSS!
-
-Want a challenge? Here you will rebuild the project with options to use the supplied UI. You will focus on showing off a few different libraries and
-an architecture of your choice (MVP, MVC, MVVM, HILT, Coroutines, etc etc etc endless possibilities) To show other developers different ways in which
-these things can be combined to build the quiz application. Please focus on and gain experience with the repository layer, dependency injection, view
-models, and whatever else you like!
-Lets see how many different modules we can create!
-
-1. navigate to `https://github.com/Tc2r1/DevInterview_Questions/tree/master/Interview_Prep_App/`
-2. decide if you want to work in Native_Java or Native_Kotlin, or something else (for something else skip to 6b) open the folder you choose.
-3. Fork the repo and create a branch to save your work to.
-4. copy the template application folder and rename it based on what your project will showcase. for example "retrofit, coroutines, viewmodel, jetpack
-   compose" along with your username (IE:
-   retrofit2_tc2r1)
-
-5. Open the "Interview_Prep_App" folder in android studio and add your module to the settings.gradle file.
-6. Rename the module id com.interviewprep.unique_folder_name_from_step_3 6b. For those who want to work in something besides native android, create a
-   folder with your application type in `Interview_Prep_App` folder: "SwiftUI" "Html5" etc.
-
-7. Use your skills and libraries of choice to recreate the project.
-8. Pull latest changes from master branch into your branch and resolve all merge conflicts.
-9. Open Contributors.md file and add your name and relevant information.
-10. Add a README.md to the base of your project folder/ module that list what makes your version of the quiz app special (aka libraries you used,
-    patterns, languages, etc)
-11. Create a PR (With detailed information and images if possible of your work)!
-12. Your PR will be reviewed, after resolving all request, your PR will be accepted
-13. CELEBRATE GOOD TIMES COME ON!!
-14. RINSE REPEAT! You're a fireball!
 
 <div align="left">
     <br>
