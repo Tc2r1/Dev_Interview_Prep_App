@@ -36,5 +36,32 @@
       "shortAns": "",
       "tag": "threading"
     }
+    {
+      "id": 4
+      "question": "What is namespace in Python?",
+      "details": "A namespace is a cluster of defined symbolic names along with the details about objects that each name references.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a way of providing the unique name for each object in Python ",
+      "tag": "namespace"
+    }
+    {
+      "id": 5
+      "question": "What is the difference between Arrays and Lists in Python?",
+      "details": "Arrays and lists store data the same way, however,  arrays can hold only a single data type elements, whereas lists can hold any data type elements.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "arrays holds only a single data type elements, when lists can hold any data type elemets",
+      "tag": "difference"
+    }
+    {
+      "id": 6
+      "question": "Is indentation required in Python?",
+      "details": "Indentation is necessary for Python. It specifies a block of code",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "",
+      "tag": "indentation"
+    }
   ]
 }
