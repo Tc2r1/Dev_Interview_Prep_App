@@ -42,17 +42,17 @@
       "details": "A namespace is a cluster of defined symbolic names along with the details about objects that each name references.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is a way of providing the unique name for each object in Python ",
+      "shortAns": "It is a way of providing the unique label for each object. ",
       "tag": "namespace"
     }
     {
       "id": 5
-      "question": "What is the difference between Arrays and Lists in Python?",
-      "details": "Arrays and lists store data the same way, however,  arrays can hold only a single data type elements, whereas lists can hold any data type elements.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "arrays holds only a single data type elements, when lists can hold any data type elemets",
-      "tag": "difference"
+      "question": "Is python case sensitive?",
+      "details": "Yes. Python is case sensitive because it differentiates between identifiers like variable and variable."
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "",
+      "tag": "case"
     }
     {
       "id": 6
