@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Developer Interview Quiz App!"
+        android:text="@string/app_name"
         android:textColor="@color/light_blue_A200"
         android:textSize="40sp"
         android:textStyle="bold"
