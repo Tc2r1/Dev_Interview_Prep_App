@@ -1,13 +1,16 @@
 {
   "answers": [
     {
-      "answer": "yes",
-      "details": "HTML 5."
+      "answer": "It is used to describe the characteristic of an HTML element in detail. Whatever written within a HTML tag are HTML element.",
+      "details": "HTML tags are used to hold the HTML element. HTML element holds the content. HTML attributes are used to describe the characteristic of an HTML element in detail. Whatever written within a HTML tag are HTML element."
     },
     {
-      "answer": "yes",
-      "details": "its a tag"
+      "answer": "It is a blueprint used to arrange web pages in a well-defined manner..",
+      "details": "An HTML layout that uses the correct format will easily improve a website's appearance."
+    },
+    {
+      "answer": "It is used to decreases the transmission time between the server and the client ",
+      "details": "Whitespace is any string of text composed only of spaces, tabs or line breaks (to be precise, CRLF sequences, carriage returns or line feeds). These characters allow you to format your code in a way that will make it easily readable by yourself and other people."
     }
-    
   ]
 }

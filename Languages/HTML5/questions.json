@@ -2,19 +2,30 @@
   "questions": [
     {
       "id": 0,
-      "question": "Are the HTML tags and elements the same thing? ...",
-      "details": "Expanded information on the correct answer to the question goes here.",
+      "question": "What are the tags and attributes in HTML?",
+      "details": " Tags are the primary component of the HTML that defines how the content will be structured/ formatted, whereas Attributes are used along with the HTML tags to define the characteristics of the element.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "Please input a short ''It is'' Ans to the question above here that ends with punctuation.",
-      "tag": "HTML 5"
+      "shortAns": "It is a primary component of the HTML",
+      "tag": "Andriod"
     },
     {
       "id": 1,
-      "question": "What are tags and attributes in HTML? ...",
-      "details": "tags",
-      "questionType": "multi"
-     
-    
+      "question": "What is HTML layout structure?",
+      "details": "Every web page has different components to display the intended content and a specific UI. But still, there are few things which are templated and are globally accepted way to structure the web page, such as: <header>",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a web page that has different components to display.",
+      "tag": "Andriod"
+    },
+    {
+      "id": 2,
+      "question": "What is the advantage of collapsing white space in HTML 5 ?",
+      "details": "In HTML, a blank sequence of whitespace characters is treated as a single space character, Because the browser collapses multiple spaces into a single space character and this helps a developer to indent lines of text without worrying about multiple spaces and maintain readability and understandability of HTML codes.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It increases readability and understandability of HTML codes.",
+      "tag": "Andriod"
+    }
   ]
 }
