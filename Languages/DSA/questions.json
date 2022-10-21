@@ -98,6 +98,33 @@
       "trueOrFalse": false,
       "shortAns": "It is an efficient algorithm to search an element in a sorted list",
       "tag": "binary-search"
+    },
+    {
+      "id": 11,
+      "question": "Minimum number of queues required for priority queue implementation?",
+      "details": "Minimum number of queues required for priority queue implementation is two. One for storing actual data and one for storing priorities.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "Atleast two queues requried for priority queue implementation.",
+      "tag": "queues"
+    },
+     {
+      "id": 12,
+      "question": "What is a graph?",
+      "details": "A graph is a non-linear data structure, which consists of vertices (or nodes) connected by edges (or arcs) where edges may be directed or undirected. In Computer science graphs are used to represent the flow of computation..",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.",
+      "tag": "graph"
+    },
+     {
+      "id": 13,
+      "question": "How Prim's algorithm finds spanning tree?",
+      "details": "Prim's algorithm to find minimum cost spanning tree (as Kruskal's algorithm) uses the greedy approach. Prim's algorithm shares a similarity with the shortest path first algorithms. Prim's algorithm, in contrast with Kruskal's algorithm, treats the nodes as a single tree and keeps on adding new nodes to the spanning tree from the given graph.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.",
+      "tag": "algorithm"
     }
   ]
 }
