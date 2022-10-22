@@ -16,11 +16,14 @@ class MultipleChoiceQuestion private constructor(builder: Builder) {
         // Required Parameters
         internal var question: String = ""
         internal var answerList: List<Answer> = emptyList()
+
+        // Function to assign all the answer choices for a question
         fun possibleAnswers(listOfAnswers: List<Answer>): Builder {
             answerList = listOfAnswers
             return this
         }
 
+        // Function to assign question
         fun quizQuestion(question: String): Builder {
             this.question = question
             return this
@@ -31,6 +34,7 @@ class MultipleChoiceQuestion private constructor(builder: Builder) {
         }
     }
 
+    // Initialising the question and the answers
     init {
         question = builder.question
         answers = builder.answerList
