@@ -3,8 +3,9 @@ package com.nudennie.interviewprepapp.controllers
 import com.nudennie.interviewprepapp.repositories.models.response.Question
 
 
-
+// Declaring QuestionsController class
 class QuestionsController {
+    // Declaring variables
     private var questionsList: ArrayList<Question>? = null
 
     //      questionService.listAll();
@@ -107,7 +108,9 @@ class QuestionsController {
             return questionsList as ArrayList<Question>
         }
 
+    // Creating various questions and adding them to the questionsList
     private fun loadQuestions() {
+        // Assigning ID, QUESTION TYPE, QUESTION and ANSWER DETAILS to every question along with its short answer
         val question1 = Question.Builder(
             1,
             "multi",
@@ -116,6 +119,7 @@ class QuestionsController {
         )
             .shortAns("A stack of software for mobile devices.")
             .build()
+        // Adding question 1 to the questionsList
         questionsList!!.add(question1)
         val question2 = Question.Builder(
             2,
@@ -125,6 +129,7 @@ class QuestionsController {
         )
             .shortAns("It performs background functionalities.")
             .build()
+        // Adding question 2 to the questionsList
         questionsList!!.add(question2)
         val question3 = Question.Builder(
             3,
@@ -134,6 +139,7 @@ class QuestionsController {
         )
             .shortAns("It is compressed with classes,UI's, supportive assets and manifest.")
             .build()
+        // Adding question 3 to the questionsList
         questionsList!!.add(question3)
         val question4 = Question.Builder(
             4,
@@ -143,6 +149,7 @@ class QuestionsController {
         )
             .shortAns("It is a declaration to do something.")
             .build()
+        // Adding question 4 to the questionsList
         questionsList!!.add(question4)
         val question5 = Question.Builder(
             5,
@@ -152,6 +159,7 @@ class QuestionsController {
         )
             .shortAns(" It is a resource file which contains all the details needed by the android system about the application.")
             .build()
+        // Adding question 5 to the questionsList
         questionsList!!.add(question5)
     }
 }
