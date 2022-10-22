@@ -36,5 +36,32 @@
       "shortAns": "",
       "tag": "threading"
     }
+    {
+      "id": 4
+      "question": "What is namespace in Python?",
+      "details": "A namespace is a cluster of defined symbolic names along with the details about objects that each name references.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a way of providing the unique label for each object. ",
+      "tag": "namespace"
+    }
+    {
+      "id": 5
+      "question": "Is python case sensitive?",
+      "details": "Yes. Python is case sensitive because it differentiates between identifiers like variable and variable."
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "",
+      "tag": "case"
+    }
+    {
+      "id": 6
+      "question": "Is indentation required in Python?",
+      "details": "Indentation is necessary for Python. It specifies a block of code",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "",
+      "tag": "indentation"
+    }
   ]
 }
