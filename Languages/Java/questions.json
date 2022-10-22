@@ -1,6 +1,6 @@
 {
-  "questions": [
-    {
+  "questions":[
+      {
       "id": 0,
       "question": "What is Java?",
       "details": "Java is the high-level, object-oriented, robust, secure programming language, platform-independent, high performance, Multithreading, and portable programming language. It was developed by James Gosling in June 1991.",
@@ -154,3 +154,4 @@
     }
   ]
 }
+
