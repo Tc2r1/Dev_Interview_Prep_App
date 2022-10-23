@@ -45,7 +45,7 @@ Lets see how many different modules we can create!
 1. navigate to `https://github.com/Tc2r1/DevInterview_Questions/tree/master/Interview_Prep_App/`
 2. decide if you want to work in Native_Java or Native_Kotlin, or something else (for something else skip to 6b) open the folder you choose.
 3. Fork the repo and create a branch to save your work to.
-4. copy the template application folder and rename it based on what your project will showcase. for example "retrofit, coroutines, viewmodel, jetpack
+4. copy the template application folder, paste it into native_kotlin folder, and rename it based on what your project will showcase. for example "retrofit, coroutines, viewmodel, jetpack
    compose" along with your username (IE:
    retrofit2_tc2r1)
 
