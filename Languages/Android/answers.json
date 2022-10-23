@@ -159,6 +159,18 @@
     {   
       "answer": "It manages all the drivers needed during the runtime of an Android application.",
       "details": "Linux Kernel is one of five Architecture Features. It manages all the drivers needed during the runtime of an Android device. The main features of Linux Kernel is security between application and host system, efficient memory management, workflow process management, handles network stack, and a multitasking operating system with asynchronous execution."
+    },
+    {
+      "answer":"It facilitates communication between the client and the service.",
+      "details": "AIDL stands for Android Interface Definition Language. It facilitates communication between the client and the service. It also communicates the information through inter-process communication.For communication between processes, the data is broken down into chunks which are easily understandable by the Android platform."
+    },
+    {
+      "answer":"It is a debugging tool in Android Studio.",
+      "details": "The Dalvik Debug Monitor Server (DDMS) is a debugging tool in Android Studio. It has a wide range of debugging features, such as Port forwarding , Location data spoofing, Screen capture, Logcat, Radio state information, Thread and Heap formation.The DDMS tool is now deprecated and Android now suggests the users use Android Profiler instead."
+    },
+    {
+      "answer":"It contains information about the application, which is then provided to the Android system.",
+      "details": "The AndroidManifest.xml file contains information about the application, which is then provided to the Android system. This data may include the package name, components such as activity, services, content providers, and more.This file executes the following tasks like providing a unique name to the Java package, Declaring the Android API which will be used by the application, etc."
     }
   ]
 }
