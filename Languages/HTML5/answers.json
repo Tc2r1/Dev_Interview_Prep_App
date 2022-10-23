@@ -12,5 +12,17 @@
       "answer": "It is used to decreases the transmission time between the server and the client ",
       "details": "Whitespace is any string of text composed only of spaces, tabs or line breaks (to be precise, CRLF sequences, carriage returns or line feeds). These characters allow you to format your code in a way that will make it easily readable by yourself and other people."
     }
+        {
+      "answer": "It is used to represent the standalone part of a HTML file.",
+      "details": "The Section tag is a structural HTML element used to group together related elements. Each <section> typically includes one or more heading elements and additional elements presenting related content."
+    },
+    {
+      "answer": "It is used by those elements which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.",
+      "details": "Inline elements do not force a new line to begin in the document flow. Block elements, on the other hand, typically cause a line break to occur."
+    },
+    {
+      "answer": "It is the space or gap between two consecutive cells.",
+      "details": "Cell Spacing is the space or gap between two consecutive cells. Whereas, Cell Padding is the space or gap between the text/ content of the cell and the edge/ border of the cell."
+    }
   ]
 }
