@@ -577,6 +577,33 @@
       "trueOrFalse": false,
       "shortAns": "It allows foreign applications to execute our app's code",
       "tag": "pending_intent"
+    },
+    {
+      "id": 64,
+      "question": "What is paging in android",
+      "details": "Paging is an Android Jetpack feature that is used to load and display small amounts of data from a remote server. It uses less network bandwidth. ",
+      "questionType": "multi ",
+      "trueOrFalse": false,
+      "shortAns": "It is used to load in the form of small amounts of data.",
+      "tag": "Paging"
+    },
+    {
+      "id": 65,
+      "question": "What is motion layout?",
+      "details": "MotionLayout is a special version of ConstraintLayout. It provides touch control motion  by describing how to transition between different layouts. ",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used to manage animations in the app.",
+      "tag": "Layouts"
+    },
+    {
+      "id": 66,
+      "question": "What is frame layout?",
+      "details": "Frame layout is a ViewGroup subclass, used to specify the position of multiple views placed on top of each other to represent a single view screen. ",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is used to block an area on the screen to a single view ",
+      "tag": "Layouts"
     }
   ]
 }
