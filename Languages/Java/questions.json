@@ -152,5 +152,14 @@
       "shortAns": "It is a problem that occurs while running the program",
       "tag": "Java"
     }
+    {
+      "id": 17,
+      "question": "Does java uses inheritance?",
+      "details": "Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class. ",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "Yes",
+      "tag": "Java"
+    }
   ]
 }
