@@ -26,3 +26,4 @@
 | pantbibek21        | [@pantbibek21](https://github.com/pantbibek21)                | 1                |
 | Sudhanshu Ranjan   | [@glitched-sudhanshu](https://github.com/glitched-sudhanshu)  | 1                |
 | Nombasa More       | [@nombasamore](https://github.com/nombasamore)                | 1                |
+| Prasad More        | [@prasad-more-12](https://github.com/prasad-more-12)          | 1                |
