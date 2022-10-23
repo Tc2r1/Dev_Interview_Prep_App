@@ -1,61 +1,34 @@
 {
   "questions": [
     {
-      "id": 0,
-      "question": "Please input a "What Is" question relevant to your language here.",
-      "details": "Expanded information on the correct answer to the question goes here.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "Please input a short ''It is'' Ans to the question above here that ends with punctuation.",
-      "tag": "Your qestion's subject Here"
-    },
-    {
       "id": 1,
-      "question": "What is a dog?",
-      "details": "The dog is characterized by an upturning tail. The dog derived from an ancient, extinct wolf, and the modern grey wolf is the dog's nearest living relative.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is a domesticated descendant of the wolf.",
-      "tag": "pet"
-    },
-    {
-      "id": 2,
-      "question": "Is a train characterized by a rail transport?",
-      "details": "It is a form of transport consisting of a series of connected vehicles that generally run along a railroad track to transport passengers or cargo. The word train comes from the Old French trahiner, derived from the Latin trahere meaning "to pull, to draw". ",
-      "questionType": "bool",
-      "trueOrFalse": true,
-      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
-      "tag": "Transportation"
-    }
-    {
-      "id": 3
       "question": "Is python threading asynchronous?",
       "details": "Python threading module calls for multiple operations at the same time, as allowed by the operating system",
       "questionType": "bool",
       "trueOrFalse": true,
       "shortAns": "",
       "tag": "threading"
-    }
+    },
     {
-      "id": 4
+      "id": 2,
       "question": "What is namespace in Python?",
       "details": "A namespace is a cluster of defined symbolic names along with the details about objects that each name references.",
       "questionType": "multi",
       "trueOrFalse": false,
       "shortAns": "It is a way of providing the unique label for each object. ",
       "tag": "namespace"
-    }
+    },
     {
-      "id": 5
+      "id": 3,
       "question": "Is python case sensitive?",
-      "details": "Yes. Python is case sensitive because it differentiates between identifiers like variable and variable."
+      "details": "Yes. Python is case sensitive because it differentiates between identifiers like variable and variable.",
       "questionType": "bool",
       "trueOrFalse": true,
       "shortAns": "",
       "tag": "case"
-    }
+    },
     {
-      "id": 6
+      "id": 4,
       "question": "Is indentation required in Python?",
       "details": "Indentation is necessary for Python. It specifies a block of code",
       "questionType": "bool",

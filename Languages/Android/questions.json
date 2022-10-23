@@ -107,7 +107,6 @@
       "trueOrFalse": false,
       "shortAns": "It specifies the types of intents to which an activity, service, or broadcast receiver can respond to.",
       "tag": "intent_filter"
-
     },
     {
       "id": 12,
@@ -523,7 +522,7 @@
       "trueOrFalse": false,
       "shortAns": "",
       "tag": "lifecycle"
-    }, 
+    },
     {
       "id": 58,
       "question": "Activities can keep track of what is currently on screen for the user.",
