@@ -28,3 +28,4 @@
 | Md. Khundmeer Siddiq| [@mksiddiq](https://github.com/mksiddiq)                     | 1                |
 | Sudhanshu Ranjan   | [@glitched-sudhanshu](https://github.com/glitched-sudhanshu)  | 1                |
 | Nombasa More       | [@nombasamore](https://github.com/nombasamore)                | 1                |
+| Jayasurya K        | [@jayasurya](https://github.com/jayasurya7a)                  | 1                |
