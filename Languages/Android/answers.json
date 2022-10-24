@@ -150,7 +150,7 @@
     },
     {
       "answer": "It is an Android architecture feature that provides Application Programming Interfaces(API) and higher-level services.",
-      "details": "Android Framework is one of five Architecture Features. It provides classes, interfaces, and utilities that are used for the devepment of Android Hardware Abstraction Layer (HAL), which allows the application to communicate with the hardware-specific device drivers. It provides high-level services such as Activity Manager, Content Providers, Resource Manager, Notifications Manager, and View System."
+      "details": "Android Framework is one of five Architecture Features. It provides classes, interfaces, and utilities that are used for the development of Android Hardware Abstraction Layer (HAL), which allows the application to communicate with the hardware-specific device drivers. It provides high-level services such as Activity Manager, Content Providers, Resource Manager, Notifications Manager, and View System."
     },
     {
       "answer": "It is a message that pops up on the screen displaying information on the status of an operation initiated by a user.",
@@ -159,6 +159,14 @@
     {
       "answer": "It manages all the drivers needed during the runtime of an Android application.",
       "details": "Linux Kernel is one of five Architecture Features. It manages all the drivers needed during the runtime of an Android device. The main features of Linux Kernel is security between application and host system, efficient memory management, workflow process management, handles network stack, and a multitasking operating system with asynchronous execution."
+    },
+    {
+      "answer": "It is emulation of real Android device.",
+      "details": "It is virtual device run on development computer to debug & test Android applications. It emulates most of the features of real android device including location, camera etc."
+    },
+    {
+      "answer": "It is emulation of real Android device.",
+      "details": "It is virtual device run on development computer to debug & test Android applications. It emulates most of the features of real android device including location, camera etc."
     }
   ]
 }
