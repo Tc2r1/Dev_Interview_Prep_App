@@ -6,6 +6,8 @@ package com.nudennie.interviewprepapp.repositories.models.response
  *
  * Description:
  */
+
+// Creating question class
 class Question private constructor(builder: Builder) {
     val id: Int
     val question: String
