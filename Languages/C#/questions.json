@@ -26,6 +26,15 @@
       "trueOrFalse": true,
       "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
       "tag": "Transportation"
+    },
+    {
+      "id": 3,
+      "question": "The programming language C# is case sensitive.",
+      "details": "Case sensitivity is important because is a capital is mean to be used and it is not this will case an error in your code.",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "",
+      "tag": "case sensitivity"
     }
   ]
 }
