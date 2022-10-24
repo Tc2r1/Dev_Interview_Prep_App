@@ -24,3 +24,4 @@
 | Sparsh Chadha      | [@Sparsh011](https://github.com/Sparsh011)                    | 1                |
 | Scott Evans        | [@scottajevans](https://github.com/scottajevans)              | 1                |
 | pantbibek21        | [@pantbibek21](https://github.com/pantbibek21)                | 1                |
+| JanFidor           | [@JanFidor](https://github.com/JanFidor)                      | 1                |
