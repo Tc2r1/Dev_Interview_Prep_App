@@ -35,6 +35,15 @@
       "trueOrFalse": true,
       "shortAns": "",
       "tag": "indentation"
-    }
+    },
+     {
+      "id": 5,
+      "question": "How would you change a data type from a number to a string in python?",
+      "details": "Using the correct data type is important when working in python because the data behaves differently and different functionalities can be used.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "Make a variable equal to str (for string) with the chosen number in the str functions brackets then print the value. A = str(number)-> print(A). A = str (10) -> print(A)",
+      "tag": "data type"
+    },
   ]
 }
