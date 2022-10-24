@@ -155,10 +155,10 @@
     {
       "id": 17,
       "question": "What is a key difference between Error and Exception?",
-      "details": "An Exception is recoverable while an Error is irrecoverable, example of error: IOError, OutOfMemoryError, example of exception: IllegalStateException, RuntimeException",
+      "details": "An irrecoverable state of the system is caused by an error while the system goes to a recoverable state when an exception is thrown.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "An Exception is recoverable while an Error is irrecoverable",
+      "shortAns": "It is an error if the system cannot recover, while an exception if system resumes normal mode of operation.",
       "tag": "Exception"
     },
     {
