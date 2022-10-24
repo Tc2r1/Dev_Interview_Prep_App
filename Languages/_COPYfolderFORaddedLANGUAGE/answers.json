@@ -1,7 +1,7 @@
 {
   "answers": [
     {
-      "answer": "Type "It is," at the beginning of all answers/ input a description of something relavent to your language/ items here will populate incorrect answers for qestions.",
+      "answer": "Type \"It is,\" at the beginning of all answers/ input a description of something relavent to your language/ items here will populate incorrect answers for questions.",
       "details": "Here you would give a detailed description of the something used in the answer key above, for more information look at the .json in the android folder."
     },
     {
