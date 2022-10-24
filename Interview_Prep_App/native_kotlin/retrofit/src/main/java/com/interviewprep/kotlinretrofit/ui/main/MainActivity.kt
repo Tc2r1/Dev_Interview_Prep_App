@@ -124,6 +124,8 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
             scorePer = (score * 100).toInt()
             scoreTv!!.text = getString(com.tc2r.sharedresources.R.string.score_display_text) + scorePer.toString()
         }
+
+
         // if quiz is not complete, continue quiz with new QuestionFragment
         if (currentQuestion < QUIZ_SIZE) {
             newFragment = QuestionFragment.newInstance(testList!![currentQuestion], answersList!!)
