@@ -14,6 +14,8 @@
             android:name=".ui.main.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/SplashScreenTheme">
+            <!--Necessary to add this intent filter to the SplashScreen activity for it to become the first activity
+            initialised by the app-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
