@@ -165,8 +165,20 @@
       "details": "It is virtual device run on development computer to debug & test Android applications. It emulates most of the features of real android device including location, camera etc."
     },
     {
-      "answer": "It is emulation of real Android device.",
-      "details": "It is virtual device run on development computer to debug & test Android applications. It emulates most of the features of real android device including location, camera etc."
+      "answer": "It is used to store data.",
+      "details": "SharedPreference stores data in XML files as key-value pair."
+    },
+    {
+      "answer": "It is to secure data and code.",
+      "details": "Permissions in android protects user data & privacy from compromising from 3rd party, virus attacks."
+    },
+    {
+      "answer": "It is process with no services, activities and broadcast receivers.",
+      "details": "Empty process has its component destroyed and its been hold on to improve the user experience if the same process is invoke/needed again."
+    },
+    {
+      "answer": "It provides lightweight feedback about an operation.",
+      "details": "Snackbar can be considered similar to Toast message except it shows a brief message at the bottom of screen on mobile & lower left on larger devices. It can be displayed one at a time that appears above all views."
     }
   ]
 }
