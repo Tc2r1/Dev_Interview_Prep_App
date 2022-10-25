@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     private var score = 0.0
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
