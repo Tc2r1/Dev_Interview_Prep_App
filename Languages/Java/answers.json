@@ -15,6 +15,18 @@
     {
       "answer": "It is the polymorphism technique which allows us to create multiple methods with the same name but different signature.",
       "details": "Method Overloading increases the readability of the program. Method overloading is performed to figure out the program quickly."
+    },
+    {
+      "answer": "It is the process of defining a method in a subclass having same name & type signature as a method in its superclass.",
+      "details": "Method overriding is one of the way by which java achieve Run Time Polymorphism. It define a behavior that's specific to the subclass type, which means a subclass can implement a parent class method based on its requirement."
+    },
+    {
+      "answer": "It is called where object has its own lifecycle and child object cannot belong to another parent object.",
+      "details": "Aggregation occurs when objects have their own life cycle and child object can associate with only one parent object."
+    },
+    {
+      "answer": "It is keyword used by the method to refer to the object that invoked it.",
+      "details": "this keyword can be used inside any method to refer to the current object. this is always a reference to the object on which the method was invoked"
     }
   ]
 }

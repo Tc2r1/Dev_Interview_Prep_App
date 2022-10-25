@@ -149,35 +149,44 @@
       "details": " An Exception is a problem that can occur during the normal flow of execution of a program.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is a problem that occurs while running the program",
+      "shortAns": "It is a problem that occur during runtime and compile time.",
       "tag": "Java"
     },
     {
       "id": 17,
-      "question": "What is a key difference between Error and Exception?",
+      "question": "What is an Error?",
       "details": "An irrecoverable state of the system is caused by an error while the system goes to a recoverable state when an exception is thrown.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is an error if the system cannot recover, while an exception if system resumes normal mode of operation.",
+      "shortAns": "It is a problem that mostly arises due to the shortage of system resources",
       "tag": "Exception"
     },
     {
       "id": 18,
-      "question": "What is the difference between throw and throws in Java?",
-      "details": "The throw keyword is used to throw an exception explicitly while the throws keyword can be used to declare multiple exceptions, separated by a comma.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "throw is used in a function, throws is used in method signature",
-      "tag": "Exception"
+      "question": "Does java uses inheritance?",
+      "details": "Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class. ",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "No",
+      "tag": "Java"
     },
     {
       "id": 19,
-      "question": "In Java 11, what would be the output of this line: (var s1, String y) -> s1 + y;",
-      "details": "cannot mix 'var' and explicitly-typed parameters, Java 11 introduced Local-Variable Syntax for Lambda Parameters, but mixing is not allowed",
-      "questionType": "multi",
+      "question": "Garbage collection is manual process.",
+      "details": "Java garbage collection is an automatic process.",
+      "questionType": "bool",
       "trueOrFalse": false,
-      "shortAns": "cannot mix 'var' and explicitly-typed parameters",
-      "tag": "Java 11"
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 20,
+      "question": "Is null a keyword in java?",
+      "details": "Null is a reserved keyword in the Java programming language. It's technically an object literal similar to True or False. ",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "No",
+      "tag": "Java"
     }
   ]
 }
