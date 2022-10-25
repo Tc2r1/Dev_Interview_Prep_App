@@ -12,6 +12,8 @@ import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.interviewprep.kotlinretrofit.R
+import com.interviewprep.kotlinretrofit.databinding.FragmentDialogBinding
+import com.interviewprep.kotlinretrofit.databinding.FragmentQuestionBinding
 import com.interviewprep.kotlinretrofit.repository.models.Answer
 import com.interviewprep.kotlinretrofit.repository.models.MultipleChoiceQuestion
 import com.interviewprep.kotlinretrofit.repository.models.Question
@@ -29,6 +31,12 @@ import java.util.Random
  * create an instance of this fragment.
  */
 class QuestionFragment : Fragment(), View.OnClickListener {
+    // assign the _binding variable initially to null
+    private var _binding: FragmentQuestionBinding? = null
+    // with the backing property of the kotlin we extract
+    // the non null value of the _binding
+    private val binding: FragmentQuestionBinding
+        get() = _binding!!
     companion object {
         // Declare Constants
         private const val QUESTION = "Question"
@@ -100,19 +108,18 @@ class QuestionFragment : Fragment(), View.OnClickListener {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val mView = inflater.inflate(R.layout.fragment_question, container, false)
-
-        // Assign Variables to Object Ids
+        // inflate the layout and bind to the _binding
+        _binding = FragmentQuestionBinding.inflate(inflater, container, false)
+        //use binding object to refer to views in fragment
         // Declare UI Variables
-        val questionTV = mView.findViewById<TextView>(R.id.question)
-        val newBtn = mView.findViewById<Button>(R.id.newQuizBtn)
-        answersRadioGroup = mView.findViewById(R.id.radio_group_answers)
-        val firstAnswerRadioButton = mView.findViewById<RadioButton>(R.id.radio_button_answer_a)
-        val secondAnswerRadioButton = mView.findViewById<RadioButton>(R.id.radio_button_answer_b)
-        val thirdAnswerRadioButton = mView.findViewById<RadioButton>(R.id.radio_button_answer_c)
-        val fourthAnswerRadioButton = mView.findViewById<RadioButton>(R.id.radio_button_answer_d)
-        val submitButton = mView.findViewById<Button>(R.id.submitButton)
+        val questionTV = binding.question
+        val newBtn = binding.newQuizBtn
+        answersRadioGroup = binding.radioGroupAnswers
+        val firstAnswerRadioButton =binding.radioButtonAnswerA
+        val secondAnswerRadioButton = binding.radioButtonAnswerB
+        val thirdAnswerRadioButton = binding.radioButtonAnswerC
+        val fourthAnswerRadioButton = binding.radioButtonAnswerD
+        val submitButton = binding.submitButton
 
         // Set Listeners
         newBtn.setOnClickListener(this)
@@ -147,7 +154,7 @@ class QuestionFragment : Fragment(), View.OnClickListener {
 
         // Set the Question Text
         questionTV.text = mCquestion.question
-        return mView
+        return binding.root
     }
 
     override fun onDetach() {
