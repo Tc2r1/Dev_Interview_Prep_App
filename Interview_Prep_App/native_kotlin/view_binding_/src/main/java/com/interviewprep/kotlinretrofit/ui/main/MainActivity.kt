@@ -3,11 +3,9 @@ package com.interviewprep.kotlinretrofit.ui.main
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.interviewprep.kotlinretrofit.R
+import com.interviewprep.kotlinretrofit.databinding.ActivityMainBinding
 import com.interviewprep.kotlinretrofit.repository.models.Answer
 import com.interviewprep.kotlinretrofit.repository.models.Question
 import com.interviewprep.kotlinretrofit.repository.tc2rgithubrepository.Tc2rGithubRepository
@@ -21,6 +19,8 @@ import kotlinx.coroutines.launch
 import java.util.Random
 
 class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
+   // first create a variable of Binding class to use in activity.
+    private lateinit var binding: ActivityMainBinding
     private val TAG = "MAINTEST"
 
     companion object {
@@ -33,9 +33,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     }
 
     // UI Variables
-    private var fragContainer: LinearLayout? = null
-    private var titleTv: TextView? = null
-    private var scoreTv: TextView? = null
+    // There is no need to declare ui variable since we are using View Binding
 
     // Fragments and Model Variables
     private var newFragment: QuestionFragment? = null
@@ -54,11 +52,12 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        // Now initialize the binding class
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        // Now get a reference of root view and pass it to setContentView()
+        setContentView(binding.root)
 
         // Initialize and assignments
-        titleTv = findViewById(R.id.title_tv)
-        scoreTv = findViewById(R.id.score_tv)
         testList = ArrayList()
         quizList = ArrayList()
         answersList = ArrayList()
@@ -122,16 +121,19 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
             numOfCorrect++
             score += pointPerQ
             scorePer = (score * 100).toInt()
-            scoreTv!!.text = getString(com.tc2r.sharedresources.R.string.score_display_text) + scorePer.toString()
+            // simply use binding object to refer scoreTv TextView
+            binding.scoreTv.text = getString(com.tc2r.sharedresources.R.string.score_display_text) + scorePer.toString()
         }
         // if quiz is not complete, continue quiz with new QuestionFragment
         if (currentQuestion < QUIZ_SIZE) {
             newFragment = QuestionFragment.newInstance(testList!![currentQuestion], answersList!!)
             currentQuestion++
-            titleTv!!.text = getString(com.tc2r.sharedresources.R.string.question_display_text) + Integer.toString(currentQuestion) + " of " + Integer.toString(QUIZ_SIZE)
-            fragContainer = findViewById(R.id.fragment_container)
+            // use binding object to refer titleTv TextView
+           binding.titleTv.text = getString(com.tc2r.sharedresources.R.string.question_display_text) + Integer.toString(currentQuestion) + " of " + Integer.toString(QUIZ_SIZE)
+            // Used binding object to refer fragmentContainer LinearLayout
+           val fragContainer = binding.fragmentContainer
             val ft = supportFragmentManager.beginTransaction()
-            ft.replace(fragContainer!!.id, newFragment!!)
+            ft.replace(fragContainer.id, newFragment!!)
             ft.commit()
         } else {
             // Quiz is over, go to final page!
