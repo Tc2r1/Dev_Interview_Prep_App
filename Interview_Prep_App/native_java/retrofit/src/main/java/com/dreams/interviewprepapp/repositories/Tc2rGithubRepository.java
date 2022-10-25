@@ -19,7 +19,7 @@ public class Tc2rGithubRepository {
     // request for answers json based on selected quiz language
     private Call<AnswersResponse> getQuizAnswers(String selectedLanguage) {
          Call<AnswersResponse> answersResponseCall;
-         switch (selectedLanguage.toUpperCase()) {
+         switch (selectedLanguage) {
             case "ANDROID" : answersResponseCall = tc2rGithubService.getAndroidAnswersList();
                              break;
             case "C"       : answersResponseCall = tc2rGithubService.getCAnswers();
@@ -52,14 +52,14 @@ public class Tc2rGithubRepository {
                              break;
             default        : answersResponseCall = tc2rGithubService.getAndroidAnswersList();
                              break;
-        };
+        }
         return answersResponseCall;
     }
 
     // request for questions json based on selected quiz language
     private Call<QuestionsResponse> getQuizQuestions(String selectedLanguage) {
         Call<QuestionsResponse> questionsResponseCall;
-        switch (selectedLanguage.toUpperCase()) {
+        switch (selectedLanguage) {
             case "ANDROID" : questionsResponseCall = tc2rGithubService.getAndroidQuestionsList() ;
                              break;
             case "C"       : questionsResponseCall = tc2rGithubService.getCQuestionsJson()        ;
@@ -92,7 +92,7 @@ public class Tc2rGithubRepository {
                              break;
             default        : questionsResponseCall = tc2rGithubService.getAndroidQuestionsList()  ;
                              break;
-        };
+        }
         return questionsResponseCall;
     }
 
