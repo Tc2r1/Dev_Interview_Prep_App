@@ -3,10 +3,8 @@ package com.interviewprep.kotlinretrofit.ui.score
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.interviewprep.kotlinretrofit.R
+import com.interviewprep.kotlinretrofit.databinding.ActivityScoreBinding
 import com.interviewprep.kotlinretrofit.ui.main.MainActivity
 
 /**
@@ -16,11 +14,10 @@ import com.interviewprep.kotlinretrofit.ui.main.MainActivity
  * Description: Displays the score after a quiz is taken.
  */
 class ScoreActivity : AppCompatActivity() {
+    // create a variable of Binding class to use in activity.
+    private lateinit var binding: ActivityScoreBinding
     // UI Variables
-    private var totalQuestionsTV: TextView? = null
-    private var totalCorrectTV: TextView? = null
-    private var finalGradeTV: TextView? = null
-    private var commentTV: TextView? = null
+    //No need to declare Ui variables since we are using ViewBinding
 
     // Extras Variables
     private var numCorrect = 0
@@ -28,7 +25,8 @@ class ScoreActivity : AppCompatActivity() {
     private var scorePer = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        // Now initialize the binding class
+        binding = ActivityScoreBinding.inflate(layoutInflater)
         // Get Extras from intent
         val extras = intent.extras
 
@@ -39,16 +37,18 @@ class ScoreActivity : AppCompatActivity() {
             quizSize = extras.getInt("quizSize", 0)
             numCorrect = extras.getInt("numCorrect", 0)
         }
-        setContentView(R.layout.activity_score)
+        // Now get a reference of root view and pass it to setContentView()
+        setContentView(binding.root)
 
         // Assign/initiate variables
-        totalQuestionsTV = findViewById(R.id.numofquestions_tv)
-        commentTV = findViewById(R.id.comment_tv)
-        totalCorrectTV = findViewById(R.id.numcorrect_tv)
-        finalGradeTV = findViewById(R.id.finalgrade_tv)
+        // use binding object to refer to views from root view
+        val totalQuestionsTV = binding.numofquestionsTv
+        val commentTV = binding.commentTv
+        val totalCorrectTV = binding.numcorrectTv
+        val finalGradeTV = binding.finalgradeTv
 
-        val closeButton = findViewById<Button>(R.id.close_button)
-        val restartButton = findViewById<Button>(R.id.restart_button)
+        val closeButton = binding.closeButton
+        val restartButton = binding.restartButton
         closeButton.setOnClickListener {
             closeApp()
         }
@@ -58,21 +58,21 @@ class ScoreActivity : AppCompatActivity() {
         }
 
         // Set UI Objects Text values
-        totalQuestionsTV!!.text = "There were $quizSize Questions."
-        totalCorrectTV!!.text = "Correct Answers: $numCorrect"
-        finalGradeTV!!.text = "$scorePer%"
+        totalQuestionsTV.text = "There were $quizSize Questions."
+        totalCorrectTV.text = "Correct Answers: $numCorrect"
+        finalGradeTV.text = "$scorePer%"
         if (scorePer >= 80) {
-            finalGradeTV!!.setTextColor(Color.GREEN)
-            commentTV!!.setTextColor(Color.GREEN)
-            commentTV!!.text = "OMEGA GOOD JOB!"
+            finalGradeTV.setTextColor(Color.GREEN)
+            commentTV.setTextColor(Color.GREEN)
+            commentTV.text = "OMEGA GOOD JOB!"
         } else if (scorePer in 51..78) {
-            finalGradeTV!!.setTextColor(Color.YELLOW)
-            commentTV!!.setTextColor(Color.YELLOW)
-            commentTV!!.text = "YOU'RE ALMOST THERE!"
+            finalGradeTV.setTextColor(Color.YELLOW)
+            commentTV.setTextColor(Color.YELLOW)
+            commentTV.text = "YOU'RE ALMOST THERE!"
         } else {
-            finalGradeTV!!.setTextColor(Color.RED)
-            commentTV!!.setTextColor(Color.RED)
-            commentTV!!.text = "BETTER STUDY!"
+            finalGradeTV.setTextColor(Color.RED)
+            commentTV.setTextColor(Color.RED)
+            commentTV.text = "BETTER STUDY!"
         }
     }
 
