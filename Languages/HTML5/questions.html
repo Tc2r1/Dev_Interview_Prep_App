@@ -1,0 +1,115 @@
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <title>Questions</title>
+  
+    <!-- INCLUDING JQUERY-->
+    <script src=
+"https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+  
+    <!-- CSS FOR STYLING THE PAGE -->
+    <style>
+        table {
+            margin: 0 auto;
+            font-size: large;
+            border: 1px solid black;
+        }
+  
+        h1 {
+            text-align: center;
+            color: #8439cf;
+            font-size: xx-large;
+            font-family: 'Gill Sans', 
+                'Gill Sans MT', ' Calibri', 
+                'Trebuchet MS', 'sans-serif';
+        }
+  
+        td {
+            background-color: #e7d0f0;
+            border: 1px solid black;
+        }
+  
+        th,
+        td {
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+  
+        td {
+            font-weight: lighter;
+        }
+    </style>
+</head>
+  
+<body>
+    <section>
+        <h1>Questions</h1>
+  
+        <!-- TABLE CONSTRUCTION-->
+        <table id='table'>
+            <!-- HEADING FORMATION -->
+            <tr>
+                <th>Id</th>
+                <th>Question</th>
+                <th>Details</th>
+                <th>QuestionType</th>
+                <th>trueOrFalse</th>
+                <th>shortAns</th>
+                <th>tag</th>
+            </tr>
+         
+            <script>
+                $(document).ready(function () {
+  
+                    // FETCHING DATA FROM JSON FILE
+                    $.getJSON("questions.json", 
+
+                            function (data) {
+                      
+                       
+                        
+                         var student = '';
+                         
+                        // ITERATING THROUGH OBJECTS
+                        $.each(data.questions, function (key, value) {
+  
+                            //CONSTRUCTION OF ROWS HAVING
+                            // DATA FROM JSON OBJECT
+
+
+                            student += '<tr>';
+                            student += '<td>' + 
+                                value.id+ '</td>';
+                              student += '<td>' + 
+                                value.question + '</td>';
+  
+                            student += '<td>' + 
+                                value.details + '</td>';
+  
+                            student += '<td>' + 
+                                value.questionType+ '</td>';
+
+                                student += '<td>' + 
+                                value.trueOrFalse+ '</td>';
+                                student += '<td>' + 
+                                value.shortAnswer+ '</td>';
+                                student += '<td>' + 
+                                value.tag+ '</td>';
+  
+  
+                            student += '</tr>';
+                        });
+                          
+                        //INSERTING ROWS INTO TABLE 
+                        $('#table').append(student);
+                    });
+                });
+            </script>
+    </section>
+</body>
+  
+</html>
