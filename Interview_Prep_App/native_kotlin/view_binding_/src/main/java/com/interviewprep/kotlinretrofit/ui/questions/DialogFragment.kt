@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
 import com.interviewprep.kotlinretrofit.R
+import com.interviewprep.kotlinretrofit.databinding.FragmentDialogBinding
 import com.interviewprep.kotlinretrofit.repository.models.Answer
 
 // TODO: Rename parameter arguments, choose names that match
@@ -21,8 +22,13 @@ private const val ARG_PARAM1 = "param1"
  * create an instance of this fragment.
  */
 class DialogFragment(private val func: () -> Unit) : DialogFragment() {
-    private lateinit var shortAnswerTv: TextView
-    private lateinit var detailTv: TextView
+    // assign the _binding variable initially to null
+    private var _binding: FragmentDialogBinding? = null
+    // with the backing property of the kotlin we extract
+    // the non null value of the _binding
+    private val binding: FragmentDialogBinding
+        get() = _binding!!
+
     private var answer: Answer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,13 +43,12 @@ class DialogFragment(private val func: () -> Unit) : DialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_dialog, container, false)
-        shortAnswerTv = view.findViewById(R.id.short_ans_tv)
-        detailTv = view.findViewById(R.id.details_tv)
-        shortAnswerTv.text = "\"" + answer?.answer + "\""
-        detailTv.text = answer?.details
-        return view
+        // inflate the layout and bind to the _binding
+        _binding = FragmentDialogBinding.inflate(inflater, container, false)
+        //use binding object to refer to views in fragment
+        binding.shortAnsTv.text = "\"" + answer?.answer + "\""
+        binding.detailsTv.text = answer?.details
+        return binding.root
     }
 
     override fun onDismiss(dialog: DialogInterface) {
