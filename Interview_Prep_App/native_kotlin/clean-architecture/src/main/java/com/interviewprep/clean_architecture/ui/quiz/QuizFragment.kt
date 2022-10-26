@@ -5,8 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.get
+import androidx.core.view.indices
+import androidx.core.view.size
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -103,9 +106,14 @@ class QuizFragment : Fragment() {
     private fun updateQuestion(title: String, answers: List<Answer>) {
         with(binding) {
             question.text = title
-            for ((index, answer) in answers.withIndex()) {
+            for (index in radioGroupAnswers.indices){
                 (radioGroupAnswers[index] as? RadioButton)?.let {
-                    it.text = answer.body
+                    if(index > answers.lastIndex)
+                        it.visibility = TextView.GONE
+                    else {
+                        it.visibility = TextView.VISIBLE
+                        it.text = answers[index].body
+                    }
                 }
             }
         }

@@ -55,6 +55,7 @@ class QuizViewModel @Inject constructor(
 
     fun submitAnswer(answerId: Int) {
         val quiz = uiState.value.quizState ?: return
+        if(answerId == -1) return
 
         val answer = quiz.currentQuestion.answers[answerId]
         val isCorrect = quiz.currentQuestion.correctAnswerId == answerId
