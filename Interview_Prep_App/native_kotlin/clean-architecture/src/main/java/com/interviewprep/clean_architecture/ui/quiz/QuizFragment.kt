@@ -1,28 +1,27 @@
 package com.interviewprep.clean_architecture.ui.quiz
 
-
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.view.get
+import androidx.core.view.indices
+import androidx.core.view.size
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.findNavController
-import com.google.android.material.snackbar.Snackbar
 import com.interviewprep.clean_architecture.domain.Answer
 import com.interviewprep.clean_architecture.ui.score.FinalScore
 import com.interviewprep.template.databinding.FragmentQuizBinding
 import com.tc2r.sharedresources.R
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-
 
 @AndroidEntryPoint
 class QuizFragment : Fragment() {
@@ -107,12 +106,16 @@ class QuizFragment : Fragment() {
     private fun updateQuestion(title: String, answers: List<Answer>) {
         with(binding) {
             question.text = title
-            for ((index, answer) in answers.withIndex()) {
+            for (index in radioGroupAnswers.indices){
                 (radioGroupAnswers[index] as? RadioButton)?.let {
-                    it.text = answer.body
+                    if(index > answers.lastIndex)
+                        it.visibility = TextView.GONE
+                    else {
+                        it.visibility = TextView.VISIBLE
+                        it.text = answers[index].body
+                    }
                 }
             }
-
         }
     }
 

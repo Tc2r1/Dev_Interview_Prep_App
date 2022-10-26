@@ -1,582 +1,644 @@
 {
-  "questions": [
-    {
-      "id": 0,
-      "question": "What is Android?",
-      "details": "Android is a stack of software for mobile devices which includes an Operating System, middleware and some key applications. The application executes within its own process and its own instance of Dalvik Virtual Machine.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "A stack of software for mobile devices.",
-      "tag": "android"
-    },
-    {
-      "id": 1,
-      "question": "What is a Service?",
-      "details": "Android service is a component that is used to perform operations on the background such as playing music, handle network transactions, interacting content providers etc.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It performs background functionalities.",
-      "tag": "service"
-    },
-    {
-      "id": 2,
-      "question": "What is the APK format?",
-      "details": "The Android packaging key is compressed with classes, UI's, supportive assets and manifest. All files are compressed to a single file that is called the APK.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is compressed with classes, UI's, supportive assets and manifest.",
-      "tag": "apk"
-    },
-    {
-      "id": 3,
-      "question": "What is an intent?",
-      "details": "It is connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser, etc.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is a declaration to do something.",
-      "tag": "intent"
-    },
-    {
-      "id": 4,
-      "question": "What is an android manifest file?",
-      "details": "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is a resource file which contains all the details needed by the android system about the application.",
-      "tag": "manifest"
-    },
-    {
-      "id": 5,
-      "question": "What is AAPT?",
-      "details": "AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents. This tool allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is a packaging tool and is included in the tools directory of the SDK.",
-      "tag": "aapt"
-    },
-    {
-      "id": 6,
-      "question": "What is an activity?",
-      "details": "Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is the window to a user interface.",
-      "tag": "activity"
-    },
-    {
-      "id": 7,
-      "question": "What is an Intent?",
-      "details": "Intents displays notification messages to the user from within the Android enabled device. It can be used to alert the user of a particular state that occurred. Users can be made to respond to intents. ",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "it displays a notification message to the user from within the Android enabled device.",
-      "tag": "intent"
-    },
-    {
-      "id": 8,
-      "question": "What is a container?",
-      "details": "Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples. ",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It holds objects and widgets together.",
-      "tag": "container"
-    },
-    {
-      "id": 9,
-      "question": "What is Orientation?",
-      "details": "Orientation, which can be set using setOrientation(), dictates if the LinearLayout is represented as a row or as a column. Values are set as either HORIZONTAL or VERTICAL. As with almost all smartphones, Android supports two screen orientations: portrait and landscape. When the screen orientation of an Android device is changed, the current activity being displayed is destroyed and re-created automatically to redraw its content in the new orientation",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It dictates if the LinearLayout is represented as a row or as a column.",
-      "tag": "orientation"
-    },
-    {
-      "id": 10,
-      "question": "What is adb?",
-      "details": "Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It allows developers the power to execute remote shell commands.",
-      "tag": "adb"
-    },
-    {
-      "id": 11,
-      "question": "What is an intent filter?",
-      "details": "Because every component needs to indicate which intents they can respond to, intent filters are used to filter out intents that these components are willing to receive. One or more intent filters are possible, depending on the services and activities that is going to make use of it. ",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It specifies the types of intents to which an activity, service, or broadcast receiver can respond to.",
-      "tag": "intent_filter"
+    "questions": [
+        {
+            "id": 0,
+            "question": "What is Android?",
+            "details": "Android is a stack of software for mobile devices which includes an Operating System, middleware and some key applications. The application executes within its own process and its own instance of Dalvik Virtual Machine.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "A stack of software for mobile devices.",
+            "tag": "android"
+        },
+        {
+            "id": 1,
+            "question": "What is a Service?",
+            "details": "Android service is a component that is used to perform operations on the background such as playing music, handle network transactions, interacting content providers etc.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It performs background functionalities.",
+            "tag": "service"
+        },
+        {
+            "id": 2,
+            "question": "What is the APK format?",
+            "details": "The Android packaging key is compressed with classes, UI's, supportive assets and manifest. All files are compressed to a single file that is called the APK.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is compressed with classes, UI's, supportive assets and manifest.",
+            "tag": "apk"
+        },
+        {
+            "id": 3,
+            "question": "What is an intent?",
+            "details": "It is connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser, etc.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is a declaration to do something.",
+            "tag": "intent"
+        },
+        {
+            "id": 4,
+            "question": "What is an android manifest file?",
+            "details": "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is a resource file which contains all the details needed by the android system about the application.",
+            "tag": "manifest"
+        },
+        {
+            "id": 5,
+            "question": "What is AAPT?",
+            "details": "AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents. This tool allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is a packaging tool and is included in the tools directory of the SDK.",
+            "tag": "aapt"
+        },
+        {
+            "id": 6,
+            "question": "What is an activity?",
+            "details": "Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is the window to a user interface.",
+            "tag": "activity"
+        },
+        {
+            "id": 7,
+            "question": "What is an Intent?",
+            "details": "Intents displays notification messages to the user from within the Android enabled device. It can be used to alert the user of a particular state that occurred. Users can be made to respond to intents. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "it displays a notification message to the user from within the Android enabled device.",
+            "tag": "intent"
+        },
+        {
+            "id": 8,
+            "question": "What is a container?",
+            "details": "Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It holds objects and widgets together.",
+            "tag": "container"
+        },
+        {
+            "id": 9,
+            "question": "What is Orientation?",
+            "details": "Orientation, which can be set using setOrientation(), dictates if the LinearLayout is represented as a row or as a column. Values are set as either HORIZONTAL or VERTICAL. As with almost all smartphones, Android supports two screen orientations: portrait and landscape. When the screen orientation of an Android device is changed, the current activity being displayed is destroyed and re-created automatically to redraw its content in the new orientation",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It dictates if the LinearLayout is represented as a row or as a column.",
+            "tag": "orientation"
+        },
+        {
+            "id": 10,
+            "question": "What is adb?",
+            "details": "Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It allows developers the power to execute remote shell commands.",
+            "tag": "adb"
+        },
+        {
+            "id": 11,
+            "question": "What is an intent filter?",
+            "details": "Because every component needs to indicate which intents they can respond to, intent filters are used to filter out intents that these components are willing to receive. One or more intent filters are possible, depending on the services and activities that is going to make use of it. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It specifies the types of intents to which an activity, service, or broadcast receiver can respond to.",
+            "tag": "intent_filter"
+        },
+        {
+            "id": 12,
+            "question": "What is an intent filter?",
+            "details": "An intent filter specifies the types of intents to which an activity, service, or broadcast receiver can respond to by declaring the capabilities of a component. Android components register intent filters either statically in the AndroidManifest. xml or in case of a broadcast receiver also dynamically via code.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It declares the capabilities of its parent component.",
+            "tag": "intent_filter"
+        },
+        {
+            "id": 13,
+            "question": "What is a Fragment?",
+            "details": "A fragment is a part or portion of an activity. It is modular in a sense that you can move around or combine with other fragments in a single activity. Fragments are also reusable.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is a part or portion of an activity.",
+            "tag": "fragment"
+        },
+        {
+            "id": 14,
+            "question": "What is a Sticky Intent?",
+            "details": "A Sticky Intent is a broadcast from sendStickyBroadcast() method such that the intent floats around even after the broadcast, allowing others to collect data from it.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is an intent that can send or recieve messages after the application has closed.",
+            "tag": "sticky_intent"
+        },
+        {
+            "id": 15,
+            "question": "What is an action?",
+            "details": "In Android development, an action is what the intent sender wants to do or expected to get as a response. Most application functionality is based on the intended action.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is what the intent sender wants to do or expected to get as a response.",
+            "tag": "action"
+        },
+        {
+            "id": 16,
+            "question": "What is a nine-patch image?",
+            "details": "In general, a Nine-patch image allows resizing that can be used as background or other image size requirements for the target device. The Nine-patch refers to the way you can resize the image: 4 corners that are unscaled, 4 edges that are scaled in 1 axis, and the middle one that can be scaled into both axes.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "it allows the creation of custom graphics that will scale the way that you define",
+            "tag": "nine_patch"
+        },
+        {
+            "id": 17,
+            "question": "What is application?",
+            "details": "Application class is a base class within an Android application, that comprises of different components such as Activity, Service, Broadcast Receivers & Content Providers. These components communicate with each other with the help of Intents, Callbacks & other methods. Often, components depend on other components, for eg: initiating an activity on a button click.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is the base class within an Android app that contains all other components such as activities and services.",
+            "tag": "application"
+        },
+        {
+            "id": 18,
+            "question": "What is application?",
+            "details": "Application class is a base class within an Android application, that comprises of different components such as Activity, Service, Broadcast Receivers & Content Providers. These components communicate with each other with the help of Intents, Callbacks & other methods. Often, components depend on other components, for eg: initiating an activity on a button click.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is instantiated before any other class when the process for your application/package is created.",
+            "tag": "application"
+        },
+        {
+            "id": 19,
+            "question": "What is the Context?",
+            "details": "A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. An Android app has activities. Context is like a handle to the environment your application is currently running in.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is a handle to the environment your application is currently running in.",
+            "tag": "context"
+        },
+        {
+            "id": 20,
+            "question": "What is the Context?",
+            "details": "A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. An Android app has activities. Context is like a handle to the environment your application is currently running in.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is the base class for Activity, Service, Application, etc.",
+            "tag": "context"
+        },
+        {
+            "id": 21,
+            "question": "What is Armv7?",
+            "details": "There are 3 CPU architectures in Android. ARMv7 is the most common as it is optimised for battery consumption. ARM64 is an evolved version of that that supports 64-bit processing for more powerful computing. ARMx86, is the least used for these three, since it is not battery friendly. It is more powerful than the other two.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is the most common CPU architecture in android.",
+            "tag": "armv7"
+        },
+        {
+            "id": 22,
+            "question": "What is a content provider?",
+            "details": "A ContentProvider provides data from one application to another, when requested. It manages access to a structured set of data. It provides mechanisms for defining data security. ContentProvider is the standard interface that connects data in one process with code running in another process.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is the standard interface that connects data in one process with code running in another process.",
+            "tag": "content_provider"
+        },
+        {
+            "id": 23,
+            "question": "What is a thread? ",
+            "details": "Thread should be used to separate long running operations from main thread so that performance is improved. But it can’t be cancelled elegantly and it can’t handle configuration changes of Android. You can’t update UI from Thread.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is used to separate long running operations from the main thread.",
+            "tag": "thread"
+        },
+        {
+            "id": 24,
+            "question": "What is an AsyncTask?",
+            "details": "With AsyncTask, you can update UI unlike java Thread. But many long running tasks will choke the performance.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is used to handle work items shorter than 5ms in duration.",
+            "tag": "asynctask"
+        },
+        {
+            "id": 25,
+            "question": "What is a thread? ",
+            "details": "Threads are generic processing tasks that can do most things, but one thing they cannot do is update the UI.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is a thread of execution in a program.",
+            "tag": "thread"
+        },
+        {
+            "id": 26,
+            "question": "What is a handler?",
+            "details": "Each Handler instance is associated with a single thread and that thread's message queue. They are not threads in their own behalf.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is bound to the thread and allows for communication with the UI thread.",
+            "tag": "handler"
+        },
+        {
+            "id": 27,
+            "question": "What is a handler?",
+            "details": "A Handler object receives messages and runs code to handle the messages. With handlers you can also have things like MessageQueuing, scheduling and repeating.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "is part of the Android system's framework for managing threads.",
+            "tag": "handler"
+        },
+        {
+            "id": 28,
+            "question": "What is an AsyncTask?",
+            "details": "AsyncTask is used to perform the heavy tasks in background on a dedicated thread and pass the results back to the UI thread. Hence use of AsyncTask in android application keeps the UI thread responsive at all times.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is an abstract Android class which helps the Android applications to handle the Main UI thread in an efficient way.",
+            "tag": "asynctask"
+        },
+        {
+            "id": 29,
+            "question": "What is an AsyncTask?",
+            "details": "AsyncTask is used to perform the heavy tasks in background on a dedicated thread and pass the results back to the UI thread. Hence use of AsyncTask in android application keeps the UI thread responsive at all times.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It allows us to perform long lasting tasks/background operations and show the result on the UI thread without affecting the main thread.",
+            "tag": "asynctask"
+        },
+        {
+            "id": 30,
+            "question": "What is a handler?",
+            "details": "Handlers are objects for managing threads. Handlers allow communicating between the background thread and the main thread. They run outside of the activity’s lifecycle, so they need to be cleaned up properly or else you will have thread leaks.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It receives messages and writes code on how to handle the message.",
+            "tag": "handler"
+        },
+        {
+            "id": 31,
+            "question": "An Android service is a component that is used to perform operations on the main thread such as playing music",
+            "details": "Android service is a component that is used to perform operations on the background such as playing music, handle network transactions, interacting content providers etc.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "It performs background functionalities.",
+            "tag": "service"
+        },
+        {
+            "id": 32,
+            "question": "APK stands for Android Professional Kernal.",
+            "details": "The Android packaging key is compressed with classes, UI's, supportive assets and manifest. All files are compressed to a single file that is called the APK.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "apk"
+        },
+        {
+            "id": 33,
+            "question": "Intents are synchronous messages which allow application components to request functionality from other Android components.",
+            "details": "Intents are ASYNCHRONOUS messages. They are connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser, etc.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "It is a declaration to do something.",
+            "tag": "intent"
+        },
+        {
+            "id": 34,
+            "question": "The android manifest is an optional file.",
+            "details": "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. It is a resource file which contains all the details needed by the android system about the application. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "manifest"
+        },
+        {
+            "id": 35,
+            "question": "The AAPT allows developers the ability to package their apk for any platform.",
+            "details": "AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents. This tool allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "aapt"
+        },
+        {
+            "id": 36,
+            "question": "An Android activity is a group of screens displaying the Android app's user interface.",
+            "details": "An android activity is ONE screen. Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "activity"
+        },
+        {
+            "id": 37,
+            "question": "Users are unable to respond to intents.",
+            "details": "Intents displays notification messages to the user from within the Android enabled device. It can be used to alert the user of a particular state that occurred. Users can be made to respond to intents. ",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "intent"
+        },
+        {
+            "id": 38,
+            "question": "Containers cannot hold other containers.",
+            "details": "Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples. ",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "It holds objects and widgets together.",
+            "tag": "container"
+        },
+        {
+            "id": 39,
+            "question": "Orientation is called using setContentView().",
+            "details": "Orientation, which can be set using setOrientation(), dictates if the LinearLayout is represented as a row or as a column. Values are set as either HORIZONTAL or VERTICAL. As with almost all smartphones, Android supports two screen orientations: portrait and landscape. When the screen orientation of an Android device is changed, the current activity being displayed is destroyed and re-created automatically to redraw its content in the new orientation",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "orientation"
+        },
+        {
+            "id": 40,
+            "question": "Adb is the abbreiviating of Android Development Board.",
+            "details": "Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "adb"
+        },
+        {
+            "id": 41,
+            "question": "Intent filters advertise the capabilities of an activity and delimit the intents that can handle.",
+            "details": "The Android System uses intent filters, in order to find a suitable component to handle the intent. An Intent Filter defines the intent that a component can respond to. Therefore, intent filters advertise the capabilities of a COMPONENT and delimit the intents that can handle.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "intent_filter"
 
-    },
-    {
-      "id": 12,
-      "question": "What is an intent filter?",
-      "details": "An intent filter specifies the types of intents to which an activity, service, or broadcast receiver can respond to by declaring the capabilities of a component. Android components register intent filters either statically in the AndroidManifest. xml or in case of a broadcast receiver also dynamically via code.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It declares the capabilities of its parent component.",
-      "tag": "intent_filter"
-    },
-    {
-      "id": 13,
-      "question": "What is a Fragment?",
-      "details": "A fragment is a part or portion of an activity. It is modular in a sense that you can move around or combine with other fragments in a single activity. Fragments are also reusable.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is a part or portion of an activity.",
-      "tag": "fragment"
-    },
-    {
-      "id": 14,
-      "question": "What is a Sticky Intent?",
-      "details": "A Sticky Intent is a broadcast from sendStickyBroadcast() method such that the intent floats around even after the broadcast, allowing others to collect data from it.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is an intent that can send or recieve messages after the application has closed.",
-      "tag": "sticky_intent"
-    },
-    {
-      "id": 15,
-      "question": "What is an action?",
-      "details": "In Android development, an action is what the intent sender wants to do or expected to get as a response. Most application functionality is based on the intended action.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is what the intent sender wants to do or expected to get as a response.",
-      "tag": "action"
-    },
-    {
-      "id": 16,
-      "question": "What is a nine-patch image?",
-      "details": "In general, a Nine-patch image allows resizing that can be used as background or other image size requirements for the target device. The Nine-patch refers to the way you can resize the image: 4 corners that are unscaled, 4 edges that are scaled in 1 axis, and the middle one that can be scaled into both axes.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "it allows the creation of custom graphics that will scale the way that you define",
-      "tag": "nine_patch"
-    },
-    {
-      "id": 17,
-      "question": "What is application?",
-      "details": "Application class is a base class within an Android application, that comprises of different components such as Activity, Service, Broadcast Receivers & Content Providers. These components communicate with each other with the help of Intents, Callbacks & other methods. Often, components depend on other components, for eg: initiating an activity on a button click.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is the base class within an Android app that contains all other components such as activities and services.",
-      "tag": "application"
-    },
-    {
-      "id": 18,
-      "question": "What is application?",
-      "details": "Application class is a base class within an Android application, that comprises of different components such as Activity, Service, Broadcast Receivers & Content Providers. These components communicate with each other with the help of Intents, Callbacks & other methods. Often, components depend on other components, for eg: initiating an activity on a button click.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is instantiated before any other class when the process for your application/package is created.",
-      "tag": "application"
-    },
-    {
-      "id": 19,
-      "question": "What is the Context?",
-      "details": "A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. An Android app has activities. Context is like a handle to the environment your application is currently running in.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is a handle to the environment your application is currently running in.",
-      "tag": "context"
-    },
-    {
-      "id": 20,
-      "question": "What is the Context?",
-      "details": "A Context is a handle to the system; it provides services like resolving resources, obtaining access to databases and preferences, and so on. An Android app has activities. Context is like a handle to the environment your application is currently running in.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is the base class for Activity, Service, Application, etc.",
-      "tag": "context"
-    },
-    {
-      "id": 21,
-      "question": "What is Armv7?",
-      "details": "There are 3 CPU architectures in Android. ARMv7 is the most common as it is optimised for battery consumption. ARM64 is an evolved version of that that supports 64-bit processing for more powerful computing. ARMx86, is the least used for these three, since it is not battery friendly. It is more powerful than the other two.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is the most common CPU architecture in android.",
-      "tag": "armv7"
-    },
-    {
-      "id": 22,
-      "question": "What is a content provider?",
-      "details": "A ContentProvider provides data from one application to another, when requested. It manages access to a structured set of data. It provides mechanisms for defining data security. ContentProvider is the standard interface that connects data in one process with code running in another process.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is the standard interface that connects data in one process with code running in another process.",
-      "tag": "content_provider"
-    },
-    {
-      "id": 23,
-      "question": "What is a thread? ",
-      "details": "Thread should be used to separate long running operations from main thread so that performance is improved. But it can’t be cancelled elegantly and it can’t handle configuration changes of Android. You can’t update UI from Thread.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is used to separate long running operations from the main thread.",
-      "tag": "thread"
-    },
-    {
-      "id": 24,
-      "question": "What is an AsyncTask?",
-      "details": "With AsyncTask, you can update UI unlike java Thread. But many long running tasks will choke the performance.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is used to handle work items shorter than 5ms in duration.",
-      "tag": "asynctask"
-    },
-    {
-      "id": 25,
-      "question": "What is a thread? ",
-      "details": "Threads are generic processing tasks that can do most things, but one thing they cannot do is update the UI.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is a thread of execution in a program.",
-      "tag": "thread"
-    },
-    {
-      "id": 26,
-      "question": "What is a handler?",
-      "details": "Each Handler instance is associated with a single thread and that thread's message queue. They are not threads in their own behalf.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is bound to the thread and allows for communication with the UI thread.",
-      "tag": "handler"
-    },
-    {
-      "id": 27,
-      "question": "What is a handler?",
-      "details": "A Handler object receives messages and runs code to handle the messages. With handlers you can also have things like MessageQueuing, scheduling and repeating.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "is part of the Android system's framework for managing threads.",
-      "tag": "handler"
-    },
-    {
-      "id": 28,
-      "question": "What is an AsyncTask?",
-      "details": "AsyncTask is used to perform the heavy tasks in background on a dedicated thread and pass the results back to the UI thread. Hence use of AsyncTask in android application keeps the UI thread responsive at all times.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is an abstract Android class which helps the Android applications to handle the Main UI thread in an efficient way.",
-      "tag": "asynctask"
-    },
-    {
-      "id": 29,
-      "question": "What is an AsyncTask?",
-      "details": "AsyncTask is used to perform the heavy tasks in background on a dedicated thread and pass the results back to the UI thread. Hence use of AsyncTask in android application keeps the UI thread responsive at all times.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It allows us to perform long lasting tasks/background operations and show the result on the UI thread without affecting the main thread.",
-      "tag": "asynctask"
-    },
-    {
-      "id": 30,
-      "question": "What is a handler?",
-      "details": "Handlers are objects for managing threads. Handlers allow communicating between the background thread and the main thread. They run outside of the activity’s lifecycle, so they need to be cleaned up properly or else you will have thread leaks.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It receives messages and writes code on how to handle the message.",
-      "tag": "handler"
-    },
-    {
-      "id": 31,
-      "question": "An Android service is a component that is used to perform operations on the main thread such as playing music",
-      "details": "Android service is a component that is used to perform operations on the background such as playing music, handle network transactions, interacting content providers etc.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "It performs background functionalities.",
-      "tag": "service"
-    },
-    {
-      "id": 32,
-      "question": "APK stands for Android Professional Kernal.",
-      "details": "The Android packaging key is compressed with classes, UI's, supportive assets and manifest. All files are compressed to a single file that is called the APK.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "apk"
-    },
-    {
-      "id": 33,
-      "question": "Intents are synchronous messages which allow application components to request functionality from other Android components.",
-      "details": "Intents are ASYNCHRONOUS messages. They are connected to either the external world of application or internal world of application, Such as, opening a pdf is an intent and connect to the web browser, etc.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "It is a declaration to do something.",
-      "tag": "intent"
-    },
-    {
-      "id": 34,
-      "question": "The android manifest is an optional file.",
-      "details": "Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. It is a resource file which contains all the details needed by the android system about the application. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "manifest"
-    },
-    {
-      "id": 35,
-      "question": "The AAPT allows developers the ability to package their apk for any platform.",
-      "details": "AAPT is short for Android Asset Packaging Tool. This tool provides developers with the ability to deal with zip-compatible archives, which includes creating, extracting as well as viewing its contents. This tool allows you to view, create, and update Zip-compatible archives (zip, jar, apk). It can also compile resources into binary assets.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "aapt"
-    },
-    {
-      "id": 36,
-      "question": "An Android activity is a group of screens displaying the Android app's user interface.",
-      "details": "An android activity is ONE screen. Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "activity"
-    },
-    {
-      "id": 37,
-      "question": "Users are unable to respond to intents.",
-      "details": "Intents displays notification messages to the user from within the Android enabled device. It can be used to alert the user of a particular state that occurred. Users can be made to respond to intents. ",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "intent"
-    },
-    {
-      "id": 38,
-      "question": "Containers cannot hold other containers.",
-      "details": "Containers, as the name itself implies, holds objects and widgets together, depending on which specific items are needed and in what particular arrangement that is wanted. Containers may hold labels, fields, buttons, or even child containers, as examples. ",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "It holds objects and widgets together.",
-      "tag": "container"
-    },
-    {
-      "id": 39,
-      "question": "Orientation is called using setContentView().",
-      "details": "Orientation, which can be set using setOrientation(), dictates if the LinearLayout is represented as a row or as a column. Values are set as either HORIZONTAL or VERTICAL. As with almost all smartphones, Android supports two screen orientations: portrait and landscape. When the screen orientation of an Android device is changed, the current activity being displayed is destroyed and re-created automatically to redraw its content in the new orientation",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "orientation"
-    },
-    {
-      "id": 40,
-      "question": "Adb is the abbreiviating of Android Development Board.",
-      "details": "Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "adb"
-    },
-    {
-      "id": 41,
-      "question": "Intent filters advertise the capabilities of an activity and delimit the intents that can handle.",
-      "details": "The Android System uses intent filters, in order to find a suitable component to handle the intent. An Intent Filter defines the intent that a component can respond to. Therefore, intent filters advertise the capabilities of a COMPONENT and delimit the intents that can handle.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "intent_filter"
-
-    },
-    {
-      "id": 42,
-      "question": "Intent filters restrict the capabilities of an activity and limit the intents that can handle.",
-      "details": "An intent filter specifies the types of intents to which an activity, service, or broadcast receiver can respond to by declaring the capabilities of a component. Android components register intent filters either statically in the AndroidManifest. xml or in case of a broadcast receiver also dynamically via code.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "intent_filter"
-    },
-    {
-      "id": 43,
-      "question": "Each activity can only contain one fragment. In order to exchange fragments the previous one must be disposed.",
-      "details": "A single activity can contain multiple fragments and many fragments can be reused in many, different activities. It is not wrong if we say that a fragment is a type of sub-activity that can be utilized again in multiple activities.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "fragment"
-    },
-    {
-      "id": 44,
-      "question": "An intent that is used with a sticky filter, is called as sticky intent.",
-      "details": "An intent that is used with STICKY BROADCAST, is called as sticky intent. This intent will stick with android system for future broadcast receiver requests. It sticks with Android, for future broadcast listeners. For example if BATTERY_LOW event occurs then that Intent will stick with Android so that any future requests for BATTERY_LOW, will return the Intent.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "sticky_intent"
-    },
-    {
-      "id": 45,
-      "question": "An Android Action declares the intent action accepted, in the name attribute. The value must be the class constant.",
-      "details": "The value must be the LITERAL STRING VALUE OF AN ACTION, not the class constant.In Android development, an action is what the intent sender wants to do or expects to get as a response. Most application functionality is based on the intended action.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "action"
-    },
-    {
-      "id": 46,
-      "question": "Although each fragment has each own lifecycle, completetely independent of the Activity it belongs to, as such, fragments are not influenced by the activity of which they are attached.",
-      "details": "It is not wrong if we say that a fragment is a type of sub-activity that can be utilized again in multiple activities. Although each fragment has each own lifecycle, it is connected with the Activity it belongs to, so it’s lifecycle is directly influenced by the activity’s lifecycle.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "fragment"
-    },
-    {
-      "id": 47,
-      "question": "The ContextCompat class in Android is the base class within an Android app that contains all other components such as activities and services",
-      "details": "Application class is a base class within an Android application, that comprises of different components such as Activity, Service, Broadcast Receivers & Content Providers. These components communicate with each other with the help of Intents, Callbacks & other methods. Often, components depend on other components, for eg: initiating an activity on a button click.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "application"
-    },
-    {
-      "id": 48,
-      "question": "The application object is guaranteed to stay in memory forever, it will not get recycled.",
-      "details": "You should never store mutable instance data inside the Application object because if you assume that your data will stay there, your application will inevitably crash at some point with a NullPointerException. The application object is NOT GUARANTEED TO STAY IN MEMORY FOREVER, it will get killed. Contrary to popular belief, the app won’t be restarted from scratch. Android will create a new Application object and start the activity where the user was before to give the illusion that the application was never killed in the first place.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "application"
-    },
-    {
-      "id": 49,
-      "question": "getContext() or View.getContext() both return the Application context and will always be the same throughout the life cycle.",
-      "details": "getContext() or View.getContext(): Returns the context the view is running in, through which it can access the current theme, resources, etc. \n\n getApplicationContext() or Activity.getApplicationContext(): Application context is associated with the Applicaition and will always be the same throughout the life cycle.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "context"
-    },
-    {
-      "id": 50,
-      "question": "Context is used to get information about the device the OS is on.",
-      "details": " It lets newly-created objects understand what has been going on. Typically, you call it to get information regarding another part of your program (activity and package/application).",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "context"
-    },
-    {
-      "id": 51,
-      "question": "If your application  is intentionally being closed, or killed by the OS, a PendingIntent will also be closed or killed by the OS.",
-      "details": "A specific feature of the PendingIntent is that it is not related to the lifecycle of your application. Even if your application was intentionally being closed, or killed by the OS, the PendingIntent will remain and the processes to which it had been given will be able to use it.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "pending_intent"
-    },
-    {
-      "id": 52,
-      "question": "Content Resolver is used to manage access to structured set of data. They encapsulate the data and provide abstraction as well as the mechanism for defining data security.",
-      "details": "Content provider is used to manage access to a structured set of data. A content provider allows one app to share data with other applications. They encapsulate the data and provide abstraction as well as the mechanism for defining data security.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "content_provider"
-    },
-    {
-      "id": 53,
-      "question": "A thread does not run separate, so it will block the UI.",
-      "details": "A thread should be used in a long running process that would block the UI from updating. If it's more than a second or two you might want to put it into a background thread and notify the user with a dialog or spinner or something. If you lock the UI thread for more than 5 seconds the user will be prompted with a kill or wait option by the OS.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "thread"
-    },
-    {
-      "id": 54,
-      "question": "A developer can lock the UI thread for more than 10 seconds before the user will be prompted to kill the application.",
-      "details": "A thread should be used in a long running process that would block the UI from updating. If it's more than a second or two you might want to put it into a background thread and notify the user with a dialog or spinner or something. If you lock the UI thread for more than 5 seconds the user will be prompted with a kill or wait option by the OS.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "thread"
-    },
-    {
-      "id": 55,
-      "question": "When the Activity is restarted, your AsyncTask’s reference to the Activity is retained.",
-      "details": "When an app is rotated, the entire Activity is destroyed and recreated. When the Activity is restarted, your AsyncTask’s reference to the Activity is invalid, so onPostExecute() will have no effect on the new Activity. This can be confusing if you are implicitly referencing the current Activity by having AsyncTask as an inner class of the Activity.",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "asynctask"
-    },
-    {
-      "id": 56,
-      "question": "There are many ways that an AsyncTask finishes early.",
-      "details": "Even if the Activity that originally spawned the AsyncTask is dead, the AsyncTask will continue running, even if you exit the entire application. The only way that an AsyncTask finishes early is if it is canceled via AsyncTask.cancel().",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "asynctask"
-    },
-    {
-      "id": 57,
-      "question": "Are there 8 lifecycle methods in Android Activity?",
-      "details": "There are  7 lifecycle methods of android activity. They are onCreate(), onStart(), onResume(), onPause(), onStop(), onRestart(), onDestroy().",
-      "questionType": "bool",
-      "trueOrFalse": false,
-      "shortAns": "",
-      "tag": "lifecycle"
-    }, 
-    {
-      "id": 58,
-      "question": "Activities can keep track of what is currently on screen for the user.",
-      "details": "True, activities can keep track of what is on screen to ensure that the system keeps running the process that is hosting the activity.",
-      "questionType": "bool",
-      "trueOrFalse": true,
-      "shortAns": "True",
-      "tag": "activity"
-    },
-    {
-      "id": 59,
-      "question": "What does the fragment implement to manage the lifecycle?",
-      "details": "Fragments maintain a LifecycleOwner for their view.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "LifecycleOwner",
-      "tag": "fragment"
-    },
-    {
-      "id": 60,
-      "question": "Other than the fragment lifecycle, what else is the FragmentManager responsible for?",
-      "details": "The FragmentManager is also responsible for attaching fragments to their host activity and detaching them when the fragment is no longer in use.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It attaches and detaches fragments from their host activity.",
-      "tag": "fragment"
-    },
-    {
-      "id": 61,
-      "question": "What is a coroutine and why is it used?",
-      "details": "Coroutines are lightweight threads. They provide us with an easy way to do synchronous and asynchronous programming. Coroutines help to manage long-running tasks that might otherwise block the main thread and cause your app to become unresponsive. The simplest solution to move the execution off the main thread is to create a new coroutine and execute the code on an it.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is used to perform asynchronous tasks.",
-      "tag": "coroutines"
-    },
-    {
-      "id": 62,
-      "question": "What is safeArgs?",
-      "details": "SafeArgs is a gradle plugin that allows you to Pass data to destination UI components. It generates simple object and builder classes for type-safe navigation and access to any associated arguments. SafeArgs is strongly recommended for navigating and passing data because it ensures type-safety.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It is used for passing data.",
-      "tag": "navigation"
-    },
-    {
-      "id": 63,
-      "question": "What is a pending intent?",
-      "details": "A PendingIntent object wraps the functionality of an Intent object while allowing your app to specify something that another app should do, on your app’s behalf, in response to a future action. For example, the wrapped intent might be invoked when an alarm goes off, or when the user taps on a notification.",
-      "questionType": "multi",
-      "trueOrFalse": false,
-      "shortAns": "It allows foreign applications to execute our app's code",
-      "tag": "pending_intent"
-    }
-  ]
+        },
+        {
+            "id": 42,
+            "question": "Intent filters restrict the capabilities of an activity and limit the intents that can handle.",
+            "details": "An intent filter specifies the types of intents to which an activity, service, or broadcast receiver can respond to by declaring the capabilities of a component. Android components register intent filters either statically in the AndroidManifest. xml or in case of a broadcast receiver also dynamically via code.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "intent_filter"
+        },
+        {
+            "id": 43,
+            "question": "Each activity can only contain one fragment. In order to exchange fragments the previous one must be disposed.",
+            "details": "A single activity can contain multiple fragments and many fragments can be reused in many, different activities. It is not wrong if we say that a fragment is a type of sub-activity that can be utilized again in multiple activities.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "fragment"
+        },
+        {
+            "id": 44,
+            "question": "An intent that is used with a sticky filter, is called as sticky intent.",
+            "details": "An intent that is used with STICKY BROADCAST, is called as sticky intent. This intent will stick with android system for future broadcast receiver requests. It sticks with Android, for future broadcast listeners. For example if BATTERY_LOW event occurs then that Intent will stick with Android so that any future requests for BATTERY_LOW, will return the Intent.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "sticky_intent"
+        },
+        {
+            "id": 45,
+            "question": "An Android Action declares the intent action accepted, in the name attribute. The value must be the class constant.",
+            "details": "The value must be the LITERAL STRING VALUE OF AN ACTION, not the class constant.In Android development, an action is what the intent sender wants to do or expects to get as a response. Most application functionality is based on the intended action.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "action"
+        },
+        {
+            "id": 46,
+            "question": "Although each fragment has each own lifecycle, completetely independent of the Activity it belongs to, as such, fragments are not influenced by the activity of which they are attached.",
+            "details": "It is not wrong if we say that a fragment is a type of sub-activity that can be utilized again in multiple activities. Although each fragment has each own lifecycle, it is connected with the Activity it belongs to, so it’s lifecycle is directly influenced by the activity’s lifecycle.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "fragment"
+        },
+        {
+            "id": 47,
+            "question": "The ContextCompat class in Android is the base class within an Android app that contains all other components such as activities and services",
+            "details": "Application class is a base class within an Android application, that comprises of different components such as Activity, Service, Broadcast Receivers & Content Providers. These components communicate with each other with the help of Intents, Callbacks & other methods. Often, components depend on other components, for eg: initiating an activity on a button click.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "application"
+        },
+        {
+            "id": 48,
+            "question": "The application object is guaranteed to stay in memory forever, it will not get recycled.",
+            "details": "You should never store mutable instance data inside the Application object because if you assume that your data will stay there, your application will inevitably crash at some point with a NullPointerException. The application object is NOT GUARANTEED TO STAY IN MEMORY FOREVER, it will get killed. Contrary to popular belief, the app won’t be restarted from scratch. Android will create a new Application object and start the activity where the user was before to give the illusion that the application was never killed in the first place.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "application"
+        },
+        {
+            "id": 49,
+            "question": "getContext() or View.getContext() both return the Application context and will always be the same throughout the life cycle.",
+            "details": "getContext() or View.getContext(): Returns the context the view is running in, through which it can access the current theme, resources, etc. \n\n getApplicationContext() or Activity.getApplicationContext(): Application context is associated with the Applicaition and will always be the same throughout the life cycle.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "context"
+        },
+        {
+            "id": 50,
+            "question": "Context is used to get information about the device the OS is on.",
+            "details": " It lets newly-created objects understand what has been going on. Typically, you call it to get information regarding another part of your program (activity and package/application).",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "context"
+        },
+        {
+            "id": 51,
+            "question": "If your application  is intentionally being closed, or killed by the OS, a PendingIntent will also be closed or killed by the OS.",
+            "details": "A specific feature of the PendingIntent is that it is not related to the lifecycle of your application. Even if your application was intentionally being closed, or killed by the OS, the PendingIntent will remain and the processes to which it had been given will be able to use it.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "pending_intent"
+        },
+        {
+            "id": 52,
+            "question": "Content Resolver is used to manage access to structured set of data. They encapsulate the data and provide abstraction as well as the mechanism for defining data security.",
+            "details": "Content provider is used to manage access to a structured set of data. A content provider allows one app to share data with other applications. They encapsulate the data and provide abstraction as well as the mechanism for defining data security.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "content_provider"
+        },
+        {
+            "id": 53,
+            "question": "A thread does not run separate, so it will block the UI.",
+            "details": "A thread should be used in a long running process that would block the UI from updating. If it's more than a second or two you might want to put it into a background thread and notify the user with a dialog or spinner or something. If you lock the UI thread for more than 5 seconds the user will be prompted with a kill or wait option by the OS.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "thread"
+        },
+        {
+            "id": 54,
+            "question": "A developer can lock the UI thread for more than 10 seconds before the user will be prompted to kill the application.",
+            "details": "A thread should be used in a long running process that would block the UI from updating. If it's more than a second or two you might want to put it into a background thread and notify the user with a dialog or spinner or something. If you lock the UI thread for more than 5 seconds the user will be prompted with a kill or wait option by the OS.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "thread"
+        },
+        {
+            "id": 55,
+            "question": "When the Activity is restarted, your AsyncTask’s reference to the Activity is retained.",
+            "details": "When an app is rotated, the entire Activity is destroyed and recreated. When the Activity is restarted, your AsyncTask’s reference to the Activity is invalid, so onPostExecute() will have no effect on the new Activity. This can be confusing if you are implicitly referencing the current Activity by having AsyncTask as an inner class of the Activity.",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "asynctask"
+        },
+        {
+            "id": 56,
+            "question": "There are many ways that an AsyncTask finishes early.",
+            "details": "Even if the Activity that originally spawned the AsyncTask is dead, the AsyncTask will continue running, even if you exit the entire application. The only way that an AsyncTask finishes early is if it is canceled via AsyncTask.cancel().",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "asynctask"
+        },
+        {
+            "id": 57,
+            "question": "Are there 8 lifecycle methods in Android Activity?",
+            "details": "There are  7 lifecycle methods of android activity. They are onCreate(), onStart(), onResume(), onPause(), onStop(), onRestart(), onDestroy().",
+            "questionType": "bool",
+            "trueOrFalse": false,
+            "shortAns": "",
+            "tag": "lifecycle"
+        },
+        {
+            "id": 58,
+            "question": "Activities can keep track of what is currently on screen for the user.",
+            "details": "True, activities can keep track of what is on screen to ensure that the system keeps running the process that is hosting the activity.",
+            "questionType": "bool",
+            "trueOrFalse": true,
+            "shortAns": "True",
+            "tag": "activity"
+        },
+        {
+            "id": 59,
+            "question": "What does the fragment implement to manage the lifecycle?",
+            "details": "Fragments maintain a LifecycleOwner for their view.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "LifecycleOwner",
+            "tag": "fragment"
+        },
+        {
+            "id": 60,
+            "question": "Other than the fragment lifecycle, what else is the FragmentManager responsible for?",
+            "details": "The FragmentManager is also responsible for attaching fragments to their host activity and detaching them when the fragment is no longer in use.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It attaches and detaches fragments from their host activity.",
+            "tag": "fragment"
+        },
+        {
+            "id": 61,
+            "question": "What is a coroutine and why is it used?",
+            "details": "Coroutines are lightweight threads. They provide us with an easy way to do synchronous and asynchronous programming. Coroutines help to manage long-running tasks that might otherwise block the main thread and cause your app to become unresponsive. The simplest solution to move the execution off the main thread is to create a new coroutine and execute the code on an it.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is used to perform asynchronous tasks.",
+            "tag": "coroutines"
+        },
+        {
+            "id": 62,
+            "question": "What is safeArgs?",
+            "details": "SafeArgs is a gradle plugin that allows you to Pass data to destination UI components. It generates simple object and builder classes for type-safe navigation and access to any associated arguments. SafeArgs is strongly recommended for navigating and passing data because it ensures type-safety.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is used for passing data.",
+            "tag": "navigation"
+        },
+        {
+            "id": 63,
+            "question": "What is a pending intent?",
+            "details": "A PendingIntent object wraps the functionality of an Intent object while allowing your app to specify something that another app should do, on your app’s behalf, in response to a future action. For example, the wrapped intent might be invoked when an alarm goes off, or when the user taps on a notification.",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It allows foreign applications to execute our app's code",
+            "tag": "pending_intent"
+        },
+        {
+            "id": 64,
+            "question": "What is paging in android",
+            "details": "Paging is an Android Jetpack feature that is used to load and display small amounts of data from a remote server. It uses less network bandwidth. ",
+            "questionType": "multi ",
+            "trueOrFalse": false,
+            "shortAns": "It is used to load in the form of small amounts of data.",
+            "tag": "Paging"
+        },
+        {
+            "id": 65,
+            "question": "What is motion layout?",
+            "details": "MotionLayout is a special version of ConstraintLayout. It provides touch control motion  by describing how to transition between different layouts. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is used to manage animations in the app.",
+            "tag": "Layouts"
+        },
+        {
+            "id": 66,
+            "question": "What is frame layout?",
+            "details": "Frame layout is a ViewGroup subclass, used to specify the position of multiple views placed on top of each other to represent a single view screen. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is used to block an area on the screen to a single view ",
+            "tag": "Layouts"
+        },
+        {
+            "id": 67,
+            "question": "What is role of AIDL?",
+            "details": "Android Interface Definition Language(AIDL) splits data into small portions that is understood by Android, this way it allows processes to communication between each other. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It allows the communication between the client and service. ",
+            "tag": "aidl"
+        },
+        {
+            "id": 68,
+            "question": "What is AAB?",
+            "details": "Android App Bundle(AAB) is non-proprietary publishing format supported by Google Play, other app stores & build tools like Android Studio, Bazel, Gradle, Unity etc. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is publishing format that might replace APKs entirely in future. ",
+            "tag": "aab"
+        },
+        {
+            "id": 69,
+            "question": "What is ART?",
+            "details": "Android Runtime(ART) has replaced Dalvik Virtual Machine(DVM) which translates the bytecode generated by compiler into native instructions that can be understood at device level. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It is used by Android OS as runtime environment. ",
+            "tag": "art"
+        },
+        {
+            "id": 70,
+            "question": "What is Android Profiler?",
+            "details": "It provides real-time data to debug the app to improve the app on how it uses CPU, network, battery resources & memory. ",
+            "questionType": "multi",
+            "trueOrFalse": false,
+            "shortAns": "It replaces Android Monitor tools from Android Studio 3.0 & above. ",
+            "tag": "profiler"
+        }
+    ]
 }
