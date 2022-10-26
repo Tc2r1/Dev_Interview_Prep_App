@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Quiz App</string>
+    <string name="app_name">Developer Interview App</string>
     <string name="score_display_text">"Score: "</string>
     <string name="question_display_text">"Question "</string>
     <string name="quit_app">Quit App</string>
