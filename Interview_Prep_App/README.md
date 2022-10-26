@@ -1,10 +1,6 @@
-<div align="center">
-    <br>
-    <a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/tree/master/Interview_Prep_App">
-        <img src="Assets/developer_interview_app.svg" width="1080" height="250" alt="Dev Interview App for HacktoberFest!">
-    </a>
-    <br>
-</div>
+# Developer Interview App
+
+## Please star ⭐ this repo to help other developers
 
 <h1 align="center">
 <p>🎃
@@ -14,27 +10,25 @@
 </p>
 </h1>
 
-<h3 align="center">🎃 Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to
-a public repository before doing the real thing! 🎃</h3>
+## This is the root folder you should open with IDE to build the android application
 
-This repository is open to all members of the GitHub community. Any member may contribute to this project without being a collaborator.
+Inside this folder are modules written in Java or Kotlin that all showcase different libraries (hilt, retrofit, coroutines), patterns (mvp, mvvm, view models, DI), and techniques to build an application that takes a set of questions and answers from an api request and uses them to make a functioning quiz that users can use to study for their development!
 
-# Don't forget to give ⭐ ( To give star you can see on your screen on top right hand side Just smash it 💥 :)
+## Our Code Standards
 
+This project attempts to adhere to a level of professionalism:
 
-<div align="left">
-    <br>
-<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/issues">
-        <img src="Assets/steps_for_contributing.svg" width="400px" height="200px" alt="Add Some Code!">
-            </a>
-</div> 
+* Well Documented Code - Please use comments to explain what your functions/methods are doing
+* Error Free Code - Please check your code against a static linter for syntax errrors
+* We Do Not Accept Spam - Pull Request that are deemed Spam will be marked so and excluded
+  * Pull Request that have nothing to do with the subject of this project.
+  * Pull Request that are not reworked after requested changes.
+  * Empty or zero effort pull request
+  * Pull Request without proper descriptions
 
+## How To Contribute
 
 (Type **"!assign"** in a comment under issues to be assigned an issue)
-
-**I have worked really hard to create a variety of ways in which everyone contribute to this project, there should be multiple directions any skill level can go in with this project.
-Below are a few different ways all skill levels and programmer types can contribute.**
-
 
 Contributors submitting low- or non-code content to projects [**should create a PR/MR to track it**](https://hacktoberfest.com/about/#low-or-non-code)
 
@@ -62,12 +56,6 @@ Contributors submitting low- or non-code content to projects [**should create a 
   * Review the Pull Request submitted by others.
     * At least 3 request must be reviewed in order to satisfy a contribution of this type.
 
-### Create a markdown.md file named `[language]_cheatsheet_[username].md`
-
-Inside this file, create a cheatsheet that others can use to help them study for interviews.
-
-### Create a document in the project `and-summit-22-notes` with your thoughts on what you found interesting that was discussed during [Android Summit 2022](https://developer.android.com/events/dev-summit/technical-talks#modern-android-development)
-
 ## Low Code Contributions
 
 * Coding Cheat Sheets
@@ -79,13 +67,18 @@ Inside this file, create a cheatsheet that others can use to help them study for
 
 [Click Here to Create a Pull Request](https://github.com/Tc2r1/Hacktoberfest_Interview_App/compare)
 
-### 🎃🎃LEVEL 3 CONTRIBUTIONS🎃🎃 - BUILD A MODULE OF THE PROJECT :O!! YOU'RE A BOSS!
+## Code Contributions
 
-Want a challenge? Here you will rebuild the project with options to use the supplied UI. You will focus on showing off a few different libraries and
-an architecture of your choice (MVP, MVC, MVVM, HILT, Coroutines, etc etc etc endless possibilities) To show other developers different ways in which
-these things can be combined to build the quiz application. Please focus on and gain experience with the repository layer, dependency injection, view
+### 🎃🎃 LEVEL 3 CONTRIBUTIONS 🎃🎃
+
+Level Three Contributions are definately our favorite to see. Here you will create a module of your own within the project and showcase your skills at recreating the Quiz App using unique library combinations. You should focus on showing off a few different libraries and an architecture of your choice (MVP, MVC, MVVM, HILT, Coroutines, etc etc etc endless possibilities).
+
+Please focus on and gain experience with the repository layer, dependency injection, view
 models, and whatever else you like!
-Lets see how many different modules we can create!
+
+There are plenty of "Issues" for this type of contribution, though you may have to scroll through the issues page to find them. It is fine if you create one of these without an issue ticket.
+
+Here are steps to complete this type of contribution:
 
 1. navigate to `https://github.com/Tc2r1/DevInterview_Questions/tree/master/Interview_Prep_App/`
 2. decide if you want to work in Native_Java or Native_Kotlin, or something else (for something else skip to 6b) open the folder you choose.
@@ -108,14 +101,12 @@ Lets see how many different modules we can create!
 13. CELEBRATE GOOD TIMES COME ON!!
 14. RINSE REPEAT! You're a fireball!
 
-<br>
-<br>
-<br>
-
-### 🎃🎃LEVEL 2 CONTRIBUTIONS🎃🎃 - RESOLVE A SMALL "ISSUE" TICKET!
+### 🎃🎃 LEVEL 2 CONTRIBUTIONS 🎃🎃 - RESOLVE A SMALL "ISSUE" TICKET
 
 Want to get your hands wet with some programming? Look at the open issues and find one that allows you to contribute to one of the modules! These will
 vary but should be easy enough.
+
+Alternatively, after building the project, check some of the modules for something you wish to update or add to, These code contributions will also be accepted. 
 
 1. Find an issue and ask for rights/claim to work on it.
 2. A Maintainer will grant said permissions.
@@ -128,14 +119,9 @@ vary but should be easy enough.
 9. CELEBRATE GOOD TIMES COME ON!!
 10. RINSE REPEAT! You're a fireball!
 
-<br>
-<br>
-<br>
+### 🎃🎃Level 1 Contributions 🎃🎃 - Add a minimal of 3 objects to the questions or answers json of your choice
 
-### 🎃🎃Level 1 Contributions🎃🎃 - Add a minimal of 3 objects to the questions or answers json of your choice.
-
-We are using Json to create a list of frequently given interview questions and answers for different languages!
-In every directory, you will find two files `questions` and `answers`
+We are using Json to create a list of frequently given interview questions and answers for different languages! In every directory, you will find two files `questions` and `answers`
 
 If you'd like to contribute to **questions.json**:
 
@@ -232,84 +218,5 @@ Please make sure to match the syntax of the previous items. Answers should end w
       
     }
 
-4. Open Contributors.md file and add your name and relevant information.
-5. Make Pull Request.
-
-<div align="left">
-    <br>
-<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/issues">
-        <img src="Assets/what_is_hacktoberfest.svg" width="400px" height="200px" alt="What Is HacktoberFest?">
-            </a>
-    <br>
-</div>
-<div align="center">
-A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first pull request to any public repository on GitHub and contribute to the open source developer community.
-</div>
-
-
-
-<h1 align="center"> Hacktoberfest 2022 🎉</h1>
-
-<div align="center">
-<img src="https://img.shields.io/badge/hacktoberfest-2022-blueviolet" alt="Hacktober Badge"/>
-<img src="https://img.shields.io/badge/hacktoberfest-2021-blueviolet" alt="Hacktober Badge"/>
- <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
- <a href="https://github.com/Tc2r1" ><img src="https://img.shields.io/badge/Contributions-welcome-violet.svg?style=flat&logo=git" alt="Contributions"/></a>
-
-</div>
-
-### 🗣 Hacktoberfest encourages participation in the open source community, which grows bigger every year. Complete the 2021 challenge and earn a limited edition T-shirt.
-
-📢 **Register [here](https://hacktoberfest.com/auth/) for Hacktoberfest and make four pull requests (PRs) between October 1st-31st to grab free SWAGS
-🔥.**
-
-## Rules
-
-- Don't use filthy words and be welcome for beginners and other people in this community.
-
----
-
-## Github Contribution Rules
-
-- Pull requests can be submitted to any opted-in repository on GitHub or GitLab.
-- The pull request must contain commits you made yourself.
-- If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.
-- If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
-- To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.
-- This year, the first 50,000 participants can earn a T-shirt.
-
----
-
-Contributions of any kind welcome!
-
--Best of luck ✌️
-
-# Don't forget to give ⭐ 
-## ( To give star you can see on your screen on top right hand side Just smash it 💥 :) )
-
-<div align="center">
-    <br>
-<a href="https://github.com/Tc2r1/Hacktoberfest_Interview_App/issues">
-        <img src="Assets/contributors_list.svg" width="400px" height="200px" alt="Thanks For Your Help!?">🏆
-            </a>
-    <br>
-
-
-🏆🙏 Thanks🙏🏆
-
-<a href="https://github.com/Tc2r1/DevInterview_Questions/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Tc2r1/DevInterview_Questions" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-> NOTE: if you should be on the list of contributors but we forgot you, don't be shy and let us know!
-</div> 
-<br>
-<br>
-
-## License
-
-[![By-nc-nd](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
-
-[Nudennie White](https://www.linkedin.com/in/nudennie-w-99411075/)
+4. Open Contributors.md file and add your name and relevant information
+5. Make Pull Request
