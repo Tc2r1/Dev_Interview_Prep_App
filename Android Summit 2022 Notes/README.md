@@ -53,7 +53,6 @@ This project attempts to adhere to a level of professionalism:
   * Empty or zero effort pull request
   * Pull Request without proper descriptions
 
-
 # Important :
 
 ```

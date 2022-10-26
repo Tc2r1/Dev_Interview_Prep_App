@@ -1,4 +1,5 @@
 # Cheat Sheets - Language Study and Tip Guides
+
 ## How To Contribute
 
 ### Here you can find cheet sheets on coding languages to help you learn faster.
@@ -23,6 +24,10 @@ Inside this file, create a cheatsheet that others can use to help them study for
 ```
 
 🥳🥳 and yaay!! You make your PR successfully.
+
+### Create a markdown.md file named `[language]_cheatsheet_[username].md`
+
+Inside this file, create a cheatsheet that others can use to help them study for interviews.
 
 ## Our Code Standards
 
