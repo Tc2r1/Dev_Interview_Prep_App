@@ -2,6 +2,8 @@ package com.nudennie.interviewprepapp.db
 
 import androidx.room.Dao
 import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
@@ -14,7 +16,11 @@ interface QuizDao {
     @Query("DROP TABLE QuizTable")
     fun deleteQuiz()
 
-    //Function to delete a particular note
+    //Function to delete a particular Row in the table
     @Delete
-    suspend fun deleteNote(quizInfo: QuizInfo)
+    fun deleteQuizRow(quizInfo: QuizInfo)
+
+    // Function to add a Row into the table
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertQuizRow(quizInfo: QuizInfo)
 }
