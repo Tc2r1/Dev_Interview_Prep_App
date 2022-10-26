@@ -13,7 +13,7 @@ interface QuizDao {
     fun getAll(): List<QuizInfo>
 
     // Function to delete all Questions and Answers in the table
-    @Query("DROP TABLE QuizTable")
+    @Query("DELETE FROM QuizTable")
     fun deleteQuiz()
 
     //Function to delete a particular Row in the table
