@@ -52,3 +52,17 @@ This project attempts to adhere to a level of professionalism:
   * Pull Request that are not reworked after requested changes.
   * Empty or zero effort pull request
   * Pull Request without proper descriptions
+
+# Important :
+
+```
+1) Star ⭐ the repo & follow the account @Tc2r1
+2) Read the readme file and generate the issue
+3) After assign the issue, fork the repo
+4) Bring the repo in your local system
+5) Create a new branch 
+6) Now add some new notes on the summit.
+7) Commit and create a pull request (Don't send any Plagiarized content)
+```
+
+🥳🥳 and yaay!! You make your PR successfully.
