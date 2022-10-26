@@ -18,7 +18,11 @@ class QuizViewModel @Inject constructor(
     private val quizRepository: QuizRepository,
     @Dispatcher(InterviewPrepDispatchers.IO) private val ioDispatcher: CoroutineDispatcher
 ) : ViewModel() {
-    private val repositoryDelay = 2_000L
+
+    companion object {
+        private const val QUESTIONS_PER_QUIZ = 10
+        private const val REPOSITORY_DELAY = 2_000L
+    }
 
     val uiState = MutableStateFlow(QuizUiState.Initial)
 
@@ -30,13 +34,13 @@ class QuizViewModel @Inject constructor(
         viewModelScope.launch(ioDispatcher) {
             while (uiState.value.quizState == null) {
                 fetchQuiz()
-                delay(repositoryDelay)
+                delay(REPOSITORY_DELAY)
             }
         }
     }
 
     private suspend fun fetchQuiz() {
-        val quizResult = quizRepository.fetchQuiz(4, 4)
+        val quizResult = quizRepository.fetchQuiz(QUESTIONS_PER_QUIZ, 4)
         val quizState = quizResult.getOrNull()
         val quizThrowable = quizResult.exceptionOrNull()
 
