@@ -70,8 +70,6 @@ Inside this file, create a cheatsheet that others can use to help them study for
 
 ## Low Code Contributions
 
-* Coding Cheat Sheets
-  * Add a coding Cheat Sheet to the `cheat_sheets` folder for a coding language.
 * Add Comments to at least 2 files in the project
   * comments should explain and detail what the code is doing to help newer developers.
 * Helpful Links
