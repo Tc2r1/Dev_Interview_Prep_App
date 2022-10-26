@@ -212,6 +212,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end|bottom"
+            android:layout_margin="12dp"
             android:background="@drawable/radio_bordered_background"
             android:backgroundTint="@color/primaryLightColor"
             android:text="@string/question_new_quiz"
