@@ -8,5 +8,5 @@ data class FinalScore(
     val correctAnswersCount: Int,
 ) : Parcelable {
     val percentageScore: Int
-        get() = correctAnswersCount / questionsCount * 100
+        get() = 100 * correctAnswersCount / questionsCount
 }
