@@ -25,6 +25,62 @@ class QuizRepositoryImp @Inject constructor(
 ) : QuizRepository {
     private val jsonParser = Json { ignoreUnknownKeys = true }
 
+    override suspend fun fetchQuiz(questionCount: Int, answersPerQuestion: Int): Result<Quiz> =
+        withContext(Dispatchers.IO) {
+            val questions =
+                getAllQuestions()
+                    .filter { it.shortAns.isNotBlank() }
+                    .takeRandomN(questionCount)
+                    .map { domainQuestionFromModel(it, answersPerQuestion) }
+            Result.success(
+                Quiz(
+                    0,
+                    0,
+                    questions
+                )
+            )
+        }
+
+    private fun domainQuestionFromModel(model: QuestionModel, answersCount: Int) =
+        when (model.trueOrFalse) {
+            true -> trueOrFalseQuestion(model)
+            false -> multiChoiceQuestion(model, answersCount)
+        }
+
+
+    private fun trueOrFalseQuestion(model: QuestionModel): Question {
+        val answers = listOf(
+            Answer("True", model.details),
+            Answer("False", model.details)
+        )
+
+        return Question(
+            model.question,
+            model.details,
+            answers,
+            if (model.shortAns == "True") 0 else 1
+        )
+    }
+
+    private fun multiChoiceQuestion(model: QuestionModel, answersCount: Int): Question {
+        val correctAnswer = Answer(model.shortAns, model.details)
+        val answers =
+            getAllAnswers()
+                .filter { ans -> ans.answer !in model.shortAns && ans.answer.isNotBlank() }
+                .takeRandomN(answersCount - 1)
+                .map(AnswerModel::toDomain)
+                .plus(correctAnswer)
+                .shuffled()
+
+        return Question(
+            model.question,
+            model.details,
+            answers,
+            answers.indexOf(correctAnswer)
+        )
+    }
+
+
     private fun getJsonDataFromAsset(fileName: String): String? {
         val jsonString: String
         try {
@@ -51,43 +107,6 @@ class QuizRepositoryImp @Inject constructor(
             jsonParser.decodeFromString<QuestionsListModel>(data).questions
         } ?: listOf()
     }
-
-    override suspend fun fetchQuiz(questionCount: Int, answersPerQuestion: Int): Result<Quiz> =
-        withContext(Dispatchers.IO) {
-            val fakeAnswerCount = answersPerQuestion - 1
-
-            val answers = getAllAnswers().takeRandomN(questionCount * fakeAnswerCount)
-            val questions = getAllQuestions().takeRandomN(questionCount)
-
-            val answersRandom =
-                answers
-                    .filter { ans -> ans.answer !in questions.map { it.shortAns } }
-                    .takeRandomN(questionCount * fakeAnswerCount)
-
-            val multiChoiceQuestions = questions.mapIndexed { index, questionModel ->
-                val correctAnswer = Answer(questionModel.shortAns, questionModel.details)
-                val allAnswers =
-                    answersRandom
-                        .subList(index * fakeAnswerCount, (index + 1) * fakeAnswerCount)
-                        .map(AnswerModel::toDomain)
-                        .plus(correctAnswer)
-                        .shuffled()
-
-                Question(
-                    questionModel.question,
-                    questionModel.details,
-                    allAnswers,
-                    allAnswers.indexOf(correctAnswer)
-                )
-            }
-            Result.success(
-                Quiz(
-                    0,
-                    0,
-                    multiChoiceQuestions
-                )
-            )
-        }
 
     private fun <T> List<T>.takeRandomN(n: Int) =
         asSequence()
