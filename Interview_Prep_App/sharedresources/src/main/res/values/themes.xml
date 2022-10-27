@@ -26,4 +26,6 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimary</item>
     </style>
+
+
 </resources>
