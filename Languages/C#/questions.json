@@ -26,6 +26,33 @@
       "trueOrFalse": true,
       "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS"="",
       "tag": "Transportation"
+    },
+    {
+      "id": 3,
+      "question": "Is C# case-sensitive?",
+      "details": "It is case sensitive, this is important because there are variable differences. ",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS",
+      "tag": "coding_language"
+    },
+    {
+      "id": 4,
+      "question": "How do you create a single line comment in C#?",
+      "details": "It is done using a double backslash to create a single line comment",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a double backslash",
+      "tag": "comments"
+    },
+    {
+      "id": 5,
+      "question": "Does an array index start at 0?",
+      "details": "It starts with 0 and increases thereafter",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "**NOTHING GOES HERE FOR BOOLEAN QUESTIONS",
+      "tag": "Array_Index"
     }
   ]
 }
