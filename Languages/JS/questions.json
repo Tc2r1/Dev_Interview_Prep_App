@@ -108,6 +108,51 @@
 		"trueOrFalse": false,
 		"shortAns": "It is an object, which object depends upon where the code is being invoked.",
 		"tag": "JavaScript"
+	},
+	{
+		"id": 12,
+		"question": "What does IIFE mean?",
+		"details": "IIFE is a function in Javascript which immediately invoked and executed as soon as it is defined. Variables declared within the IIFE cannot be accessed by the outside world and this way you can avoid the global scope from getting polluted. So the primary reason to use IIFE is to immediately execute the code and obtain data privacy.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "IIFE is a function in Javascript which immediately invoked and executed as soon as it is defined.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 13,
+		"question": "What is Closure?",
+		"details": "A closure is simply a function inside another function that has access to the outer function variable. Now, this definition sound pretty much straightforward but the real magic is created with the scope. The inner function can access the variable defined in its scope, in the scope of its parent function, and the global variables.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Closure is a function inside another function that has access to the outer function variable.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 14,
+		"question": "What does Scope in JS mean?",
+		"details": "Scope is the accessibility of variables, functions, and objects in some particular part of your code during runtime. In other words, scope determines the visibility of variables and other resources in areas of your code. The scope is defined in the main two ways 1. Global Scope 2. Local Scope",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Scope means variable access.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 15,
+		"question": "What is Currying?",
+		"details": "When a function, instead of taking all arguments at one time, takes the first one and return a new function that takes the second one and returns a new function which takes the third one, and so forth until all arguments have been fulfilled.The technique of evaluating is called Currying.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Currying is a technique of evaluating the function with multiple arguments, into a sequence of function with a single argument.",
+		"tag": "JavaScript"
+	},
+	{
+		"id": 16,
+		"question": "What is Memoization?",
+		"details": "Memoization is a programming technique that attempts to increase a function’s performance by caching its previously computed results. Each time a memoized function is called, its parameters are used to index the cache. If the data is present, then it can be returned, without executing the entire function. However, if the data is not cached, then the function is executed, and the result is added to the cache.",
+		"questionType": "multi",
+		"trueOrFalse": false,
+		"shortAns": "Memoization or memoisation is an optimization technique used primarily to speed up computer programs by storing the results of expensive function calls.",
+		"tag": "JavaScript"
 	}
    ]
 }

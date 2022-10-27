@@ -1,0 +1,196 @@
+{
+    "answers": [
+        {
+            "answer": "It is an abstract description of an operation to be performed.",
+            "details": "An Intent provides a facility for performing late runtime binding between the code in different applications. Its most significant use is in the launching of activities, where it can be thought of as the glue between activities."
+        },
+        {
+            "answer": "It is an app created for Android, Google's mobile operating system.",
+            "details": "The Android packaging key is compressed with classes, UI\\'s, supportive assets and manifest. All files are compressed to a single file."
+        },
+        {
+            "answer": "It specifies the component to be invoked from activity.",
+            "details": "Android Explicit intent specifies the component to be invoked from activity. We can call another activity in android by explicit intent."
+        },
+        {
+            "answer": "It provides information of available components provided by the system to be invoked.",
+            "details": "Implicit Intent doesn't specify the component. In such case, intent provides information of available components provided by the system that is to be invoked."
+        },
+        {
+            "answer": "It presents essential information about your app to the Android system",
+            "details": "Every android application must have a Manifest.xml file (with precisely that name) in its root directory. The manifest file presents essential information about your app to the Android system, information the system must have before it can run any of the app's code."
+        },
+        {
+            "answer": "It is useful to develop the applications and test the applications.",
+            "details": "ADT (Android Developer Tools) is a plugin that provides a suite of tools that are integrated with the Eclipse IDE. It offers you access to many features that help you develop Android applications quickly."
+        },
+        {
+            "answer": "is a set of development tools used to develop applications for Android platform.",
+            "details": "Android SDK Tools is a component for the Android SDK. It includes the complete set of development and debugging tools for Android. It is included with Android Studio."
+        },
+        {
+            "answer": "It is a single screen in Android.",
+            "details": "An Activity is a single screen in Android. It is like a window in a desktop app, or a Frame in a Java program. An Activity allows you place all your UI components or widgets together on the screen."
+        },
+        {
+            "answer": "It is everything you can see on the screen of the app.",
+            "details": "Think of the individual UI elements like buttons, labels, and text fields."
+        },
+        {
+            "answer": "It is responsible for invoking individual components. ",
+            "details": "The main purpose of intent is to invoke individual components. Common uses include starting the service, launching activities, displaying a list of contacts, dialing a phone number, or displaying a web page."
+        },
+        {
+            "answer": "It is a background process that can either be local or remote.",
+            "details": "A service is a background process that can either be local or remote. Local services may be accessed from within the application while remote services are intended to be used by other applications running on the same device."
+        },
+        {
+            "answer": "It shares data between applications.",
+            "details": "Content providers can help an application manage access to data stored by itself, stored by other apps, and provide a way to share data with other apps. They encapsulate the data, and provide mechanisms for defining data security. Content providers are the standard interface that connects data in one process with code running in another process."
+        },
+        {
+            "answer": "it is a modular section of an activity, which has its own lifecycle, receives its own input events",
+            "details": "A fragment must always be hosted in an activity and the fragment's lifecycle is directly affected by the host activity's lifecycle."
+        },
+        {
+            "answer": "It represents a behavior or a portion of user interface in a FragmentActivity.",
+            "details": "You can combine multiple fragments in a single activity to build a multi-pane UI and reuse a fragment in multiple activities. "
+        },
+        {
+            "answer": "It is where you initialize your activity.",
+            "details": "OnCreate(Bundle), When Activity is started and application is not loaded, then both onCreate() methods will be called."
+        },
+        {
+            "answer": "It is called whenever the application becomes visible.",
+            "details": "onStart(), When the activity enters the Started state, the system invokes this callback. The onStart() call makes the activity visible to the user, as the app prepares for the activity to enter the foreground and become interactive. The main difference between onStart and onCreate is that onStart follows onCreate. onStart() is called whenever the application becomes visible. This includes when the application is first created and when it is brought back on the screen without being terminated. This second behaviour occurs when a user switches applications and the app is sitting in the background."
+        },
+        {
+            "answer": "It is used to pause operations such as animations and music playback.",
+            "details": "onPause(), The system calls this method as the first indication that the user is leaving your activity (though it does not always mean the activity is being destroyed). Use the onPause() method to pause operations such animations and music playback that should not continue while the Activity is in the Paused state, and that you expect to resume shortly."
+        },
+        {
+            "answer": "It is the final call that the activity receives.",
+            "details": "onDestroy(), Its like death of an application. Once this is done all the progress in the app is lost unless app data is saved locally or in a database online. This is method is invoked in two ways: either by programmer using finish() or by the system when the memory runs out."
+        },
+        {
+            "answer": "It is invoked when an activity has finished running and is about to be terminated.",
+            "details": "onStopped(), When your activity is no longer visible to the user, it has entered the Stopped state, and the system invokes the onStop() callback. This may occur, for example, when a newly launched activity covers the entire screen. The system may also call onStop() when the activity has finished running, and is about to be terminated."
+        },
+        {
+            "answer": "It is a set of rules that define what happens when an activity is different states.",
+            "details": "A lifecycle for an activity is set of rules when an activity is destroyed from memory or when app’s state is saved."
+        },
+        {
+            "answer": "It is denotes software for which the original source code is made freely available and may be redistributed and modified.",
+            "details": "The Android platform is open sourced: No licenses, no distribution or development fees."
+        },
+        {
+            "answer": "It is a highly optimized virtual machine for mobile devices.",
+            "details": "The Dalvik Virtual Machine (DVM) is an android virtual machine optimized for mobile devices. It optimizes the virtual machine for memory, battery life and performance."
+        },
+        {
+            "answer":"It is the open-source relational database of choice for Android applications.",
+            "details": "SQLite is the open-source relational database of choice for Android applications. The SQLite engine is serverless, transactional, and self-contained. Instead of the typical client-server relationship of most database management systems, the SQLite engine is integrally linked with the application. The library can also be called dynamically, and makes use of simple function calls that reduce latency in database access."
+        },
+        {
+            "answer": "It is the base layer of an application that directly interfaces with the device hardware.",
+            "details": "Linux Kernel: The base layer of an application that directly interfaces with the device hardware—this is the level that deals with hardware drivers like the camera, keypad, and display."
+        },
+        {
+            "answer": "It rest on top of the Linux Kernel, it is a set of open-source libraries.",
+            "details": "Native Libraries: Resting on top of the Linux Kernel are a set of open-source libraries, including the SQLite database, libc, and the WebKit browser engine."
+        },
+        {
+            "answer": "It is the same level as the Native Libraries. ",
+            "details": "Android Runtime: The Dalvik Virtual Machine is in the same level as the Native Libraries and allows every Android app to run its own processes."
+        },
+        {
+            "answer": "It is the stack of code that makes up the OS which includes native libraries which may or may not be accessible to the developer.",
+            "details": "Android Framework is the stack of code that makes up the OS which includes native libraries which may or may not be accessible to the developer. It includes tools to design UI, work with databases, handle user interaction, etc."
+        },
+        {
+            "answer": "It is the top layer is the Android App itself.",
+            "details": "Applications: The top layer is the Android App itself. This is the level where applications are actually installed, and the one developers are most familiar with."
+        },
+        {
+            "answer": "It is a debugging tool used in the Android platform. The Dalvik Debug Monitor Service is downloaded as part of the Android SDK.",
+            "details": "The Dalvik Debug Monitor Service (DDMS) is a debugging tool used in the Android platform. The Dalvik Debug Monitor Service is downloaded as part of the Android SDK. Some of the services provided by the DDMS are port forwarding, on-device screen capture, on-device thread and heap monitoring, and radio state information. The Dalvik Debug Monitor Service allows developers to spot bugs in applications running on either an emulator or an actual Android device. "
+        },
+        {
+            "answer": "It appears to the user when an Android application remains unresponsive for a long period of time",
+            "details": "ANR (Application Not Responding) To avoid ANR, an app should perform lengthy database or networking operations in separate threads. For background task-intensive apps, you can alleviate pressure from the UI thread by using the IntentService. In general, it helps to always define time-outs for all your web service calls and to remain ever vigilant for infinite loops in complex calculations. "
+        },
+        {
+            "answer": "It is typically caused when the app performs too much on the main thread.",
+            "details": "ANR (Application Not Responding) To avoid ANR, an app should perform lengthy database or networking operations in separate threads. For background task-intensive apps, you can alleviate pressure from the UI thread by using the IntentService. In general, it helps to always define time-outs for all your web service calls and to remain ever vigilant for infinite loops in complex calculations. "
+        },
+        {
+            "answer": "It is a collection of views and other child views.",
+            "details": "View group is a collection of views and other child views, it is an invisible part and the base class for layouts."
+        },
+        {
+            "answer": "It is like an activity to do background functionalities without UI interaction. ",
+            "details": "Services are faceless components: The components of Android system that run in the background are Service components. They are very much like activities, only without a User Interface. They carry out long-running tasks desired by the application (without user intervention). Each Service has a specific job, and they keep at it if you switch between different Activities, or even if you switch to a different application altogether."
+        },
+        {
+            "answer": "It supplies data from one application to others on request.",
+            "details": "A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. A content provider can use different ways to store its data and the data can be stored in a database, in files, or even over a network."
+        },
+        {
+            "answer": "It executes remote shell commands to run applications on an emulator.",
+            "details": "The ADB (Android Debug Bridge) in Android acts as bridge between emulator and IDE, it executes remote shell commands to run applications on an emulator."
+        },
+        {
+            "answer": "It supplies data from one application to others on request.",
+            "details": "A content provider component supplies data from one application to others on request. Such requests are handled by the methods of the ContentResolver class. A content provider can use different ways to store its data and the data can be stored in a database, in files, or even over a network."
+        },
+        {
+            "answer": "It is an Android architecture feature that powers our applications, and is the basis for the framework feature.",
+            "details": "Android Runtime is one of five Architecture Features. It contains core libraries and the DVM (Dalvik Virtual Machine) which is used for executing applications on Android, optimize battery life, memory usage, and performance. This results in less memory usage and faster performance. "
+        },
+        {
+            "answer": "It is an Android architecture feature that provides Application Programming Interfaces(API) and higher-level services.",
+            "details": "Android Framework is one of five Architecture Features. It provides classes, interfaces, and utilities that are used for the development of Android Hardware Abstraction Layer (HAL), which allows the application to communicate with the hardware-specific device drivers. It provides high-level services such as Activity Manager, Content Providers, Resource Manager, Notifications Manager, and View System."
+        },
+        {
+            "answer": "It is a message that pops up on the screen displaying information on the status of an operation initiated by a user.",
+            "details": "Toast is a message that pops up on the screen displaying a message regarding the status of an operation initiated by a user. It covers only the expanse of space required for the message while the user's recent activity remains visible and interactive."
+        },
+        {
+            "answer": "It manages all the drivers needed during the runtime of an Android application.",
+            "details": "Linux Kernel is one of five Architecture Features. It manages all the drivers needed during the runtime of an Android device. The main features of Linux Kernel is security between application and host system, efficient memory management, workflow process management, handles network stack, and a multitasking operating system with asynchronous execution."
+        },
+        {
+            "answer":"It is a method facilitates communication between the client and the service.",
+            "details": "AIDL stands for Android Interface Definition Language. It facilitates communication between the client and the service. It also communicates the information through inter-process communication.For communication between processes, the data is broken down into chunks which are easily understandable by the Android platform."
+        },
+        {
+            "answer":"It is a debugging tool in Android Studio.",
+            "details": "The Dalvik Debug Monitor Server (DDMS) is a debugging tool in Android Studio. It has a wide range of debugging features, such as Port forwarding , Location data spoofing, Screen capture, Logcat, Radio state information, Thread and Heap formation.The DDMS tool is now deprecated and Android now suggests the users use Android Profiler instead."
+        },
+        {
+            "answer":"It is a file that contains information about the application, which is then provided to the Android system.",
+            "details": "The AndroidManifest.xml file contains information about the application, which is then provided to the Android system. This data may include the package name, components such as activity, services, content providers, and more.This file executes the following tasks like providing a unique name to the Java package, Declaring the Android API which will be used by the application, etc."
+        },
+        {
+            "answer": "It is emulation of real Android device.",
+            "details": "It is virtual device run on development computer to debug & test Android applications. It emulates most of the features of real android device including location, camera etc."
+        },
+        {
+            "answer": "It is used to store data.",
+            "details": "SharedPreference stores data in XML files as key-value pair."
+        },
+        {
+            "answer": "It is to secure data and code.",
+            "details": "Permissions in android protects user data & privacy from compromising from 3rd party, virus attacks."
+        },
+        {
+            "answer": "It is process with no services, activities and broadcast receivers.",
+            "details": "Empty process has its component destroyed and its been hold on to improve the user experience if the same process is invoke/needed again."
+        },
+        {
+            "answer": "It provides lightweight feedback about an operation.",
+            "details": "Snackbar can be considered similar to Toast message except it shows a brief message at the bottom of screen on mobile & lower left on larger devices. It can be displayed one at a time that appears above all views."
+        }
+    ]
+}
