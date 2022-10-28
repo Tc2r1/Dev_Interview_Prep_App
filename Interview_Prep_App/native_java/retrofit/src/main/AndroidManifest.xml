@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InterviewPrepApp">
         <activity
-            android:name=".ui.main.SplashScreenActivity"
+            android:name=".ui.main.AnimSplashScreenActivity"
             android:exported="true"
             android:theme="@style/SplashScreenTheme">
             <!--Necessary to add this intent filter to the SplashScreen activity for it to become the first activity
@@ -31,6 +31,7 @@
             android:theme="@style/AppTheme"
             tools:node="merge" />
         <activity android:name=".ui.score.ScoreActivity" />
+        <activity android:name=".ui.main.SplashScreenActivity"/>
     </application>
 
 </manifest>
