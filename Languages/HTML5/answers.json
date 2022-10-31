@@ -1,16 +1,28 @@
 {
   "answers": [
     {
-      "answer": "Type "It is," at the beginning of all answers/ input a description of something relavent to your language/ items here will populate incorrect answers for qestions.",
-      "details": "Here you would give a detailed description of the something used in the answer key above, for more information look at the .json in the android folder."
+      "answer": "It is used to describe the characteristic of an HTML element in detail. Whatever written within a HTML tag are HTML element.",
+      "details": "HTML tags are used to hold the HTML element. HTML element holds the content. HTML attributes are used to describe the characteristic of an HTML element in detail. Whatever written within a HTML tag are HTML element."
     },
     {
-      "answer": "EXAMPLE: It is a four legged animal that meows.",
-      "details": "EXAMPLE: The cat is a domestic species of small carnivorous mammal. It is the only domesticated species in the family Felidae and is often referred to as the domestic cat to distinguish it from the wild members of the family."
+      "answer": "It is a blueprint used to arrange web pages in a well-defined manner..",
+      "details": "An HTML layout that uses the correct format will easily improve a website's appearance."
     },
     {
-      "answer": "EXAMPLE: It is a wheeled motor vehicle used for transportation.",
-      "details": "EXAMPLE: Most definitions of cars say that they run primarily on roads, seat one-to-eight people, have four wheels and mainly transport people rather than goods. Cars came into global use during the 20th century, and developed economies depend on them."
+      "answer": "It is used to decreases the transmission time between the server and the client ",
+      "details": "Whitespace is any string of text composed only of spaces, tabs or line breaks (to be precise, CRLF sequences, carriage returns or line feeds). These characters allow you to format your code in a way that will make it easily readable by yourself and other people."
+    },
+    {
+      "answer": "It is used to represent the standalone part of a HTML file.",
+      "details": "The Section tag is a structural HTML element used to group together related elements. Each <section> typically includes one or more heading elements and additional elements presenting related content."
+    },
+    {
+      "answer": "It is used by those elements which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.",
+      "details": "Inline elements do not force a new line to begin in the document flow. Block elements, on the other hand, typically cause a line break to occur."
+    },
+    {
+      "answer": "It is the space or gap between two consecutive cells.",
+      "details": "Cell Spacing is the space or gap between two consecutive cells. Whereas, Cell Padding is the space or gap between the text/ content of the cell and the edge/ border of the cell."
     }
   ]
 }

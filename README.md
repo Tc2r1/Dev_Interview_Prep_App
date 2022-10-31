@@ -21,8 +21,6 @@ This repository is open to all members of the GitHub community. Any member may c
 
 # Don't forget to give ⭐ ( To give star you can see on your screen on top right hand side Just smash it 💥 :)
 
-Celebrate [HacktoberFest](https://hacktoberfest.digitalocean.com/) by getting involved in the open source community by completing some simple tasks in
-this project.
 
 <div align="left">
     <br>
@@ -32,7 +30,52 @@ this project.
 </div> 
 
 
-## Type "!assign" in a comment under issues to be assigned an issue!
+(Type **"!assign"** in a comment under issues to be assigned an issue)
+
+**I have worked really hard to create a variety of ways in which everyone contribute to this project, there should be multiple directions any skill level can go in with this project.
+Below are a few different ways all skill levels and programmer types can contribute.**
+
+
+Contributors submitting low- or non-code content to projects [**should create a PR/MR to track it**](https://hacktoberfest.com/about/#low-or-non-code)
+
+[Click Here to Create a Pull Request](https://github.com/Tc2r1/Hacktoberfest_Interview_App/compare)
+
+## No Code Contributions
+
+**LOG YOUR NON-CODE CONTRIBUTION IN THE CONTRIBUTIONS.MD FILE**
+
+* Documentation
+  * If you see an area that could benefit from documentation, we welcome these contributions. Be it Code of Conducts, Reformatting a readme., Adding Graphs etc.
+  * Writing and translating technical documentation
+  * Translating a readme.md to another language
+* Designs
+  * Use Tools Like Figma to create Mocks for the UI of the application
+  * Redesign or create an application icon or splash screen
+  * Create a header banner for the project
+* Advocacy by podcasts, case studies, blog posts, or social media posts
+  * Write a blog post about the github project and how it can help others
+  * Shoutout the repository on social media to a popular group
+* Maintenance
+  * Create feature ideas you think would be benefitual for the application to have
+    * At least 2 approve ideas must be submitted to satisfy a contribution of this type
+    * Issues should be labeled Triage and Hacktoberfest
+  * Review the Pull Request submitted by others.
+    * At least 3 request must be reviewed in order to satisfy a contribution of this type.
+
+### Create a markdown.md file named `[language]_cheatsheet_[username].md`
+
+Inside this file, create a cheatsheet that others can use to help them study for interviews.
+
+### Create a document in the project `and-summit-22-notes` with your thoughts on what you found interesting that was discussed during [Android Summit 2022](https://developer.android.com/events/dev-summit/technical-talks#modern-android-development)
+
+## Low Code Contributions
+
+* Add Comments to at least 2 files in the project
+  * comments should explain and detail what the code is doing to help newer developers.
+* Helpful Links
+  * Add at least 3 links to helpful free resources developers can use to the `readme.md` in the root folder.
+
+[Click Here to Create a Pull Request](https://github.com/Tc2r1/Hacktoberfest_Interview_App/compare)
 
 ### 🎃🎃LEVEL 3 CONTRIBUTIONS🎃🎃 - BUILD A MODULE OF THE PROJECT :O!! YOU'RE A BOSS!
 
@@ -45,7 +88,7 @@ Lets see how many different modules we can create!
 1. navigate to `https://github.com/Tc2r1/DevInterview_Questions/tree/master/Interview_Prep_App/`
 2. decide if you want to work in Native_Java or Native_Kotlin, or something else (for something else skip to 6b) open the folder you choose.
 3. Fork the repo and create a branch to save your work to.
-4. copy the template application folder and rename it based on what your project will showcase. for example "retrofit, coroutines, viewmodel, jetpack
+4. copy the template application folder, paste it into native_kotlin folder, and rename it based on what your project will showcase. for example "retrofit, coroutines, viewmodel, jetpack
    compose" along with your username (IE:
    retrofit2_tc2r1)
 
