@@ -11,6 +11,18 @@
     {
       "answer": "EXAMPLE: It is a wheeled motor vehicle used for transportation.",
       "details": "EXAMPLE: Most definitions of cars say that they run primarily on roads, seat one-to-eight people, have four wheels and mainly transport people rather than goods. Cars came into global use during the 20th century, and developed economies depend on them."
+    },
+    {
+      "answer": "It is a programming language similar to c++ but newer.",
+      "details": "C# is an object oriented programming language that launched in 2000."
+    },
+    {
+      "answer": "It is a programming language that is easy to read for beginners.",
+      "details": "C# is an easy language to read due to it having classes that have well defined hierarchy, making the hierarchy easy to follow, read and understand."
+    },
+    {
+      "answer": "It is classed as a high level coding/ programming language.",
+      "details": "C# is classed as a high level coding/ programming language due to the syntax being seen as similar or resembling the language of humans."
     }
   ]
 }

@@ -29,6 +29,7 @@
 | Ayush Singh        | [@OneAutumLeaf](https://github.com/OneAutumLeaf)              | 1                |
 | Prasad More        | [@prasad-more-12](https://github.com/prasad-more-12)          | 1                |
 | Jayasurya K        | [@jayasurya](https://github.com/jayasurya7a)                  | 1                |
+| CaraghMcI		     	 | [@CaraghMcI](https://github.com/CaraghMcI)				          	 | 1                |
 | prasad-333         | [@prasad-333](https://github.com/prasad-333)                  | 1                |
 | JanFidor           | [@JanFidor](https://github.com/JanFidor)                      | 1                |
 | libialany          | [@libialany](https://github.com/libialany)                    | 1                |
