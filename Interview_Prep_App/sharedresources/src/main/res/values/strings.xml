@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Quiz App</string>
+    <string name="app_name">Developer Interview App</string>
     <string name="score_display_text">"Score: "</string>
     <string name="question_display_text">"Question "</string>
     <string name="quit_app">Quit App</string>
@@ -11,4 +11,14 @@
     <string name="question_next">NEXT</string>
     <string name="question_new_quiz">New Quiz</string>
     <string name="submit_button">Submit Answer</string>
+
+    <plurals name="final_score_question_count">
+        <item quantity="one">There Was %d Question</item>
+        <item quantity="other">There Were %d Questions</item>
+    </plurals>
+
+    <string name="final_score_correct_answers_count">Correct answers: %1$d</string>
+    <string name="quiz_progress">Question %1$d of %2$d</string>
+    <string name="score">Score: %1$d</string>
+    <string name="final_score_percentage">%1$d%%</string>
 </resources>

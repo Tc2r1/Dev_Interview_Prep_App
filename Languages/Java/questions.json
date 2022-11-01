@@ -1,6 +1,6 @@
 {
-  "questions": [
-    {
+  "questions":[
+      {
       "id": 0,
       "question": "What is Java?",
       "details": "Java is the high-level, object-oriented, robust, secure programming language, platform-independent, high performance, Multithreading, and portable programming language. It was developed by James Gosling in June 1991.",
@@ -74,7 +74,7 @@
     },
     {
       "id": 8,
-      "question":"What is a wrapper class?",
+      "question": "What is a wrapper class?",
       "details": "A wrapper class converts a primitive type into an object. An example would be the Integer class.",
       "questionType": "multi",
       "trueOrFalse": false,
@@ -92,7 +92,7 @@
     },
     {
       "id": 10,
-      "question":"Java supports multiple inheritance",
+      "question": "Java supports multiple inheritance",
       "details": "One class cannot inherit multiple classes. We can simulate this by implementing multiple interfaces.",
       "trueOrFalse": false,
       "shortAns": "No",
@@ -127,7 +127,7 @@
     },
     {
       "id": 14,
-      "question":"What does the 'synchronized' keyword do?",
+      "question": "What does the 'synchronized' keyword do?",
       "details": "'synchronized' isolates a thread so that other threads using the same resource(s) cannot interrupt it.",
       "questionType": "multi",
       "trueOrFalse": false,
@@ -149,8 +149,45 @@
       "details": " An Exception is a problem that can occur during the normal flow of execution of a program.",
       "questionType": "multi",
       "trueOrFalse": false,
-      "shortAns": "It is a problem that occurs while running the program",
+      "shortAns": "It is a problem that occur during runtime and compile time.",
+      "tag": "Java"
+    },
+    {
+      "id": 17,
+      "question": "What is an Error?",
+      "details": "An irrecoverable state of the system is caused by an error while the system goes to a recoverable state when an exception is thrown.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is a problem that mostly arises due to the shortage of system resources",
+      "tag": "Exception"
+    },
+    {
+      "id": 18,
+      "question": "Does java uses inheritance?",
+      "details": "Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class. ",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 19,
+      "question": "Garbage collection is manual process.",
+      "details": "Java garbage collection is an automatic process.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+    {
+      "id": 20,
+      "question": "Is null a keyword in java?",
+      "details": "Null is a reserved keyword in the Java programming language. It's technically an object literal similar to True or False. ",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "No",
       "tag": "Java"
     }
   ]
 }
+
