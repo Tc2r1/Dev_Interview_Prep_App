@@ -274,7 +274,7 @@ A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](ht
 - If a maintainer reports your pull request as spam, it will not be counted toward your participation in Hacktoberfest.
 - If a maintainer reports behavior that’s not in line with the project’s code of conduct, you will be ineligible to participate.
 - To get a shirt, you must make four approved pull requests (PRs) on opted-in projects between October 1-31 in any time zone.
-- This year, the first 50,000 participants can earn a T-shirt.
+- This year, the first 40,000 participants (maintainers and contributors) who complete Hacktoberfest can elect to receive one of two prizes: a tree planted in their     name, or the Hacktoberfest 2022 t-shirt.
 
 ---
 
