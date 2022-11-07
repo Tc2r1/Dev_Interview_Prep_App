@@ -35,6 +35,33 @@
       "trueOrFalse": true,
       "shortAns": "",
       "tag": "indentation"
-    }
+     },
+     {
+        "id": 5,
+        "question": "Does Python automatically clear memory?",
+        "details": "Python automatically handles the allocation and deallocation of memory",
+        "questionType": "bool",
+        "trueOrFalse": true,
+        "shortAns": "",
+        "tag": "memory management"
+      },
+      {
+        "id": 6,
+        "question": "Can you speed up Python?",
+        "details": "Use Built-in Functions and Libraries",
+        "questionType": "bool",
+        "trueOrFalse": true,
+        "shortAns": "",
+        "tag": "optimization"
+      },
+      {
+        "id": 7,
+        "question": "Can Python run in a browser?",
+        "details": "you can't run Python code in the browser",
+        "questionType": "bool",
+        "trueOrFalse": false,
+        "shortAns": "",
+        "tag": "dev"
+      }
   ]
 }
