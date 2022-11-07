@@ -9,8 +9,7 @@ import com.nudennie.interviewprepapp.R
 class SplashScreenActivity : AppCompatActivity() {
 
     // This holds the time in milisec for the splash screen display
-    val screenTimer = 3000L
-
+    val screenTimer = 4000L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)

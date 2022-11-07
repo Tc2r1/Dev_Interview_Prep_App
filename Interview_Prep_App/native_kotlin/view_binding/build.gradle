@@ -35,13 +35,16 @@ android {
         }
     }
     packagingOptions {
-        exclude 'META-INF/com.android.tools/proguard/coroutines.pro'
+        resources {
+            excludes += ['META-INF/com.android.tools/proguard/coroutines.pro']
+        }
     }
-    // to enable view binding in module, set viewBinding to true in buildFeatures{} when it is enabled
+// to enable view binding in module, set viewBinding to true in buildFeatures{} when it is enabled
     // a binding class is generated for each XML layout file.
     buildFeatures {
         viewBinding = true
     }
+    namespace 'com.interviewprep.kotlinviewbinding'
 }
 
 dependencies {

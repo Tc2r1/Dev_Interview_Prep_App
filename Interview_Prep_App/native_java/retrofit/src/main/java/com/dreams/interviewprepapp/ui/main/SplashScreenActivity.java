@@ -1,16 +1,17 @@
 package com.dreams.interviewprepapp.ui.main;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.dreams.interviewprepapp.R;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+@SuppressLint("CustomSplashScreen")
 public class SplashScreenActivity extends AppCompatActivity {
     // Time for which the Splash Screen is to be displayed (in Milliseconds)
-    long screenTimer = 2000L;
+    long screenTimer = 4000L;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
