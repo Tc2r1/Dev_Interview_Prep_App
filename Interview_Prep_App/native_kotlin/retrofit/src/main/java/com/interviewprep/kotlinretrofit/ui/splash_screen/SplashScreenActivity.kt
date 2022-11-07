@@ -1,10 +1,10 @@
 package com.interviewprep.kotlinretrofit.ui.splash_screen
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
 import com.interviewprep.kotlinretrofit.R
 import com.interviewprep.kotlinretrofit.ui.main.MainActivity
 
@@ -19,6 +19,6 @@ class SplashScreenActivity : AppCompatActivity() {
             val intent = Intent(this@SplashScreenActivity, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, 2000)
+        }, 4000)
     }
 }
