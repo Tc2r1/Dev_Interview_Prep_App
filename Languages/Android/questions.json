@@ -639,7 +639,69 @@
       "trueOrFalse": false,
       "shortAns": "It replaces Android Monitor tools from Android Studio 3.0 & above. ",
       "tag": "profiler"
+    },
+    {
+      "id":71,
+      "question": "What is an accurate description of onCreate() in lifecycle?",
+      "details": "onCreate() is called when the activity is first created. This is where all the static work is done like creating views, binding data to lists, etc. This method also provides a Bundle containing its previous frozen state, if there was one. ",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is where all the static work is done like creating views.",
+      "tag": "aab"
+    },
+    {
+      "id": 72,
+      "question": "What is an accurate description of onStart() in lifecycle?",
+      "details": "onStart() is invoked when the activity is visible to the user. It is followed by onResume() if the activity is invoked from the background. It is also invoked after onCreate() when the activity is first started.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is invoked when the activity is visible to the user.",
+      "tag": "art"
+    },
+    {
+      "id": 74,
+      "question": What is an accurate description of onRestart() in lifecycle?",
+      "details": "onRestart is invoked after the activity has been stopped and prior to its starting stage and thus is always followed by onStart() when any activity is revived from background to on-screen.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is always followed by onStart() when any activity is revived from background to on-screen.",
+      "tag": "profiler"
+    },
+   {
+      "id": 75,
+      "question": What is an accurate description of onResume() in lifecycle?",
+      "details": "It is invoked when the activity starts interacting with the user. At this point, the activity is at the top of the activity stack, with a user interacting with it. Always followed by onPause() when the activity goes into the background or is closed by the user.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is invoked when the activity starts interacting with the user.",
+      "tag": "profiler"
+    },
+   {
+      "id": 76,
+      "question": What is an accurate description of onPause() in lifecycle?",
+      "details": "It is invoked when an activity is going into the background but has not yet been killed. It is a counterpart to onResume(). When an activity is launched in front of another activity, this callback will be invoked on the top activity (currently on screen). The activity, under the active activity, will not be created until the active activity’s onPause() returns, so it is recommended that heavy processing should not be done in this part.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is invoked when an activity is going into the background but has not yet been killed.",
+      "tag": "profiler"
+    },
+   {
+      "id": 77,
+      "question": What is an accurate description of onStop() in lifecycle?",
+      "details": "It is invoked when the activity is not visible to the user. It is followed by onRestart() when the activity is revoked from the background, followed by onDestroy() when the activity is closed or finished, and nothing when the activity remains on the background only. Note that this method may never be called, in low memory situations where the system does not have enough memory to keep the activity’s process running after its onPause() method is called.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is invoked when the activity is not visible to the user.",
+      "tag": "profiler"
+    },
+   {
+      "id": 78,
+      "question": What is an accurate description of onDestroy() in lifecycle?",
+      "details": "The final call received before the activity is destroyed. This can happen either because the activity is finishing (when finish() is invoked) or because the system is temporarily destroying this instance of the activity to save space. To distinguish between these scenarios, check it with isFinishing() method.",
+      "questionType": "multi",
+      "trueOrFalse": false,
+      "shortAns": "It is the final call received when the activity is finishing.",
+      "tag": "profiler"
     }
-
   ]
 }
