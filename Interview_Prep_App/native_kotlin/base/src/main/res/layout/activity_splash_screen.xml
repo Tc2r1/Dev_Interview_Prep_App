@@ -16,6 +16,7 @@
         android:textColor="@color/light_blue_A200"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

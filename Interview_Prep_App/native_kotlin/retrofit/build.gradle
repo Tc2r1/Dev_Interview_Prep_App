@@ -35,8 +35,11 @@ android {
         }
     }
     packagingOptions {
-        exclude 'META-INF/com.android.tools/proguard/coroutines.pro'
+        resources {
+            excludes += ['META-INF/com.android.tools/proguard/coroutines.pro']
+        }
     }
+    namespace 'com.interviewprep.kotlinretrofit'
 }
 
 dependencies {
@@ -48,7 +51,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.7'
 
     //Retrofit & Scalar Converter
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
@@ -59,12 +62,11 @@ dependencies {
 
 
     // Coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.2"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
 
     //Retrofit with Moshi converter
     implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
     implementation 'com.google.android.material:material:1.7.0'
-
 }

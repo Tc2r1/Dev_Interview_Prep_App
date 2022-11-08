@@ -38,6 +38,7 @@ android {
     buildFeatures{
         viewBinding = true
     }
+    namespace = "com.interviewprep.template"
 }
 
 kapt {
