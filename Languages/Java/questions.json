@@ -187,6 +187,33 @@
       "trueOrFalse": true,
       "shortAns": "No",
       "tag": "Java"
+    },
+	{
+      "id": 21,
+      "question": "Does Java allow use of Pointers like C/C++?",
+      "details": "A pointer is a data type that can store the memory address of another variable. It essentially points to the location of that variable in the memory.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
+    },
+	{
+      "id": 22,
+      "question": "Is Java platform-independent?",
+      "details": "Platform independence means code written once can be run on multiple platforms or machines.",
+      "questionType": "bool",
+      "trueOrFalse": true,
+      "shortAns": "Yes, Java is platform-independent",
+      "tag": "Java"
+    },
+	{
+      "id": 23,
+      "question": "Are Integer and String primitive data types?",
+      "details": "Primitive data types are predefined data types that define the size and type of standard values.",
+      "questionType": "bool",
+      "trueOrFalse": false,
+      "shortAns": "No",
+      "tag": "Java"
     }
   ]
 }
