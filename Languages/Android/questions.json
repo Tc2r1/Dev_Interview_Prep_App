@@ -639,7 +639,34 @@
       "trueOrFalse": false,
       "shortAns": "It replaces Android Monitor tools from Android Studio 3.0 & above. ",
       "tag": "profiler"
+    },
+    {
+      "id":71,
+      "question":"What is ROOM database ?",
+      "details":"It is an essential part of Android Jetpack Suite which is build on SQLite database.",
+      "questionType":"multi",
+      "trueOrFalse":false,
+      "shortAns":"Performs CRUD operations & write Complex queries.",
+      "tag":"Database"
+    },
+    {
+      "id":72,
+      "question":" Coroutines are better than Multi-threading .",
+      "details":"It is  light weight and more  efficient to perform computationally intensive operation.",
+      "questionType":"bool",
+      "trueOrFalse":true,
+      "shortAns":"true",
+      "tag":"Asyncronous"
+    },{
+      "id":73,
+      "question":"The performance of recycler View can be optimized by implementing DiffUtil on background thread.",
+      "details":" It can efficiently calculate list changes on a background thread.",
+      "questionType":"bool",
+      "trueOrFalse":true,
+      "shortAns":true,
+      "tag":"android"
     }
+
 
   ]
 }
