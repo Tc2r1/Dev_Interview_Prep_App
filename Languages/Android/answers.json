@@ -187,10 +187,7 @@
     {
       "answer": "It is process with no services, activities and broadcast receivers.",
       "details": "Empty process has its component destroyed and its been hold on to improve the user experience if the same process is invoke/needed again."
-    },
-    {
-      "answer": "It provides lightweight feedback about an operation.",
-      "details": "Snackbar can be considered similar to Toast message except it shows a brief message at the bottom of screen on mobile & lower left on larger devices. It can be displayed one at a time that appears above all views."
     }
+    
   ]
 }
