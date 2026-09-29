@@ -135,6 +135,33 @@ vary but should be easy enough.
 We are using Json to create a list of frequently given interview questions and answers for different languages!
 In every directory, you will find two files `questions` and `answers`
 
+## Question and Answer Format
+
+The interview questions and answers are stored in JSON format and organized by language.
+
+### Questions
+
+Questions are stored in `questions.json`. Each question contains the following fields:
+
+- **id** – A unique identifier for the question.
+- **question** – The interview question.
+- **details** – Additional information explaining the question.
+- **questionType** – Defines whether the question is multiple-choice (`multi`) or true/false (`bool`).
+- **trueOrFalse** – Contains the correct true/false value when the question type is `bool`.
+- **shortAns** – A short answer to the question.
+- **tag** – Identifies the topic associated with the question.
+
+### Answers
+
+Answers are stored in `answers.json`. Each answer contains the following fields:
+
+- **answer** – The answer or concept associated with the question.
+- **details** – Additional information that explains the answer in more detail.
+
+The `answer` field is used as the main answer displayed for the corresponding question, while the `details` field provides additional explanation and context.
+
+When adding new questions or answers, contributors should follow the existing JSON structure and formatting used in the project.
+
 If you'd like to contribute to **questions.json**:
 
 1. Fork this repo
