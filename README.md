@@ -14,6 +14,33 @@
 </p>
 </h1>
 
+## About the Project
+
+Dev Interview Prep App is an open-source programming quiz application designed to help developers prepare for technical interviews.
+
+The application provides interview questions and answers covering programming concepts and different languages. The project is structured to support contributions from developers with different experience levels, from adding new interview questions to developing new versions of the application.
+
+### What You Can Find in This Repository
+
+- **Interview_Prep_App** – Contains the application modules and implementations of the interview preparation quiz.
+- **Languages** – Contains the interview questions and answers organized by programming language.
+- **Assets** – Contains images and other visual assets used by the project.
+- **Android Summit 2022 Notes** – Contains notes and documentation related to Android Summit 2022.
+- **CONTRIBUTING.md** – Provides guidelines for contributing to the project.
+- **CODE_OF_CONDUCT.md** – Defines the expected standards for participation in the community.
+
+### What Can You Practice?
+
+The project can be used to practice:
+
+- Programming language concepts
+- Technical interview questions
+- Multiple-choice and true/false questions
+- Core development concepts
+- Interview preparation across different programming languages
+
+The repository is open to contributions, allowing developers to improve the existing content, add questions and answers, improve documentation or build new application modules.
+
 <h3 align="center">🎃 Use this project to make your first contribution to an open source project on GitHub. Practice making your first pull request to
 a public repository before doing the real thing! 🎃</h3>
 
@@ -28,6 +55,7 @@ This repository is open to all members of the GitHub community. Any member may c
         <img src="Assets/steps_for_contributing.svg" width="400px" height="200px" alt="Add Some Code!">
             </a>
 </div> 
+
 
 
 (Type **"!assign"** in a comment under issues to be assigned an issue)
